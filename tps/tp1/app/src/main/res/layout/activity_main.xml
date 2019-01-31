@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO 2 - Remplacer le ConstraintLayout par un LinearLayout vertical -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.iut.tp1.SearchActivity">
+
+    <!-- TODO 7 - Ajouter une image en pointant vers le logo octocat ajouté dans les ressources -->
+    <!-- TODO 8 - Laissez lui prendre toute la largeur, et uniquement la hauteur nécessaire -->
+
+    <!-- TODO 3 - Supprimer tous les attributs contenant constraint dans leur nom -->
+    <!-- TODO 4 - Remplacer le texte par "Recherche d'utilisateur" -->
+    <!-- TODO 5 - Passer la taille du texe à 50sp -->
+    <!-- TODO 6 - Centrez le horizontalement -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TODO 9 - Ajoutez un EditText de type text -->
+    <!-- TODO 10 - Donnez lui un id "name" et faites lui prendre 300dp de largeur -->
+    <!-- TODO 11 - Centrez le de nouveau -->
+
+    <!-- TODO 12 - Ajoutez maintenant un bouton avec pour id "search" -->
+    <!-- TODO 13 - Centre le et donnez lui un texte "Rechercher" -->
+
+    <!-- TODO 14 - Comme on est pas des sauvages, on va tenter de corriger les warnings remontés par l'IDE -->
+    <!-- TODO 15 - Normalement il est capable de les corriger facilement pour vous -->
+</android.support.constraint.ConstraintLayout>

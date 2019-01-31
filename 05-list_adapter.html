@@ -1,0 +1,4452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Android</title>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="copyright" content="Copyright &#169; Listes et Adapters" />
+<meta name="generator" content="AsciiDoc 8.6.10" />
+<style type="text/css">
+/*
+ * AsciiDoc 'volnitsky' theme for xhtml11 and html5 backends.
+ * Based on css from http://volnitsky.com, which was in turn based on default
+ * theme from AsciiDoc
+ *
+ * FIXME: The styling is still a bit rough in places.
+ *
+ */
+
+/* Default font. */
+body {
+  font-family: Georgia,"Times New Roman",Times,serif;
+}
+
+/* Title font. */
+h1, h2, h3, h4, h5, h6,
+div.title, caption.title,
+thead, p.table.header,
+#toctitle,
+#author, #revnumber, #revdate, #revremark,
+#footer {
+  font-family: Candara,Arial,sans-serif;
+}
+
+
+#toc a {
+    border-bottom: 1px dotted #999999;
+    color: #3A3A4D !important;
+    text-decoration: none !important;
+}
+#toc a:hover {
+    border-bottom: 1px solid #6D4100;
+    color: #6D4100 !important;
+    text-decoration: none !important;
+}
+a { color: #666688; text-decoration: none; border-bottom: 1px dotted #666688; }
+a:visited { color: #615FA0; border-bottom: 1px dotted #615FA0; }
+a:hover { color: #6D4100; border-bottom: 1px solid #6D4100; }
+
+em {
+  font-style: italic;
+  color: #444466;
+}
+
+strong {
+  font-weight: bold;
+  color: #444466;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #666688;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+  letter-spacing:+0.15em;
+}
+
+h1, h2, h3 { border-bottom: 2px solid #ccd; }
+h2 { padding-top: 0.5em; }
+h3 { float: left; }
+h3 + * { clear: left; }
+
+div.sectionbody {
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid #444466;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul, ol, li > p {
+  margin-top: 0;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+#author {
+  color: #444466;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#footer {
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+
+#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+
+#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+#preamble {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+div.tableblock, div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+div.admonitionblock {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  color: #444466;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+
+div.listingblock > div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock {
+  padding-left: 2.0em;
+  margin-right: 10%;
+}
+div.quoteblock > div.attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock {
+  padding-left: 2.0em;
+  margin-right: 10%;
+}
+div.verseblock > pre.content {
+  font-family: inherit;
+}
+div.verseblock > div.attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+/* DEPRECATED: Pre version 8.2.7 verse style literal block. */
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #444466;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 2px solid silver;
+}
+
+div.exampleblock > div.content {
+  border-left: 2px solid silver;
+  padding: 0.5em;
+}
+
+div.imageblock div.content { padding-left: 0; }
+span.image img { border-style: none; }
+a.image:visited { color: white; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: normal;
+  color: #444466;
+}
+dd > *:first-child {
+  margin-top: 0.1em;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+ol.arabic {
+  list-style-type: decimal;
+}
+ol.loweralpha {
+  list-style-type: lower-alpha;
+}
+ol.upperalpha {
+  list-style-type: upper-alpha;
+}
+ol.lowerroman {
+  list-style-type: lower-roman;
+}
+ol.upperroman {
+  list-style-type: upper-roman;
+}
+
+div.compact ul, div.compact ol,
+div.compact p, div.compact p,
+div.compact div, div.compact div {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+div.tableblock > table {
+  border: 3px solid #444466;
+}
+thead {
+  font-weight: bold;
+  color: #444466;
+}
+tfoot {
+  font-weight: bold;
+}
+td > div.verse {
+  white-space: pre;
+}
+p.table {
+  margin-top: 0;
+}
+/* Because the table frame attribute is overriden by CSS in most browsers. */
+div.tableblock > table[frame="void"] {
+  border-style: none;
+}
+div.tableblock > table[frame="hsides"] {
+  border-left-style: none;
+  border-right-style: none;
+}
+div.tableblock > table[frame="vsides"] {
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+
+div.hdlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hdlist tr {
+  padding-bottom: 15px;
+}
+dt.hdlist1.strong, td.hdlist1.strong {
+  font-weight: bold;
+}
+td.hdlist1 {
+  vertical-align: top;
+  font-style: normal;
+  padding-right: 0.8em;
+  color: #444466;
+}
+td.hdlist2 {
+  vertical-align: top;
+}
+div.hdlist.compact tr {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.comment {
+  background: yellow;
+}
+
+@media print {
+  #footer-badges { display: none; }
+}
+
+#toctitle {
+  color: #666688;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 { margin-top: 0; margin-bottom: 0; }
+div.toclevel1 { margin-top: 0.3em; margin-left: 0; font-size: 1.0em; }
+div.toclevel2 { margin-top: 0.25em; margin-left: 2em; font-size: 0.9em; }
+div.toclevel3 { margin-left: 4em; font-size: 0.8em; }
+div.toclevel4 { margin-left: 6em; font-size: 0.8em; }
+
+body {
+  margin: 1em 5%;
+  max-width:  55em;
+  padding-left: 0;
+
+}
+
+.monospaced, tt, div.listingblock > div.content {
+  font-family:  Consolas, "Andale Mono", "Courier New", monospace;
+  color: #004400;
+  background: #f4f4f4;
+  max-width: 80em;
+  line-height: 1.2em;
+}
+
+.paragraph p  {
+  line-height: 1.5em;
+  margin-top: 1em;
+}
+
+.paragraph p, li, dd, .content { max-width: 45em; }
+.admonitionblock               { max-width: 35em; }
+
+div.sectionbody div.ulist > ul > li {
+  list-style-type: square;
+  color: #aaa;
+}
+  div.sectionbody div.ulist >  ul > li > * {
+    color: black;
+    /*font-size: 50%;*/
+  }
+
+
+div.sectionbody div.ulist > ul > li div.ulist > ul > li {
+  color: #ccd ;
+}
+  div.sectionbody div.ulist > ul > li div.ulist > ul > li > * {
+    color: black ;
+  }
+
+em {
+  font-style: normal ! important;
+  font-weight: bold ! important;
+  color: #662222   ! important;
+  letter-spacing:+0.08em ! important;
+}
+
+span.underline { text-decoration: underline; }
+span.overline { text-decoration: overline; }
+span.line-through { text-decoration: line-through; }
+
+/*
+ * html5 specific
+ *
+ * */
+
+table.tableblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+thead, p.tableblock.header {
+  font-weight: bold;
+  color: #666688;
+}
+p.tableblock {
+  margin-top: 0;
+}
+table.tableblock {
+  border-width: 3px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-color: #444466;
+  border-collapse: collapse;
+}
+th.tableblock, td.tableblock {
+  border-width: 1px;
+  padding: 4px;
+  border-style: solid;
+  border-color: #444466;
+}
+
+table.tableblock.frame-topbot {
+  border-left-style: hidden;
+  border-right-style: hidden;
+}
+table.tableblock.frame-sides {
+  border-top-style: hidden;
+  border-bottom-style: hidden;
+}
+table.tableblock.frame-none {
+  border-style: hidden;
+}
+
+th.tableblock.halign-left, td.tableblock.halign-left {
+  text-align: left;
+}
+th.tableblock.halign-center, td.tableblock.halign-center {
+  text-align: center;
+}
+th.tableblock.halign-right, td.tableblock.halign-right {
+  text-align: right;
+}
+
+th.tableblock.valign-top, td.tableblock.valign-top {
+  vertical-align: top;
+}
+th.tableblock.valign-middle, td.tableblock.valign-middle {
+  vertical-align: middle;
+}
+th.tableblock.valign-bottom, td.tableblock.valign-bottom {
+  vertical-align: bottom;
+}
+
+
+/* slidy.css
+
+   Copyright (c) 2005-2010 W3C (MIT, ERCIM, Keio), All Rights Reserved.
+   W3C liability, trademark, document use and software licensing
+   rules apply, see:
+
+   http://www.w3.org/Consortium/Legal/copyright-documents
+   http://www.w3.org/Consortium/Legal/copyright-software
+*/
+
+/*
+   SJR: 2010-09-29: Modified for AsciiDoc slidy backend.
+   Mostly just commented out stuff that is handled by AsciiDoc's CSS files.
+*/
+
+body
+{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+  background-color: white;
+/*
+  font-family: "Gill Sans MT", "Gill Sans", GillSans, sans-serif;
+*/
+  font-size: 14pt;
+}
+
+div.toolbar {
+  position: fixed; z-index: 200;
+  top: auto; bottom: 0; left: 0; right: 0;
+  height: 1.2em; text-align: right;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 60%;
+  color: red;
+  background-color: rgb(240,240,240);
+  border-top: solid 1px rgb(180,180,180);
+}
+
+div.toolbar span.copyright {
+  color: black;
+  margin-left: 0.5em;
+}
+
+div.initial_prompt {
+  position: absolute;
+  z-index: 1000;
+  bottom: 1.2em;
+  width: 90%;
+  background-color: rgb(200,200,200);
+  opacity: 0.35;
+  background-color: rgb(200,200,200, 0.35);
+  cursor: pointer;
+}
+
+div.initial_prompt p.help {
+  text-align: center;
+}
+
+div.initial_prompt p.close {
+  text-align: right;
+  font-style: italic;
+}
+
+div.slidy_toc {
+  position: absolute;
+  z-index: 300;
+  width: 60%;
+  max-width: 30em;
+  height: 30em;
+  overflow: auto;
+  top: auto;
+  right: auto;
+  left: 4em;
+  bottom: 4em;
+  padding: 1em;
+  background: rgb(240,240,240);
+  border-style: solid;
+  border-width: 2px;
+  font-size: 60%;
+}
+
+div.slidy_toc .toc_heading {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 1em;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(180,180,180);
+  border-bottom-width: 1px;
+}
+
+div.slide {
+  z-index: 20;
+  margin: 0 0 0 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-width: 0;
+  clear: both;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 120%;
+  background-color: transparent;
+}
+
+div.background {
+  display: none;
+}
+
+div.handout {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div.slide.titlepage {
+  text-align: center;
+}
+
+div.slide.titlepage.h1 {
+  padding-top: 10%;
+}
+
+div.slide h1 {
+  padding-left: 0;
+  padding-right: 20pt;
+  padding-top: 4pt;
+  padding-bottom: 4pt;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 60pt;
+  margin-bottom: 0.5em;
+  display: block;
+  font-size: 160%;
+  line-height: 1.2em;
+  background: transparent;
+}
+
+div.toc {
+  position: absolute;
+  top: auto;
+  bottom: 4em;
+  left: 4em;
+  right: auto;
+  width: 60%;
+  max-width: 30em;
+  height: 30em;
+  border: solid thin black;
+  padding: 1em;
+  background: rgb(240,240,240);
+  color: black;
+  z-index: 300;
+  overflow: auto;
+  display: block;
+  visibility: visible;
+}
+
+div.toc-heading {
+  width: 100%;
+  border-bottom: solid 1px rgb(180,180,180);
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/*
+pre {
+ font-size: 80%;
+ font-weight: bold;
+ line-height: 120%;
+ padding-top: 0.2em;
+ padding-bottom: 0.2em;
+ padding-left: 1em;
+ padding-right: 1em;
+ border-style: solid;
+ border-left-width: 1em;
+ border-top-width: thin;
+ border-right-width: thin;
+ border-bottom-width: thin;
+ border-color: #95ABD0;
+ color: #00428C;
+ background-color: #E4E5E7;
+}
+*/
+
+/*
+li pre { margin-left: 0; }
+
+blockquote { font-style: italic }
+
+img { background-color: transparent }
+
+p.copyright { font-size: smaller }
+*/
+
+.center { text-align: center }
+.footnote { font-size: smaller; margin-left: 2em; }
+
+/*
+a img { border-width: 0; border-style: none }
+*/
+
+a:visited { color: navy }
+a:link { color: navy }
+a:hover { color: red; text-decoration: underline }
+a:active { color: red; text-decoration: underline }
+
+a {text-decoration: none}
+.navbar a:link {color: white}
+.navbar a:visited {color: yellow}
+.navbar a:active {color: red}
+.navbar a:hover {color: red}
+
+/*
+ul { list-style-type: square; }
+ul ul { list-style-type: disc; }
+ul ul ul { list-style-type: circle; }
+ul ul ul ul { list-style-type: disc; }
+li { margin-left: 0.5em; margin-top: 0.5em; }
+li li { font-size: 85%; font-style: italic }
+li li li { font-size: 85%; font-style: normal }
+*/
+
+div dt
+{
+  margin-left: 0;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+div dd
+{
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+}
+
+
+/*
+p,pre,ul,ol,blockquote,h2,h3,h4,h5,h6,dl,table {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+*/
+
+p.subhead { font-weight: bold; margin-top: 2em; }
+
+.smaller { font-size: smaller }
+.bigger { font-size: 130% }
+
+/*
+td,th { padding: 0.2em }
+*/
+
+ul {
+  margin: 0.5em 1.5em 0.5em 1.5em;
+  padding: 0;
+}
+
+ol {
+  margin: 0.5em 1.5em 0.5em 1.5em;
+  padding: 0;
+}
+
+ul { list-style-type: square; }
+ul ul { list-style-type: disc; }
+ul ul ul { list-style-type: circle; }
+ul ul ul ul { list-style-type: disc; }
+
+/*
+ul li {
+  list-style: square;
+  margin: 0.1em 0em 0.6em 0;
+  padding: 0 0 0 0;
+  line-height: 140%;
+}
+
+ol li {
+  margin: 0.1em 0em 0.6em 1.5em;
+  padding: 0 0 0 0px;
+  line-height: 140%;
+  list-style-type: decimal;
+}
+
+li ul li {
+  font-size: 85%;
+  font-style: italic;
+  list-style-type: disc;
+  background: transparent;
+  padding: 0 0 0 0;
+}
+li li ul li {
+  font-size: 85%;
+  font-style: normal;
+  list-style-type: circle;
+  background: transparent;
+  padding: 0 0 0 0;
+}
+li li li ul li {
+  list-style-type: disc;
+  background: transparent;
+  padding: 0 0 0 0;
+}
+
+li ol li {
+  list-style-type: decimal;
+}
+
+
+li li ol li {
+  list-style-type: decimal;
+}
+*/
+
+/*
+ setting class="outline" on ol or ul makes it behave as an
+ ouline list where blocklevel content in li elements is
+ hidden by default and can be expanded or collapsed with
+ mouse click. Set class="expand" on li to override default
+*/
+
+ol.outline li:hover { cursor: pointer }
+ol.outline li.nofold:hover { cursor: default }
+
+ul.outline li:hover { cursor: pointer }
+ul.outline li.nofold:hover { cursor: default }
+
+ol.outline { list-style:decimal; }
+ol.outline ol { list-style-type:lower-alpha }
+
+ol.outline li.nofold {
+  padding: 0 0 0 20px;
+  background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
+}
+ol.outline li.unfolded {
+  padding: 0 0 0 20px;
+  background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
+}
+ol.outline li.folded {
+  padding: 0 0 0 20px;
+  background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
+}
+ol.outline li.unfolded:hover {
+  padding: 0 0 0 20px;
+  background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
+}
+ol.outline li.folded:hover {
+  padding: 0 0 0 20px;
+  background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
+}
+
+ul.outline li.nofold {
+  padding: 0 0 0 20px;
+  background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
+}
+ul.outline li.unfolded {
+  padding: 0 0 0 20px;
+  background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
+}
+ul.outline li.folded {
+  padding: 0 0 0 20px;
+  background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
+}
+ul.outline li.unfolded:hover {
+  padding: 0 0 0 20px;
+  background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
+}
+ul.outline li.folded:hover {
+  padding: 0 0 0 20px;
+  background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
+}
+
+/* for slides with class "title" in table of contents */
+a.titleslide { font-weight: bold; font-style: italic }
+
+/*
+ hide images for work around for save as bug
+ where browsers fail to save images used by CSS
+*/
+img.hidden { display: none; visibility: hidden }
+div.initial_prompt { display: none; visibility: hidden }
+
+  div.slide {
+     visibility: visible;
+     position: inherit;
+  }
+  div.handout {
+     border-top-style: solid;
+     border-top-width: thin;
+     border-top-color: black;
+  }
+
+@media screen {
+  .hidden { display: none; visibility: visible }
+
+  div.slide.hidden { display: block; visibility: visible }
+  div.handout.hidden { display: block; visibility: visible }
+  div.background { display: none; visibility: hidden }
+  body.single_slide div.initial_prompt { display: block; visibility: visible }
+  body.single_slide div.background { display: block; visibility: visible }
+  body.single_slide div.background.hidden { display: none; visibility: hidden }
+  body.single_slide .invisible { visibility: hidden }
+  body.single_slide .hidden { display: none; visibility: hidden }
+  body.single_slide div.slide { position: absolute }
+  body.single_slide div.handout { display: none; visibility: hidden }
+}
+
+@media print {
+  .hidden { display: block; visibility: visible }
+
+/*
+  div.slide pre { font-size: 60%; padding-left: 0.5em; }
+*/
+  div.toolbar { display: none; visibility: hidden; }
+  div.slidy_toc { display: none; visibility: hidden; }
+  div.background { display: none; visibility: hidden; }
+  div.slide { page-break-before: always }
+  /* :first-child isn't reliable for print media */
+  div.slide.first-slide { page-break-before: avoid }
+}
+
+
+/* SJR: AsciiDoc slidy backend tweaks */
+
+ol, ul {
+  margin: 0.8em 1.5em 0.8em 1.8em;
+}
+li > ul, li > ol {
+  margin-top: 0.5em;
+}
+
+.outline > li.folded,
+.outline > li.unfolded {
+  color: #527bbd;
+}
+ul > li{ color: #aaa; }
+ul > li > *, ol > li > * { color: black; }
+
+li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #808080 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0040D0 } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+/* slidy.js
+
+   Copyright (c) 2005-2010 W3C (MIT, ERCIM, Keio), All Rights Reserved.
+   W3C liability, trademark, document use and software licensing
+   rules apply, see:
+
+   http://www.w3.org/Consortium/Legal/copyright-documents
+   http://www.w3.org/Consortium/Legal/copyright-software
+*/
+
+// the slidy object implementation
+var w3c_slidy = {
+  // classify which kind of browser we're running under
+  ns_pos: (typeof window.pageYOffset!='undefined'),
+  khtml: ((navigator.userAgent).indexOf("KHTML") >= 0 ? true : false),
+  opera: ((navigator.userAgent).indexOf("Opera") >= 0 ? true : false),
+  ipad: ((navigator.userAgent).indexOf("iPad") >= 0 ? true : false),
+  iphone: ((navigator.userAgent).indexOf("iPhone") >= 0 ? true : false),
+  ie: (typeof document.all != "undefined" && !this.opera),
+  ie6: (!this.ns_pos && navigator.userAgent.indexOf("MSIE 6") != -1),
+  ie7: (!this.ns_pos && navigator.userAgent.indexOf("MSIE 7") != -1),
+  ie8: (!this.ns_pos && navigator.userAgent.indexOf("MSIE 8") != -1),
+  ie9: (!this.ns_pos && navigator.userAgent.indexOf("MSIE 9") != -1),
+  keyboardless: (this.ipad || this.iphone),
+
+  // are we running as XHTML? (doesn't work on Opera)
+  is_xhtml: /xml/.test(document.contentType),
+
+  slide_number: 0, // integer slide count: 0, 1, 2, ...
+  slide_number_element: null, // element containing slide number
+  slides: [], // set to array of slide div's
+  notes: [], // set to array of handout div's
+  backgrounds: [], // set to array of background div's
+  toolbar: null, // element containing toolbar
+  title: null, // document title
+  last_shown: null, // last incrementally shown item
+  eos: null,  // span element for end of slide indicator
+  toc: null, // table of contents
+  outline: null, // outline element with the focus
+  selected_text_len: 0, // length of drag selection on document
+  view_all: 0,  // 1 to view all slides + handouts
+  want_toolbar: true,  // user preference to show/hide toolbar
+  mouse_click_enabled: true, // enables left click for next slide
+  scroll_hack: 0, // IE work around for position: fixed
+  disable_slide_click: false,  // used by clicked anchors
+
+  lang: "en", // updated to language specified by html file
+
+  help_anchor: null, // used for keyboard focus hack in showToolbar()
+  help_page: "http://www.w3.org/Talks/Tools/Slidy2/help/help.html",
+  help_text: "Navigate with mouse click, space bar, Cursor Left/Right, " +
+             "or Pg Up and Pg Dn. Use S and B to change font size.",
+
+  size_index: 0,
+  size_adjustment: 0,
+  sizes:  new Array("10pt", "12pt", "14pt", "16pt", "18pt", "20pt",
+                    "22pt", "24pt", "26pt", "28pt", "30pt", "32pt"),
+
+  // needed for efficient resizing
+  last_width: 0,
+  last_height: 0,
+
+
+  // Needed for cross browser support for relative width/height on
+  // object elements. The work around is to save width/height attributes
+  // and then to recompute absolute width/height dimensions on resizing
+   objects: [],
+
+  // attach initialiation event handlers
+  set_up: function () {
+    var init = function() { w3c_slidy.init(); };
+    if (typeof window.addEventListener != "undefined")
+      window.addEventListener("load", init, false);
+    else
+      window.attachEvent("onload", init);
+  },
+
+  hide_slides: function () {
+    if (document.body && !w3c_slidy.initialized)
+      document.body.style.visibility = "hidden";
+    else
+      setTimeout(w3c_slidy.hide_slides, 50);
+  },
+
+  // hack to persuade IE to compute correct document height
+  // as needed for simulating fixed positioning of toolbar
+  ie_hack: function () {
+    window.resizeBy(0,-1);
+    window.resizeBy(0, 1);
+  },
+
+  init: function () {
+    //alert("slidy starting test 10");
+    document.body.style.visibility = "visible";
+    w3c_slidy_i18n.init();
+    this.add_toolbar();
+    this.wrap_implicit_slides();
+    this.collect_slides();
+    this.collect_notes();
+    this.collect_backgrounds();
+    this.objects = document.body.getElementsByTagName("object");
+    this.patch_anchors();
+    this.slide_number = this.find_slide_number(location.href);
+    window.offscreenbuffering = true;
+    this.size_adjustment = this.find_size_adjust();
+    this.time_left = this.find_duration();
+    this.hide_image_toolbar();  // suppress IE image toolbar popup
+    this.init_outliner();  // activate fold/unfold support
+    this.title = document.title;
+
+    // work around for opera bug
+    this.is_xhtml = (document.body.tagName == "BODY" ? false : true);
+
+    if (this.slides.length > 0)
+    {
+      var slide = this.slides[this.slide_number];
+
+      if (this.slide_number > 0)
+      {
+        this.set_visibility_all_incremental("visible");
+        this.last_shown = this.previous_incremental_item(null);
+        this.set_eos_status(true);
+      }
+      else
+      {
+        this.last_shown = null;
+        this.set_visibility_all_incremental("hidden");
+        this.set_eos_status(!this.next_incremental_item(this.last_shown));
+      }
+
+      this.set_location();
+      this.add_class(this.slides[0], "first-slide");
+      w3c_slidy.show_slide(slide);
+    }
+
+    this.toc = this.table_of_contents();
+
+    this.add_initial_prompt();
+
+    // bind event handlers without interfering with custom page scripts
+    // Tap events behave too weirdly to support clicks reliably on
+    // iPhone and iPad, so exclude these from click handler
+
+    if (!this.keyboardless)
+      this.add_listener(document.body, "click", this.mouse_button_click);
+
+    this.add_listener(document, "keydown", this.key_down);
+    this.add_listener(document, "keypress", this.key_press);
+    this.add_listener(window, "resize", this.resized);
+    this.add_listener(window, "scroll", this.scrolled);
+    this.add_listener(window, "unload", this.unloaded);
+
+    if (!document.body.onclick)
+      document.body.onclick = function () { };
+
+    this.single_slide_view();
+
+    //this.set_location();
+
+    this.resized();
+
+    if (this.ie7)
+      setTimeout(w3c_slidy.ie_hack, 100);
+
+    this.show_toolbar();
+
+    // for back button detection
+    setInterval(function () { w3c_slidy.check_location(); }, 200);
+    w3c_slidy.initialized = true;
+  },
+
+  // create div element with links to each slide
+  table_of_contents: function () {
+    var toc = this.create_element("div");
+    this.add_class(toc, "slidy_toc hidden");
+    //toc.setAttribute("tabindex", "0");
+
+    var heading = this.create_element("div");
+    this.add_class(heading, "toc-heading");
+    heading.innerHTML = "Table of Contents".localize();
+
+    toc.appendChild(heading);
+    var previous = null;
+
+    for (var i = 0; i < this.slides.length; ++i)
+    {
+      var title = this.has_class(this.slides[i], "title");
+      var num = document.createTextNode((i + 1) + ". ");
+
+      toc.appendChild(num);
+
+      var a = this.create_element("a");
+      a.setAttribute("href", "#(" + (i+1) + ")");
+
+      if (title)
+        this.add_class(a, "titleslide");
+
+      var name = document.createTextNode(this.slide_name(i));
+      a.appendChild(name);
+      a.onclick = w3c_slidy.toc_click;
+      a.onkeydown = w3c_slidy.toc_keydown;
+      a.previous = previous;
+
+      if (previous)
+        previous.next = a;
+
+      toc.appendChild(a);
+
+      if (i == 0)
+        toc.first = a;
+
+      if (i < this.slides.length - 1)
+      {
+        var br = this.create_element("br");
+        toc.appendChild(br);
+      }
+
+      previous = a;
+    }
+
+    toc.focus = function () {
+      if (this.first)
+        this.first.focus();
+    }
+
+    toc.onmouseup = w3c_slidy.mouse_button_up;
+
+    toc.onclick = function (e) {
+      e||(e=window.event);
+
+      if (w3c_slidy.selected_text_len <= 0)
+         w3c_slidy.hide_table_of_contents();
+
+      w3c_slidy.stop_propagation(e);
+
+      if (e.cancel != undefined)
+        e.cancel = true;
+
+      if (e.returnValue != undefined)
+        e.returnValue = false;
+
+      return false;
+    };
+
+    document.body.insertBefore(toc, document.body.firstChild);
+    return toc;
+  },
+
+  is_shown_toc: function () {
+    return !w3c_slidy.has_class(w3c_slidy.toc, "hidden");
+  },
+
+  show_table_of_contents: function () {
+    w3c_slidy.remove_class(w3c_slidy.toc, "hidden");
+    var toc = w3c_slidy.toc;
+    toc.focus();
+
+    if (w3c_slidy.ie7 && w3c_slidy.slide_number == 0)
+      setTimeout(w3c_slidy.ie_hack, 100);
+  },
+
+  hide_table_of_contents: function () {
+    w3c_slidy.add_class(w3c_slidy.toc, "hidden");
+
+    if (!w3c_slidy.opera)
+      w3c_slidy.help_anchor.focus();
+  },
+
+  toggle_table_of_contents: function () {
+    if (w3c_slidy.is_shown_toc())
+      w3c_slidy.hide_table_of_contents();
+    else
+      w3c_slidy.show_table_of_contents();
+  },
+
+  // called on clicking toc entry
+  toc_click: function (e) {
+    if (!e)
+      e = window.event;
+
+    var target = w3c_slidy.get_target(e);
+
+    if (target && target.nodeType == 1)
+    {
+      var uri = target.getAttribute("href");
+
+      if (uri)
+      {
+        //alert("going to " + uri);
+        var slide = w3c_slidy.slides[w3c_slidy.slide_number];
+        w3c_slidy.hide_slide(slide);
+        w3c_slidy.slide_number = w3c_slidy.find_slide_number(uri);
+        slide = w3c_slidy.slides[w3c_slidy.slide_number];
+        w3c_slidy.last_shown = null;
+        w3c_slidy.set_location();
+        w3c_slidy.set_visibility_all_incremental("hidden");
+        w3c_slidy.set_eos_status(!w3c_slidy.next_incremental_item(w3c_slidy.last_shown));
+        w3c_slidy.show_slide(slide);
+        //target.focus();
+
+        try
+        {
+          if (!w3c_slidy.opera)
+            w3c_slidy.help_anchor.focus();
+        }
+        catch (e)
+        {
+        }
+      }
+    }
+
+    w3c_slidy.hide_table_of_contents(e);
+    if (w3c_slidy.ie7) w3c_slidy.ie_hack();
+    w3c_slidy.stop_propagation(e);
+    return w3c_slidy.cancel(e);
+  },
+
+  // called onkeydown for toc entry
+  toc_keydown: function (event) {
+    var key;
+
+    if (!event)
+      var event = window.event;
+
+    // kludge around NS/IE differences
+    if (window.event)
+      key = window.event.keyCode;
+    else if (event.which)
+      key = event.which;
+    else
+      return true; // Yikes! unknown browser
+
+    // ignore event if key value is zero
+    // as for alt on Opera and Konqueror
+    if (!key)
+      return true;
+
+    // check for concurrent control/command/alt key
+    // but are these only present on mouse events?
+
+    if (event.ctrlKey || event.altKey)
+      return true;
+
+    if (key == 13)
+    {
+      var uri = this.getAttribute("href");
+
+      if (uri)
+      {
+        //alert("going to " + uri);
+       var slide = w3c_slidy.slides[w3c_slidy.slide_number];
+        w3c_slidy.hide_slide(slide);
+        w3c_slidy.slide_number = w3c_slidy.find_slide_number(uri);
+        slide = w3c_slidy.slides[w3c_slidy.slide_number];
+        w3c_slidy.last_shown = null;
+        w3c_slidy.set_location();
+        w3c_slidy.set_visibility_all_incremental("hidden");
+        w3c_slidy.set_eos_status(!w3c_slidy.next_incremental_item(w3c_slidy.last_shown));
+        w3c_slidy.show_slide(slide);
+        //target.focus();
+
+        try
+        {
+          if (!w3c_slidy.opera)
+            w3c_slidy.help_anchor.focus();
+        }
+        catch (e)
+        {
+        }
+      }
+
+      w3c_slidy.hide_table_of_contents();
+
+      if (self.ie7)
+       w3c_slidy.ie_hack();
+
+      return w3c_slidy.cancel(event);
+    }
+
+    if (key == 40 && this.next)
+    {
+      this.next.focus();
+      return w3c_slidy.cancel(event);
+    }
+
+    if (key == 38 && this.previous)
+    {
+      this.previous.focus();
+      return w3c_slidy.cancel(event);
+    }
+
+    return true;
+  },
+
+
+  // ### OBSOLETE ###
+  before_print: function () {
+    this.show_all_slides();
+    this.hide_toolbar();
+    alert("before print");
+  },
+
+  // ### OBSOLETE ###
+  after_print: function () {
+    if (!this.view_all)
+    {
+      this.single_slide_view();
+      this.show_toolbar();
+    }
+    alert("after print");
+  },
+
+  // ### OBSOLETE ###
+  print_slides: function () {
+    this.before_print();
+    window.print();
+    this.after_print();
+  },
+
+  // ### OBSOLETE ?? ###
+  toggle_view: function () {
+    if (this.view_all)
+    {
+      this.single_slide_view();
+      this.show_toolbar();
+      this.view_all = 0;
+    }
+    else
+    {
+      this.show_all_slides();
+      this.hide_toolbar();
+      this.view_all = 1;
+    }
+  },
+
+  // prepare for printing  ### OBSOLETE ###
+  show_all_slides: function () {
+    this.remove_class(document.body, "single_slide");
+    this.set_visibility_all_incremental("visible");
+  },
+
+  // restore after printing  ### OBSOLETE ###
+  single_slide_view: function () {
+    this.add_class(document.body, "single_slide");
+    this.set_visibility_all_incremental("visible");
+    this.last_shown = this.previous_incremental_item(null);
+  },
+
+  // suppress IE's image toolbar pop up
+  hide_image_toolbar: function () {
+    if (!this.ns_pos)
+    {
+      var images = document.getElementsByTagName("IMG");
+
+      for (var i = 0; i < images.length; ++i)
+        images[i].setAttribute("galleryimg", "no");
+    }
+  },
+
+  unloaded: function (e) {
+    //alert("unloaded");
+  },
+
+  // Safari and Konqueror don't yet support getComputedStyle()
+  // and they always reload page when location.href is updated
+  is_KHTML: function () {
+    var agent = navigator.userAgent;
+    return (agent.indexOf("KHTML") >= 0 ? true : false);
+  },
+
+  // find slide name from first h1 element
+  // default to document title + slide number
+  slide_name: function (index) {
+    var name = null;
+    var slide = this.slides[index];
+
+    var heading = this.find_heading(slide);
+
+    if (heading)
+      name = this.extract_text(heading);
+
+    if (!name)
+      name = this.title + "(" + (index + 1) + ")";
+
+    name.replace(/\&/g, "&amp;");
+    name.replace(/\</g, "&lt;");
+    name.replace(/\>/g, "&gt;");
+
+    return name;
+  },
+
+  // find first h1 element in DOM tree
+  find_heading: function (node) {
+    if (!node || node.nodeType != 1)
+      return null;
+
+    if (node.nodeName == "H1" || node.nodeName == "h1")
+      return node;
+
+    var child = node.firstChild;
+
+    while (child)
+    {
+      node = this.find_heading(child);
+
+      if (node)
+        return node;
+
+      child = child.nextSibling;
+    }
+
+    return null;
+  },
+
+  // recursively extract text from DOM tree
+  extract_text: function (node) {
+    if (!node)
+      return "";
+
+    // text nodes
+    if (node.nodeType == 3)
+      return node.nodeValue;
+
+    // elements
+    if (node.nodeType == 1)
+    {
+      node = node.firstChild;
+      var text = "";
+
+      while (node)
+      {
+        text = text + this.extract_text(node);
+        node = node.nextSibling;
+      }
+
+      return text;
+    }
+
+    return "";
+  },
+
+  // find copyright text from meta element
+  find_copyright: function () {
+    var name, content;
+    var meta = document.getElementsByTagName("meta");
+
+    for (var i = 0; i < meta.length; ++i)
+    {
+      name = meta[i].getAttribute("name");
+      content = meta[i].getAttribute("content");
+
+      if (name == "copyright")
+        return content;
+    }
+
+    return null;
+  },
+
+  find_size_adjust: function () {
+    var name, content, offset;
+    var meta = document.getElementsByTagName("meta");
+
+    for (var i = 0; i < meta.length; ++i)
+    {
+      name = meta[i].getAttribute("name");
+      content = meta[i].getAttribute("content");
+
+      if (name == "font-size-adjustment")
+        return 1 * content;
+    }
+
+    return 1;
+  },
+
+  // <meta name="duration" content="20" />  for 20 minutes
+  find_duration: function () {
+    var name, content, offset;
+    var meta = document.getElementsByTagName("meta");
+
+    for (var i = 0; i < meta.length; ++i)
+    {
+      name = meta[i].getAttribute("name");
+      content = meta[i].getAttribute("content");
+
+      if (name == "duration")
+        return 60000 * content;
+    }
+
+    return null;
+  },
+
+  replace_by_non_breaking_space: function (str) {
+    for (var i = 0; i < str.length; ++i)
+      str[i] = 160;
+  },
+
+  // ### CHECK ME ### is use of "li" okay for text/html?
+  // for XHTML do we also need to specify namespace?
+  init_outliner: function () {
+    var items = document.getElementsByTagName("li");
+
+    for (var i = 0; i < items.length; ++i)
+    {
+      var target = items[i];
+
+      if (!this.has_class(target.parentNode, "outline"))
+        continue;
+
+      target.onclick = this.outline_click;
+/* ### more work needed for IE6
+      if (!this.ns_pos)
+      {
+        target.onmouseover = this.hover_outline;
+        target.onmouseout = this.unhover_outline;
+      }
+*/
+      if (this.foldable(target))
+      {
+        target.foldable = true;
+        target.onfocus = function () {w3c_slidy.outline = this;};
+        target.onblur = function () {w3c_slidy.outline = null;};
+
+        if (!target.getAttribute("tabindex"))
+          target.setAttribute("tabindex", "0");
+
+        if (this.has_class(target, "expand"))
+          this.unfold(target);
+        else
+          this.fold(target);
+      }
+      else
+      {
+        this.add_class(target, "nofold");
+        target.visible = true;
+        target.foldable = false;
+      }
+    }
+  },
+
+  foldable: function (item) {
+    if (!item || item.nodeType != 1)
+      return false;
+
+    var node = item.firstChild;
+
+    while (node)
+    {
+      if (node.nodeType == 1 && this.is_block(node))
+        return true;
+
+      node = node.nextSibling;
+    }
+
+    return false;
+  },
+
+  // ### CHECK ME ### switch to add/remove "hidden" class
+  fold: function (item) {
+    if (item)
+    {
+      this.remove_class(item, "unfolded");
+      this.add_class(item, "folded");
+    }
+
+    var node = item ? item.firstChild : null;
+
+    while (node)
+    {
+      if (node.nodeType == 1 && this.is_block(node)) // element
+      {
+         w3c_slidy.add_class(node, "hidden");
+      }
+
+      node = node.nextSibling;
+    }
+
+    item.visible = false;
+  },
+
+  // ### CHECK ME ### switch to add/remove "hidden" class
+  unfold: function (item) {
+    if (item)
+    {
+      this.add_class(item, "unfolded");
+      this.remove_class(item, "folded");
+    }
+
+    var node = item ? item.firstChild : null;
+
+    while (node)
+    {
+      if (node.nodeType == 1 && this.is_block(node)) // element
+      {
+        w3c_slidy.remove_class(node, "hidden");
+      }
+
+      node = node.nextSibling;
+    }
+
+    item.visible = true;
+  },
+
+  outline_click: function (e) {
+    if (!e)
+      e = window.event;
+
+    var rightclick = false;
+    var target = w3c_slidy.get_target(e);
+
+    while (target && target.visible == undefined)
+      target = target.parentNode;
+
+    if (!target)
+      return true;
+
+    if (e.which)
+      rightclick = (e.which == 3);
+    else if (e.button)
+      rightclick = (e.button == 2);
+
+    if (!rightclick && target.visible != undefined)
+    {
+      if (target.foldable)
+      {
+        if (target.visible)
+          w3c_slidy.fold(target);
+        else
+          w3c_slidy.unfold(target);
+      }
+
+      w3c_slidy.stop_propagation(e);
+      e.cancel = true;
+      e.returnValue = false;
+    }
+
+    return false;
+  },
+
+  add_initial_prompt: function () {
+    var prompt = this.create_element("div");
+    prompt.setAttribute("class", "initial_prompt");
+
+    var p1 = this.create_element("p");
+    prompt.appendChild(p1);
+    p1.setAttribute("class", "help");
+
+    if (this.keyboardless)
+      p1.innerHTML = "Tap footer to move to next slide";
+    else
+      p1.innerHTML = "Space or Right Arrow to move to next " +
+                     "slide, click help below for more details";
+
+    this.add_listener(prompt, "click", function (e) {
+      document.body.removeChild(prompt);
+      w3c_slidy.stop_propagation(e);
+
+      if (e.cancel != undefined)
+        e.cancel = true;
+
+      if (e.returnValue != undefined)
+        e.returnValue = false;
+
+      return false;
+    });
+
+    document.body.appendChild(prompt);
+    this.initial_prompt = prompt;
+    setTimeout(function() {document.body.removeChild(prompt);}, 5000);
+  },
+
+  add_toolbar: function () {
+    var counter, page;
+
+     this.toolbar = this.create_element("div");
+     this.toolbar.setAttribute("class", "toolbar");
+
+     // a reasonably behaved browser
+     if (this.ns_pos || !this.ie6)
+     {
+       var right = this.create_element("div");
+       right.setAttribute("style", "float: right; text-align: right");
+
+       counter = this.create_element("span")
+       counter.innerHTML = "slide".localize() + " n/m";
+       right.appendChild(counter);
+       this.toolbar.appendChild(right);
+
+       var left = this.create_element("div");
+       left.setAttribute("style", "text-align: left");
+
+       // global end of slide indicator
+       this.eos = this.create_element("span");
+       this.eos.innerHTML = "* ";
+       left.appendChild(this.eos);
+
+       var help = this.create_element("a");
+       help.setAttribute("href", this.help_page);
+       help.setAttribute("title", this.help_text.localize());
+       help.innerHTML = "help?".localize();
+       left.appendChild(help);
+       this.help_anchor = help;  // save for focus hack
+
+       var gap1 = document.createTextNode(" ");
+       left.appendChild(gap1);
+
+       var contents = this.create_element("a");
+       contents.setAttribute("href", "javascript:w3c_slidy.toggle_table_of_contents()");
+       contents.setAttribute("title", "table of contents".localize());
+       contents.innerHTML = "contents?".localize();
+       left.appendChild(contents);
+
+       var gap2 = document.createTextNode(" ");
+       left.appendChild(gap2);
+
+       var copyright = this.find_copyright();
+
+       if (copyright)
+       {
+         var span = this.create_element("span");
+         span.className = "copyright";
+         span.innerHTML = copyright;
+         left.appendChild(span);
+       }
+
+       this.toolbar.setAttribute("tabindex", "0");
+       this.toolbar.appendChild(left);
+     }
+     else // IE6 so need to work around its poor CSS support
+     {
+       this.toolbar.style.position = (this.ie7 ? "fixed" : "absolute");
+       this.toolbar.style.zIndex = "200";
+       this.toolbar.style.width = "99.9%";
+       this.toolbar.style.height = "1.2em";
+       this.toolbar.style.top = "auto";
+       this.toolbar.style.bottom = "0";
+       this.toolbar.style.left = "0";
+       this.toolbar.style.right = "0";
+       this.toolbar.style.textAlign = "left";
+       this.toolbar.style.fontSize = "60%";
+       this.toolbar.style.color = "red";
+       this.toolbar.borderWidth = 0;
+       this.toolbar.className = "toolbar";
+       this.toolbar.style.background = "rgb(240,240,240)";
+
+       // would like to have help text left aligned
+       // and page counter right aligned, floating
+       // div's don't work, so instead use nested
+       // absolutely positioned div's.
+
+       var sp = this.create_element("span");
+       sp.innerHTML = "&nbsp;&nbsp;*&nbsp;";
+       this.toolbar.appendChild(sp);
+       this.eos = sp;  // end of slide indicator
+
+       var help = this.create_element("a");
+       help.setAttribute("href", this.help_page);
+       help.setAttribute("title", this.help_text.localize());
+       help.innerHTML = "help?".localize();
+       this.toolbar.appendChild(help);
+       this.help_anchor = help;  // save for focus hack
+
+       var gap1 = document.createTextNode(" ");
+       this.toolbar.appendChild(gap1);
+
+       var contents = this.create_element("a");
+       contents.setAttribute("href", "javascript:toggleTableOfContents()");
+       contents.setAttribute("title", "table of contents".localize());
+       contents.innerHTML = "contents?".localize();
+       this.toolbar.appendChild(contents);
+
+       var gap2 = document.createTextNode(" ");
+       this.toolbar.appendChild(gap2);
+
+       var copyright = this.find_copyright();
+
+       if (copyright)
+       {
+         var span = this.create_element("span");
+         span.innerHTML = copyright;
+         span.style.color = "black";
+         span.style.marginLeft = "0.5em";
+         this.toolbar.appendChild(span);
+       }
+
+       counter = this.create_element("div")
+       counter.style.position = "absolute";
+       counter.style.width = "auto"; //"20%";
+       counter.style.height = "1.2em";
+       counter.style.top = "auto";
+       counter.style.bottom = 0;
+       counter.style.right = "0";
+       counter.style.textAlign = "right";
+       counter.style.color = "red";
+       counter.style.background = "rgb(240,240,240)";
+
+       counter.innerHTML = "slide".localize() + " n/m";
+       this.toolbar.appendChild(counter);
+     }
+
+     // ensure that click isn't passed through to the page
+     this.toolbar.onclick =
+         function (e) {
+           if (!e)
+             e = window.event;
+
+           var target = e.target;
+
+           if (!target && e.srcElement)
+             target = e.srcElement;
+
+           // work around Safari bug
+           if (target && target.nodeType == 3)
+             target = target.parentNode;
+
+           w3c_slidy.stop_propagation(e);
+
+           if (target && target.nodeName.toLowerCase() != "a")
+             w3c_slidy.mouse_button_click(e);
+         };
+
+     this.slide_number_element = counter;
+     this.set_eos_status(false);
+     document.body.appendChild(this.toolbar);
+  },
+
+  // wysiwyg editors make it hard to use div elements
+  // e.g. amaya loses the div when you copy and paste
+  // this function wraps div elements around implicit
+  // slides which start with an h1 element and continue
+  // up to the next heading or div element
+  wrap_implicit_slides: function () {
+    var i, heading, node, next, div;
+    var headings = document.getElementsByTagName("h1");
+
+    if (!headings)
+      return;
+
+    for (i = 0; i < headings.length; ++i)
+    {
+      heading = headings[i];
+
+      if (heading.parentNode != document.body)
+        continue;
+
+      node = heading.nextSibling;
+
+      div = document.createElement("div");
+      this.add_class(div, "slide");
+      document.body.replaceChild(div, heading);
+      div.appendChild(heading);
+
+      while (node)
+      {
+        if (node.nodeType == 1 &&    // an element
+             (node.nodeName == "H1" ||
+              node.nodeName == "h1" ||
+              node.nodeName == "DIV" ||
+              node.nodeName == "div"))
+          break;
+
+        next = node.nextSibling;
+        node = document.body.removeChild(node);
+        div.appendChild(node);
+        node = next;
+      }
+    }
+  },
+
+// return new array of all slides
+  collect_slides: function () {
+    var slides = new Array();
+    var divs = document.body.getElementsByTagName("div");
+
+    for (var i = 0; i < divs.length; ++i)
+    {
+      div = divs.item(i);
+
+      if (this.has_class(div, "slide"))
+      {
+        // add slide to collection
+        slides[slides.length] = div;
+
+        // hide each slide as it is found
+        this.add_class(div, "hidden");
+
+        // add dummy <br/> at end for scrolling hack
+        var node1 = document.createElement("br");
+        div.appendChild(node1);
+        var node2 = document.createElement("br");
+        div.appendChild(node2);
+      }
+      else if (this.has_class(div, "background"))
+      {  // work around for Firefox SVG reload bug
+        // which otherwise replaces 1st SVG graphic with 2nd
+        div.style.display = "block";
+      }
+    }
+
+    this.slides = slides;
+  },
+
+  // return new array of all <div class="handout">
+  collect_notes: function () {
+    var notes = new Array();
+    var divs = document.body.getElementsByTagName("div");
+
+    for (var i = 0; i < divs.length; ++i)
+    {
+      div = divs.item(i);
+
+      if (this.has_class(div, "handout"))
+      {
+        // add note to collection
+        notes[notes.length] = div;
+
+        // and hide it
+        this.add_class(div, "hidden");
+      }
+    }
+
+    this.notes = notes;
+  },
+
+  // return new array of all <div class="background">
+  // including named backgrounds e.g. class="background titlepage"
+  collect_backgrounds: function () {
+    var backgrounds = new Array();
+    var divs = document.body.getElementsByTagName("div");
+
+    for (var i = 0; i < divs.length; ++i)
+    {
+      div = divs.item(i);
+
+      if (this.has_class(div, "background"))
+      {
+        // add background to collection
+        backgrounds[backgrounds.length] = div;
+
+        // and hide it
+        this.add_class(div, "hidden");
+      }
+    }
+
+    this.backgrounds = backgrounds;
+  },
+
+  // set click handlers on all anchors
+  patch_anchors: function () {
+    var self = w3c_slidy;
+    var handler = function (event) {
+      // compare this.href with location.href
+      // for link to another slide in this doc
+
+      if (self.page_address(this.href) == self.page_address(location.href))
+      {
+        // yes, so find new slide number
+        var newslidenum = self.find_slide_number(this.href);
+
+        if (newslidenum != self.slide_number)
+        {
+          var slide = self.slides[self.slide_number];
+          self.hide_slide(slide);
+          self.slide_number = newslidenum;
+          slide = self.slides[self.slide_number];
+          self.show_slide(slide);
+          self.set_location();
+        }
+      }
+      else if (this.target == null)
+        location.href = this.href;
+
+      this.blur();
+      self.disable_slide_click = true;
+    };
+
+    var anchors = document.body.getElementsByTagName("a");
+
+    for (var i = 0; i < anchors.length; ++i)
+    {
+      if (window.addEventListener)
+        anchors[i].addEventListener("click", handler, false);
+      else
+        anchors[i].attachEvent("onclick", handler);
+    }
+  },
+
+  // ### CHECK ME ### see which functions are invoked via setTimeout
+  // either directly or indirectly for use of w3c_slidy vs this
+  show_slide_number: function () {
+    var timer = w3c_slidy.get_timer();
+    w3c_slidy.slide_number_element.innerHTML = timer + "slide".localize() + " " +
+           (w3c_slidy.slide_number + 1) + "/" + w3c_slidy.slides.length;
+  },
+
+  // every 200mS check if the location has been changed as a
+  // result of the user activating the Back button/menu item
+  // doesn't work for Opera < 9.5
+  check_location: function () {
+    var hash = location.hash;
+
+    if (w3c_slidy.slide_number > 0 && (hash == "" || hash == "#"))
+      w3c_slidy.goto_slide(0);
+    else if (hash.length > 2 && hash != "#("+(w3c_slidy.slide_number+1)+")")
+    {
+      var num = parseInt(location.hash.substr(2));
+
+      if (!isNaN(num))
+        w3c_slidy.goto_slide(num-1);
+    }
+
+    if (w3c_slidy.time_left && w3c_slidy.slide_number > 0)
+    {
+      w3c_slidy.show_slide_number();
+
+      if (w3c_slidy.time_left > 0)
+        w3c_slidy.time_left -= 200;
+    }
+  },
+
+  get_timer: function () {
+    var timer = "";
+    if (w3c_slidy.time_left)
+    {
+      var mins, secs;
+      secs = Math.floor(w3c_slidy.time_left/1000);
+      mins = Math.floor(secs / 60);
+      secs = secs % 60;
+      timer = (mins ? mins+"m" : "") + secs + "s ";
+    }
+
+    return timer;
+  },
+
+  // this doesn't push location onto history stack for IE
+  // for which a hidden iframe hack is needed: load page into
+  // the iframe with script that set's parent's location.hash
+  // but that won't work for standalone use unless we can
+  // create the page dynamically via a javascript: URL
+  set_location: function () {
+     var uri = w3c_slidy.page_address(location.href);
+     var hash = "#(" + (w3c_slidy.slide_number+1) + ")";
+
+     if (w3c_slidy.slide_number >= 0)
+       uri = uri + hash;
+
+     if (w3c_slidy.ie && !w3c_slidy.ie8)
+       w3c_slidy.push_hash(hash);
+
+     if (uri != location.href) // && !khtml
+        location.href = uri;
+
+     if (this.khtml)
+        hash = "(" + (w3c_slidy.slide_number+1) + ")";
+
+     if (!this.ie && location.hash != hash && location.hash != "")
+       location.hash = hash;
+
+     document.title = w3c_slidy.title + " (" + (w3c_slidy.slide_number+1) + ")";
+     w3c_slidy.show_slide_number();
+  },
+
+  page_address: function (uri) {
+    var i = uri.indexOf("#");
+
+    if (i < 0)
+      i = uri.indexOf("%23");
+
+    // check if anchor is entire page
+
+    if (i < 0)
+      return uri;  // yes
+
+    return uri.substr(0, i);
+  },
+
+  // only used for IE6 and IE7
+  on_frame_loaded: function (hash) {
+    location.hash = hash;
+    var uri = w3c_slidy.page_address(location.href);
+    location.href = uri + hash;
+  },
+
+  // history hack with thanks to Bertrand Le Roy
+  push_hash: function (hash) {
+    if (hash == "") hash = "#(1)";
+      window.location.hash = hash;
+
+    var doc = document.getElementById("historyFrame").contentWindow.document;
+    doc.open("javascript:'<html></html>'");
+    // PWL modified this string literal to break the close script tag
+    // which otherwise gets parsed when incorporated
+    doc.write("<html><head><script type=\"text/javascript\">window.parent.w3c_slidy.on_frame_loaded('"+
+      (hash) + "');</" + "script></head><body>hello mum</body></html>");
+    doc.close();
+    },
+
+  // find current slide based upon location
+  // first find target anchor and then look
+  // for associated div element enclosing it
+  // finally map that to slide number
+  find_slide_number: function (uri) {
+    // first get anchor from page location
+
+    var i = uri.indexOf("#");
+
+    // check if anchor is entire page
+    if (i < 0)
+      return 0;  // yes
+
+    var anchor = unescape(uri.substr(i+1));
+
+    // now use anchor as XML ID to find target
+    var target = document.getElementById(anchor);
+
+    if (!target)
+    {
+      // does anchor look like "(2)" for slide 2 ??
+      // where first slide is (1)
+      var re = /\((\d)+\)/;
+
+      if (anchor.match(re))
+      {
+        var num = parseInt(anchor.substring(1, anchor.length-1));
+
+        if (num > this.slides.length)
+          num = 1;
+
+        if (--num < 0)
+          num = 0;
+
+        return num;
+      }
+
+      // accept [2] for backwards compatibility
+      re = /\[(\d)+\]/;
+
+      if (anchor.match(re))
+      {
+         var num = parseInt(anchor.substring(1, anchor.length-1));
+
+         if (num > this.slides.length)
+            num = 1;
+
+         if (--num < 0)
+            num = 0;
+
+         return num;
+      }
+
+      // oh dear unknown anchor
+      return 0;
+    }
+
+    // search for enclosing slide
+
+    while (true)
+    {
+      // browser coerces html elements to uppercase!
+      if (target.nodeName.toLowerCase() == "div" &&
+            this.has_class(target, "slide"))
+      {
+        // found the slide element
+        break;
+      }
+
+      // otherwise try parent element if any
+
+      target = target.parentNode;
+
+      if (!target)
+      {
+        return 0;   // no luck!
+      }
+    };
+
+    for (i = 0; i < slides.length; ++i)
+    {
+      if (slides[i] == target)
+        return i;  // success
+    }
+
+    // oh dear still no luck
+    return 0;
+  },
+
+  previous_slide: function (incremental) {
+    if (!w3c_slidy.view_all)
+    {
+      var slide;
+
+      if ((incremental || w3c_slidy.slide_number == 0) && w3c_slidy.last_shown != null)
+      {
+        w3c_slidy.last_shown = w3c_slidy.hide_previous_item(w3c_slidy.last_shown);
+        w3c_slidy.set_eos_status(false);
+      }
+      else if (w3c_slidy.slide_number > 0)
+      {
+        slide = w3c_slidy.slides[w3c_slidy.slide_number];
+        w3c_slidy.hide_slide(slide);
+
+        w3c_slidy.slide_number = w3c_slidy.slide_number - 1;
+        slide = w3c_slidy.slides[w3c_slidy.slide_number];
+        w3c_slidy.set_visibility_all_incremental("visible");
+        w3c_slidy.last_shown = w3c_slidy.previous_incremental_item(null);
+        w3c_slidy.set_eos_status(true);
+        w3c_slidy.show_slide(slide);
+      }
+
+      w3c_slidy.set_location();
+
+      if (!w3c_slidy.ns_pos)
+        w3c_slidy.refresh_toolbar(200);
+    }
+  },
+
+  next_slide: function (incremental) {
+    if (!w3c_slidy.view_all)
+    {
+      var slide, last = w3c_slidy.last_shown;
+
+      if (incremental || w3c_slidy.slide_number == w3c_slidy.slides.length - 1)
+         w3c_slidy.last_shown = w3c_slidy.reveal_next_item(w3c_slidy.last_shown);
+
+      if ((!incremental || w3c_slidy.last_shown == null) &&
+             w3c_slidy.slide_number < w3c_slidy.slides.length - 1)
+      {
+         slide = w3c_slidy.slides[w3c_slidy.slide_number];
+         w3c_slidy.hide_slide(slide);
+
+         w3c_slidy.slide_number = w3c_slidy.slide_number + 1;
+         slide = w3c_slidy.slides[w3c_slidy.slide_number];
+         w3c_slidy.last_shown = null;
+         w3c_slidy.set_visibility_all_incremental("hidden");
+         w3c_slidy.show_slide(slide);
+      }
+      else if (!w3c_slidy.last_shown)
+      {
+         if (last && incremental)
+           w3c_slidy.last_shown = last;
+      }
+
+      w3c_slidy.set_location();
+
+      w3c_slidy.set_eos_status(!w3c_slidy.next_incremental_item(w3c_slidy.last_shown));
+
+      if (!w3c_slidy.ns_pos)
+         w3c_slidy.refresh_toolbar(200);
+     }
+  },
+
+  // to first slide with nothing revealed
+  // i.e. state at start of presentation
+  first_slide: function () {
+     if (!w3c_slidy.view_all)
+     {
+       var slide;
+
+       if (w3c_slidy.slide_number != 0)
+       {
+         slide = w3c_slidy.slides[w3c_slidy.slide_number];
+         w3c_slidy.hide_slide(slide);
+
+         w3c_slidy.slide_number = 0;
+         slide = w3c_slidy.slides[w3c_slidy.slide_number];
+         w3c_slidy.last_shown = null;
+         w3c_slidy.set_visibility_all_incremental("hidden");
+         w3c_slidy.show_slide(slide);
+       }
+
+       w3c_slidy.set_eos_status(
+         !w3c_slidy.next_incremental_item(w3c_slidy.last_shown));
+       w3c_slidy.set_location();
+     }
+  },
+
+  // goto last slide with everything revealed
+  // i.e. state at end of presentation
+  last_slide: function () {
+    if (!w3c_slidy.view_all)
+    {
+      var slide;
+
+      w3c_slidy.last_shown = null; //revealNextItem(lastShown);
+
+      if (w3c_slidy.last_shown == null &&
+          w3c_slidy.slide_number < w3c_slidy.slides.length - 1)
+      {
+         slide = w3c_slidy.slides[w3c_slidy.slide_number];
+         w3c_slidy.hide_slide(slide);
+         w3c_slidy.slide_number = w3c_slidy.slides.length - 1;
+         slide = w3c_slidy.slides[w3c_slidy.slide_number];
+         w3c_slidy.set_visibility_all_incremental("visible");
+         w3c_slidy.last_shown = w3c_slidy.previous_incremental_item(null);
+
+         w3c_slidy.show_slide(slide);
+      }
+      else
+      {
+         w3c_slidy.set_visibility_all_incremental("visible");
+         w3c_slidy.last_shown = w3c_slidy.previous_incremental_item(null);
+      }
+
+      w3c_slidy.set_eos_status(true);
+      w3c_slidy.set_location();
+    }
+  },
+
+
+  // ### check this and consider add/remove class
+  set_eos_status: function (state) {
+    if (this.eos)
+      this.eos.style.color = (state ? "rgb(240,240,240)" : "red");
+  },
+
+  // first slide is 0
+  goto_slide: function (num) {
+    //alert("going to slide " + (num+1));
+    var slide = w3c_slidy.slides[w3c_slidy.slide_number];
+    w3c_slidy.hide_slide(slide);
+    w3c_slidy.slide_number = num;
+    slide = w3c_slidy.slides[w3c_slidy.slide_number];
+    w3c_slidy.last_shown = null;
+    w3c_slidy.set_visibility_all_incremental("hidden");
+    w3c_slidy.set_eos_status(!w3c_slidy.next_incremental_item(w3c_slidy.last_shown));
+    document.title = w3c_slidy.title + " (" + (w3c_slidy.slide_number+1) + ")";
+    w3c_slidy.show_slide(slide);
+    w3c_slidy.show_slide_number();
+  },
+
+
+  show_slide: function (slide) {
+    this.sync_background(slide);
+    window.scrollTo(0,0);
+    this.remove_class(slide, "hidden");
+  },
+
+  hide_slide: function (slide) {
+    this.add_class(slide, "hidden");
+  },
+
+  // show just the backgrounds pertinent to this slide
+  // when slide background-color is transparent
+  // this should now work with rgba color values
+  sync_background: function (slide) {
+    var background;
+    var bgColor;
+
+    if (slide.currentStyle)
+      bgColor = slide.currentStyle["backgroundColor"];
+    else if (document.defaultView)
+    {
+      var styles = document.defaultView.getComputedStyle(slide,null);
+
+      if (styles)
+        bgColor = styles.getPropertyValue("background-color");
+      else // broken implementation probably due Safari or Konqueror
+      {
+        //alert("defective implementation of getComputedStyle()");
+        bgColor = "transparent";
+      }
+    }
+    else
+      bgColor == "transparent";
+
+    if (bgColor == "transparent" ||
+        bgColor.indexOf("rgba") >= 0 ||
+        bgColor.indexOf("opacity") >= 0)
+    {
+      var slideClass = this.get_class_list(slide);
+
+      for (var i = 0; i < this.backgrounds.length; i++)
+      {
+        background = this.backgrounds[i];
+
+        var bgClass = this.get_class_list(background);
+
+        if (this.matching_background(slideClass, bgClass))
+          this.remove_class(background, "hidden");
+        else
+          this.add_class(background, "hidden");
+      }
+    }
+    else // forcibly hide all backgrounds
+      this.hide_backgrounds();
+  },
+
+  hide_backgrounds: function () {
+    for (var i = 0; i < this.backgrounds.length; i++)
+    {
+      background = this.backgrounds[i];
+      this.add_class(background, "hidden");
+    }
+  },
+
+  // compare classes for slide and background
+  matching_background: function (slideClass, bgClass) {
+    var i, count, pattern, result;
+
+    // define pattern as regular expression
+    pattern = /\w+/g;
+
+    // check background class names
+    result = bgClass.match(pattern);
+
+    for (i = count = 0; i < result.length; i++)
+    {
+      if (result[i] == "hidden")
+        continue;
+
+      if (result[i] == "background")
+	continue;
+
+      ++count;
+    }
+
+    if (count == 0)  // default match
+      return true;
+
+    // check for matches and place result in array
+    result = slideClass.match(pattern);
+
+    // now check if desired name is present for background
+    for (i = count = 0; i < result.length; i++)
+    {
+      if (result[i] == "hidden")
+        continue;
+
+      if (this.has_token(bgClass, result[i]))
+        return true;
+    }
+
+    return false;
+  },
+
+  resized: function () {
+     var width = 0;
+
+     if ( typeof( window.innerWidth ) == 'number' )
+       width = window.innerWidth;  // Non IE browser
+     else if (document.documentElement && document.documentElement.clientWidth)
+       width = document.documentElement.clientWidth;  // IE6
+     else if (document.body && document.body.clientWidth)
+       width = document.body.clientWidth; // IE4
+
+     var height = 0;
+
+     if ( typeof( window.innerHeight ) == 'number' )
+       height = window.innerHeight;  // Non IE browser
+     else if (document.documentElement && document.documentElement.clientHeight)
+       height = document.documentElement.clientHeight;  // IE6
+     else if (document.body && document.body.clientHeight)
+       height = document.body.clientHeight; // IE4
+
+     if (height && (width/height > 1.05*1024/768))
+     {
+       width = height * 1024.0/768;
+     }
+
+     // IE fires onresize even when only font size is changed!
+     // so we do a check to avoid blocking < and > actions
+     if (width != w3c_slidy.last_width || height != w3c_slidy.last_height)
+     {
+       if (width >= 1100)
+         w3c_slidy.size_index = 5;    // 4
+       else if (width >= 1000)
+         w3c_slidy.size_index = 4;    // 3
+       else if (width >= 800)
+         w3c_slidy.size_index = 3;    // 2
+       else if (width >= 600)
+         w3c_slidy.size_index = 2;    // 1
+       else if (width)
+         w3c_slidy.size_index = 0;
+
+       // add in font size adjustment from meta element e.g.
+       // <meta name="font-size-adjustment" content="-2" />
+       // useful when slides have too much content ;-)
+
+       if (0 <= w3c_slidy.size_index + w3c_slidy.size_adjustment &&
+             w3c_slidy.size_index + w3c_slidy.size_adjustment < w3c_slidy.sizes.length)
+         w3c_slidy.size_index = w3c_slidy.size_index + w3c_slidy.size_adjustment;
+
+       // enables cross browser use of relative width/height
+       // on object elements for use with SVG and Flash media
+       w3c_slidy.adjust_object_dimensions(width, height);
+
+       if (document.body.style.fontSize != w3c_slidy.sizes[w3c_slidy.size_index])
+       {
+         document.body.style.fontSize = w3c_slidy.sizes[w3c_slidy.size_index];
+       }
+
+       w3c_slidy.last_width = width;
+       w3c_slidy.last_height = height;
+
+       // force reflow to work around Mozilla bug
+       if (w3c_slidy.ns_pos)
+       {
+         var slide = w3c_slidy.slides[w3c_slidy.slide_number];
+         w3c_slidy.hide_slide(slide);
+         w3c_slidy.show_slide(slide);
+       }
+
+       // force correct positioning of toolbar
+       w3c_slidy.refresh_toolbar(200);
+     }
+  },
+
+  scrolled: function () {
+    if (w3c_slidy.toolbar && !w3c_slidy.ns_pos && !w3c_slidy.ie7)
+    {
+      w3c_slidy.hack_offset = w3c_slidy.scroll_x_offset();
+      // hide toolbar
+      w3c_slidy.toolbar.style.display = "none";
+
+      // make it reappear later
+      if (w3c_slidy.scrollhack == 0 && !w3c_slidy.view_all)
+      {
+        setTimeout(function () {w3c_slidy.show_toolbar(); }, 1000);
+        w3c_slidy.scrollhack = 1;
+      }
+    }
+  },
+
+  hide_toolbar: function () {
+    w3c_slidy.add_class(w3c_slidy.toolbar, "hidden");
+    window.focus();
+  },
+
+  // used to ensure IE refreshes toolbar in correct position
+  refresh_toolbar: function (interval) {
+    if (!w3c_slidy.ns_pos && !w3c_slidy.ie7)
+    {
+      w3c_slidy.hide_toolbar();
+      setTimeout(function () {w3c_slidy.show_toolbar(); }, interval);
+    }
+  },
+
+  // restores toolbar after short delay
+  show_toolbar: function () {
+    if (w3c_slidy.want_toolbar)
+    {
+      w3c_slidy.toolbar.style.display = "block";
+
+      if (!w3c_slidy.ns_pos)
+      {
+        // adjust position to allow for scrolling
+        var xoffset = w3c_slidy.scroll_x_offset();
+        w3c_slidy.toolbar.style.left = xoffset;
+        w3c_slidy.toolbar.style.right = xoffset;
+
+        // determine vertical scroll offset
+        //var yoffset = scrollYOffset();
+
+        // bottom is doc height - window height - scroll offset
+        //var bottom = documentHeight() - lastHeight - yoffset
+
+        //if (yoffset > 0 || documentHeight() > lastHeight)
+        //   bottom += 16;  // allow for height of scrollbar
+
+        w3c_slidy.toolbar.style.bottom = 0; //bottom;
+      }
+
+      w3c_slidy.remove_class(w3c_slidy.toolbar, "hidden");
+    }
+
+    w3c_slidy.scrollhack = 0;
+
+
+    // set the keyboard focus to the help link on the
+    // toolbar to ensure that document has the focus
+    // IE doesn't always work with window.focus()
+    // and this hack has benefit of Enter for help
+
+    try
+    {
+      if (!w3c_slidy.opera)
+        w3c_slidy.help_anchor.focus();
+    }
+    catch (e)
+    {
+    }
+  },
+
+// invoked via F key
+  toggle_toolbar: function () {
+    if (!w3c_slidy.view_all)
+    {
+      if (w3c_slidy.has_class(w3c_slidy.toolbar, "hidden"))
+      {
+        w3c_slidy.remove_class(w3c_slidy.toolbar, "hidden")
+        w3c_slidy.want_toolbar = 1;
+      }
+      else
+      {
+        w3c_slidy.add_class(w3c_slidy.toolbar, "hidden")
+        w3c_slidy.want_toolbar = 0;
+      }
+    }
+  },
+
+  scroll_x_offset: function () {
+    if (window.pageXOffset)
+      return self.pageXOffset;
+
+    if (document.documentElement &&
+             document.documentElement.scrollLeft)
+      return document.documentElement.scrollLeft;
+
+    if (document.body)
+      return document.body.scrollLeft;
+
+    return 0;
+  },
+
+  scroll_y_offset: function () {
+    if (window.pageYOffset)
+      return self.pageYOffset;
+
+    if (document.documentElement &&
+             document.documentElement.scrollTop)
+      return document.documentElement.scrollTop;
+
+    if (document.body)
+      return document.body.scrollTop;
+
+    return 0;
+  },
+
+  // looking for a way to determine height of slide content
+  // the slide itself is set to the height of the window
+  optimize_font_size: function () {
+    var slide = w3c_slidy.slides[w3c_slidy.slide_number];
+
+    //var dh = documentHeight(); //getDocHeight(document);
+    var dh = slide.scrollHeight;
+    var wh = getWindowHeight();
+    var u = 100 * dh / wh;
+
+    alert("window utilization = " + u + "% (doc "
+      + dh + " win " + wh + ")");
+  },
+
+  // from document object
+  get_doc_height: function (doc) {
+    if (!doc)
+      doc = document;
+
+    if (doc && doc.body && doc.body.offsetHeight)
+      return doc.body.offsetHeight;  // ns/gecko syntax
+
+    if (doc && doc.body && doc.body.scrollHeight)
+      return doc.body.scrollHeight;
+
+    alert("couldn't determine document height");
+  },
+
+  get_window_height: function () {
+    if ( typeof( window.innerHeight ) == 'number' )
+      return window.innerHeight;  // Non IE browser
+
+    if (document.documentElement && document.documentElement.clientHeight)
+      return document.documentElement.clientHeight;  // IE6
+
+    if (document.body && document.body.clientHeight)
+      return document.body.clientHeight; // IE4
+  },
+
+  document_height: function () {
+    var sh, oh;
+
+    sh = document.body.scrollHeight;
+    oh = document.body.offsetHeight;
+
+    if (sh && oh)
+    {
+      return (sh > oh ? sh : oh);
+    }
+
+    // no idea!
+    return 0;
+  },
+
+  smaller: function () {
+    if (w3c_slidy.size_index > 0)
+    {
+      --w3c_slidy.size_index;
+    }
+
+    w3c_slidy.toolbar.style.display = "none";
+    document.body.style.fontSize = w3c_slidy.sizes[w3c_slidy.size_index];
+    var slide = w3c_slidy.slides[w3c_slidy.slide_number];
+    w3c_slidy.hide_slide(slide);
+    w3c_slidy.show_slide(slide);
+    setTimeout(function () {w3c_slidy.show_toolbar(); }, 50);
+  },
+
+  bigger: function () {
+    if (w3c_slidy.size_index < w3c_slidy.sizes.length - 1)
+    {
+      ++w3c_slidy.size_index;
+    }
+
+    w3c_slidy.toolbar.style.display = "none";
+    document.body.style.fontSize = w3c_slidy.sizes[w3c_slidy.size_index];
+    var slide = w3c_slidy.slides[w3c_slidy.slide_number];
+    w3c_slidy.hide_slide(slide);
+    w3c_slidy.show_slide(slide);
+    setTimeout(function () {w3c_slidy.show_toolbar(); }, 50);
+  },
+
+  // enables cross browser use of relative width/height
+  // on object elements for use with SVG and Flash media
+  // with thanks to Ivan Herman for the suggestion
+  adjust_object_dimensions: function (width, height) {
+    for( var i = 0; i < w3c_slidy.objects.length; i++ )
+    {
+      var obj = this.objects[i];
+      var mimeType = obj.getAttribute("type");
+
+      if (mimeType == "image/svg+xml" || mimeType == "application/x-shockwave-flash")
+      {
+        if ( !obj.initialWidth )
+          obj.initialWidth = obj.getAttribute("width");
+
+        if ( !obj.initialHeight )
+          obj.initialHeight = obj.getAttribute("height");
+
+        if ( obj.initialWidth && obj.initialWidth.charAt(obj.initialWidth.length-1) == "%" )
+        {
+          var w = parseInt(obj.initialWidth.slice(0, obj.initialWidth.length-1));
+          var newW = width * (w/100.0);
+          obj.setAttribute("width",newW);
+        }
+
+        if ( obj.initialHeight &&
+             obj.initialHeight.charAt(obj.initialHeight.length-1) == "%" )
+        {
+          var h = parseInt(obj.initialHeight.slice(0, obj.initialHeight.length-1));
+          var newH = height * (h/100.0);
+          obj.setAttribute("height", newH);
+        }
+      }
+    }
+  },
+
+  // needed for Opera to inhibit default behavior
+  // since Opera delivers keyPress even if keyDown
+  // was cancelled
+  key_press: function (event) {
+    if (!event)
+      event = window.event;
+
+    if (!w3c_slidy.key_wanted)
+      return w3c_slidy.cancel(event);
+
+    return true;
+  },
+
+  //  See e.g. http://www.quirksmode.org/js/events/keys.html for keycodes
+  key_down: function (event) {
+    var key;
+
+    w3c_slidy.key_wanted = true;
+
+    if (!event)
+      event = window.event;
+
+    // kludge around NS/IE differences
+    if (window.event)
+      key = window.event.keyCode;
+    else if (event.which)
+      key = event.which;
+    else
+      return true; // Yikes! unknown browser
+
+    // ignore event if key value is zero
+    // as for alt on Opera and Konqueror
+    if (!key)
+       return true;
+
+    // check for concurrent control/command/alt key
+    // but are these only present on mouse events?
+
+    if (event.ctrlKey || event.altKey || event.metaKey)
+       return true;
+
+    // dismiss table of contents if visible
+    if (w3c_slidy.is_shown_toc() && key != 9 && key != 16 && key != 38 && key != 40)
+    {
+      w3c_slidy.hide_table_of_contents();
+
+      if (key == 27 || key == 84 || key == 67)
+        return w3c_slidy.cancel(event);
+    }
+
+    if (key == 34) // Page Down
+    {
+      if (w3c_slidy.view_all)
+        return true;
+
+      w3c_slidy.next_slide(false);
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 33) // Page Up
+    {
+      if (w3c_slidy.view_all)
+        return true;
+
+      w3c_slidy.previous_slide(false);
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 32) // space bar
+    {
+      w3c_slidy.next_slide(true);
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 37) // Left arrow
+    {
+      w3c_slidy.previous_slide(!event.shiftKey);
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 36) // Home
+    {
+      w3c_slidy.first_slide();
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 35) // End
+    {
+      w3c_slidy.last_slide();
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 39) // Right arrow
+    {
+      w3c_slidy.next_slide(!event.shiftKey);
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 13) // Enter
+    {
+      if (w3c_slidy.outline)
+      {
+        if (w3c_slidy.outline.visible)
+          w3c_slidy.fold(w3c_slidy.outline);
+        else
+          w3c_slidy.unfold(w3c_slidy.outline);
+
+       return w3c_slidy.cancel(event);
+      }
+    }
+    else if (key == 188)  // < for smaller fonts
+    {
+      w3c_slidy.smaller();
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 190)  // > for larger fonts
+    {
+      w3c_slidy.bigger();
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 189 || key == 109)  // - for smaller fonts
+    {
+      w3c_slidy.smaller();
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 187 || key == 191 || key == 107)  // = +  for larger fonts
+    {
+      w3c_slidy.bigger();
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 83)  // S for smaller fonts
+    {
+      w3c_slidy.smaller();
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 66)  // B for larger fonts
+    {
+      w3c_slidy.bigger();
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 90)  // Z for last slide
+    {
+      w3c_slidy.last_slide();
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 70)  // F for toggle toolbar
+    {
+      w3c_slidy.toggle_toolbar();
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 65)  // A for toggle view single/all slides
+    {
+      w3c_slidy.toggle_view();
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 75)  // toggle action of left click for next page
+    {
+      w3c_slidy.mouse_click_enabled = !w3c_slidy.mouse_click_enabled;
+      var alert_msg = (w3c_slidy.mouse_click_enabled ?
+                "enabled" : "disabled") +  " mouse click advance";
+
+      alert(alert_msg.localize());
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 84 || key == 67)  // T or C for table of contents
+    {
+      if (w3c_slidy.toc)
+        w3c_slidy.toggle_table_of_contents();
+
+      return w3c_slidy.cancel(event);
+    }
+    else if (key == 72) // H for help
+    {
+      window.location = w3c_slidy.help_page;
+      return w3c_slidy.cancel(event);
+    }
+    //else alert("key code is "+ key);
+
+    return true;
+  },
+
+  // safe for both text/html and application/xhtml+xml
+  create_element: function (name) {
+    if (this.xhtml && (typeof document.createElementNS != 'undefined'))
+      return document.createElementNS("http://www.w3.org/1999/xhtml", name)
+
+    return document.createElement(name);
+  },
+
+  get_element_style: function (elem, IEStyleProp, CSSStyleProp) {
+    if (elem.currentStyle)
+    {
+      return elem.currentStyle[IEStyleProp];
+    }
+    else if (window.getComputedStyle)
+    {
+      var compStyle = window.getComputedStyle(elem, "");
+      return compStyle.getPropertyValue(CSSStyleProp);
+    }
+    return "";
+  },
+
+  // the string str is a whitespace separated list of tokens
+  // test if str contains a particular token, e.g. "slide"
+  has_token: function (str, token) {
+    if (str)
+    {
+      // define pattern as regular expression
+      var pattern = /\w+/g;
+
+      // check for matches
+      // place result in array
+      var result = str.match(pattern);
+
+      // now check if desired token is present
+      for (var i = 0; i < result.length; i++)
+      {
+        if (result[i] == token)
+          return true;
+      }
+    }
+
+    return false;
+  },
+
+  get_class_list: function (element) {
+    if (typeof element.className != 'undefined')
+      return element.className;
+
+    return element.getAttribute("class");
+  },
+
+  has_class: function (element, name) {
+    if (element.nodeType != 1)
+      return false;
+
+    var regexp = new RegExp("(^| )" + name + "\W*");
+
+    if (typeof element.className != 'undefined')
+      return regexp.test(element.className);
+
+    return regexp.test(element.getAttribute("class"));
+  },
+
+  remove_class: function (element, name) {
+    var regexp = new RegExp("(^| )" + name + "\W*");
+    var clsval = "";
+
+    if (typeof element.className != 'undefined')
+    {
+      clsval = element.className;
+
+      if (clsval)
+      {
+        clsval = clsval.replace(regexp, "");
+        element.className = clsval;
+      }
+    }
+    else
+    {
+      clsval = element.getAttribute("class");
+
+      if (clsval)
+      {
+        clsval = clsval.replace(regexp, "");
+        element.setAttribute("class", clsval);
+      }
+    }
+  },
+
+  add_class: function (element, name) {
+    if (!this.has_class(element, name))
+    {
+      if (typeof element.className != 'undefined')
+        element.className += " " + name;
+      else
+      {
+        var clsval = element.getAttribute("class");
+        clsval = clsval ? clsval + " " + name : name;
+        element.setAttribute("class", clsval);
+      }
+    }
+  },
+
+  // HTML elements that can be used with class="incremental"
+  // note that you can also put the class on containers like
+  // up, ol, dl, and div to make their contents appear
+  // incrementally. Upper case is used since this is what
+  // browsers report for HTML node names (text/html).
+  incremental_elements: null,
+  okay_for_incremental: function (name) {
+    if (!this.incremental_elements)
+    {
+      var inclist = new Array();
+      inclist["p"] = true;
+      inclist["pre"] = true;
+      inclist["li"] = true;
+      inclist["blockquote"] = true;
+      inclist["dt"] = true;
+      inclist["dd"] = true;
+      inclist["h2"] = true;
+      inclist["h3"] = true;
+      inclist["h4"] = true;
+      inclist["h5"] = true;
+      inclist["h6"] = true;
+      inclist["span"] = true;
+      inclist["address"] = true;
+      inclist["table"] = true;
+      inclist["tr"] = true;
+      inclist["th"] = true;
+      inclist["td"] = true;
+      inclist["img"] = true;
+      inclist["object"] = true;
+      this.incremental_elements = inclist;
+    }
+    return this.incremental_elements[name.toLowerCase()];
+  },
+
+  next_incremental_item: function (node) {
+    var br = this.is_xhtml ? "br" : "BR";
+    var slide = w3c_slidy.slides[w3c_slidy.slide_number];
+
+    for (;;)
+    {
+      node = w3c_slidy.next_node(slide, node);
+
+      if (node == null || node.parentNode == null)
+        break;
+
+      if (node.nodeType == 1)  // ELEMENT
+      {
+        if (node.nodeName == br)
+          continue;
+
+        if (w3c_slidy.has_class(node, "incremental")
+             && w3c_slidy.okay_for_incremental(node.nodeName))
+          return node;
+
+        if (w3c_slidy.has_class(node.parentNode, "incremental")
+             && !w3c_slidy.has_class(node, "non-incremental"))
+          return node;
+      }
+    }
+
+    return node;
+  },
+
+  previous_incremental_item: function (node) {
+    var br = this.is_xhtml ? "br" : "BR";
+    var slide = w3c_slidy.slides[w3c_slidy.slide_number];
+
+    for (;;)
+    {
+      node = w3c_slidy.previous_node(slide, node);
+
+      if (node == null || node.parentNode == null)
+        break;
+
+      if (node.nodeType == 1)
+      {
+        if (node.nodeName == br)
+          continue;
+
+        if (w3c_slidy.has_class(node, "incremental")
+             && w3c_slidy.okay_for_incremental(node.nodeName))
+          return node;
+
+        if (w3c_slidy.has_class(node.parentNode, "incremental")
+             && !w3c_slidy.has_class(node, "non-incremental"))
+          return node;
+      }
+    }
+
+    return node;
+  },
+
+  // set visibility for all elements on current slide with
+  // a parent element with attribute class="incremental"
+  set_visibility_all_incremental: function (value) {
+    var node = this.next_incremental_item(null);
+
+    if (value == "hidden")
+    {
+      while (node)
+      {
+        w3c_slidy.add_class(node, "invisible");
+        node = w3c_slidy.next_incremental_item(node);
+      }
+    }
+    else // value == "visible"
+    {
+      while (node)
+      {
+        w3c_slidy.remove_class(node, "invisible");
+        node = w3c_slidy.next_incremental_item(node);
+      }
+    }
+  },
+
+  // reveal the next hidden item on the slide
+  // node is null or the node that was last revealed
+  reveal_next_item: function (node) {
+    node = w3c_slidy.next_incremental_item(node);
+
+    if (node && node.nodeType == 1)  // an element
+      w3c_slidy.remove_class(node, "invisible");
+
+    return node;
+  },
+
+  // exact inverse of revealNextItem(node)
+  hide_previous_item: function (node) {
+    if (node && node.nodeType == 1)  // an element
+      w3c_slidy.add_class(node, "invisible");
+
+    return this.previous_incremental_item(node);
+  },
+
+  // left to right traversal of root's content
+  next_node: function (root, node) {
+    if (node == null)
+      return root.firstChild;
+
+    if (node.firstChild)
+      return node.firstChild;
+
+    if (node.nextSibling)
+      return node.nextSibling;
+
+    for (;;)
+    {
+      node = node.parentNode;
+
+      if (!node || node == root)
+        break;
+
+      if (node && node.nextSibling)
+        return node.nextSibling;
+    }
+
+    return null;
+  },
+
+  // right to left traversal of root's content
+  previous_node: function (root, node) {
+    if (node == null)
+    {
+      node = root.lastChild;
+
+      if (node)
+      {
+        while (node.lastChild)
+          node = node.lastChild;
+      }
+
+      return node;
+    }
+
+    if (node.previousSibling)
+    {
+      node = node.previousSibling;
+
+      while (node.lastChild)
+        node = node.lastChild;
+
+      return node;
+    }
+
+    if (node.parentNode != root)
+      return node.parentNode;
+
+    return null;
+  },
+
+  previous_sibling_element: function (el) {
+    el = el.previousSibling;
+
+    while (el && el.nodeType != 1)
+      el = el.previousSibling;
+
+    return el;
+  },
+
+  next_sibling_element: function (el) {
+    el = el.nextSibling;
+
+    while (el && el.nodeType != 1)
+      el = el.nextSibling;
+
+    return el;
+  },
+
+  first_child_element: function (el) {
+    var node;
+
+    for (node = el.firstChild; node; node = node.nextSibling)
+    {
+      if (node.nodeType == 1)
+        break;
+    }
+
+    return node;
+  },
+
+  first_tag: function (element, tag) {
+    var node;
+
+    if (!this.is_xhtml)
+      tag = tag.toUpperCase();
+
+    for (node = element.firstChild; node; node = node.nextSibling)
+    {
+      if (node.nodeType == 1 && node.nodeName == tag)
+        break;
+    }
+
+    return node;
+  },
+
+  hide_selection: function () {
+    if (window.getSelection) // Firefox, Chromium, Safari, Opera
+    {
+      var selection = window.getSelection();
+
+      if (selection.rangeCount > 0)
+      {
+        var range = selection.getRangeAt(0);
+        range.collapse (false);
+      }
+    }
+    else // Internet Explorer
+    {
+      var textRange = document.selection.createRange ();
+      textRange.collapse (false);
+    }
+  },
+
+  get_selected_text: function () {
+    try
+    {
+      if (window.getSelection)
+        return window.getSelection().toString();
+
+      if (document.getSelection)
+        return document.getSelection().toString();
+
+      if (document.selection)
+        return document.selection.createRange().text;
+    }
+    catch (e)
+    {
+    }
+
+    return "";
+  },
+
+  // make note of length of selected text
+  // as this evaluates to zero in click event
+  mouse_button_up: function (e) {
+    w3c_slidy.selected_text_len = w3c_slidy.get_selected_text().length;
+  },
+
+  // right mouse button click is reserved for context menus
+  // it is more reliable to detect rightclick than leftclick
+  mouse_button_click: function (e) {
+    var rightclick = false;
+    var leftclick = false;
+    var middleclick = false;
+    var target;
+
+    if (!e)
+      var e = window.event;
+
+    if (e.target)
+      target = e.target;
+    else if (e.srcElement)
+      target = e.srcElement;
+
+    // work around Safari bug
+    if (target.nodeType == 3)
+      target = target.parentNode;
+
+    if (e.which) // all browsers except IE
+    {
+      leftclick = (e.which == 1);
+      middleclick = (e.which == 2);
+      rightclick = (e.which == 3);
+    }
+    else if (e.button)
+    {
+      // Konqueror gives 1 for left, 4 for middle
+      // IE6 gives 0 for left and not 1 as I expected
+
+      if (e.button == 4)
+        middleclick = true;
+
+      // all browsers agree on 2 for right button
+      rightclick = (e.button == 2);
+    }
+    else leftclick = true;
+/*
+    alert("you clicked over a " + target.nodeName + " element\n" +
+    "w3c_slidy.mouse_click_enabled = " + w3c_slidy.mouse_click_enabled + "\n" +
+    "leftclick = " + leftclick + "\n" +
+    "selected text length = " + w3c_slidy.selected_text_len);
+    //alert("selected text length = " + w3c_slidy.selected_text_len);
+*/
+    if (w3c_slidy.selected_text_len > 0)
+    {
+      w3c_slidy.stop_propagation(e);
+      e.cancel = true;
+      e.returnValue = false;
+      return false;
+    }
+
+    // dismiss table of contents
+    w3c_slidy.hide_table_of_contents();
+
+    // check if target is something that probably want's clicks
+    // e.g. a, embed, object, input, textarea, select, option
+    var tag = target.nodeName.toLowerCase();
+
+    if (w3c_slidy.mouse_click_enabled && leftclick &&
+        tag != "a" &&
+        tag != "embed" &&
+        tag != "object" &&
+        tag != "video" &&
+        tag != "input" &&
+        tag != "textarea" &&
+        tag != "select" &&
+        tag != "option" &&
+        !target.onclick)
+    {
+      w3c_slidy.next_slide(true);
+      w3c_slidy.stop_propagation(e);
+      e.cancel = true;
+      e.returnValue = false;
+      return false;
+    }
+  },
+
+  get_key: function (e)
+  {
+    var key;
+
+    // kludge around NS/IE differences
+    if (typeof window.event != "undefined")
+      key = window.event.keyCode;
+    else if (e.which)
+      key = e.which;
+
+    return key;
+  },
+
+  get_target: function (e) {
+    var target;
+
+    if (!e)
+      e = window.event;
+
+    if (e.target)
+      target = e.target;
+    else if (e.srcElement)
+      target = e.srcElement;
+
+    if (target.nodeType != 1)
+      target = target.parentNode;
+
+    return target;
+  },
+
+  // does display property provide correct defaults?
+  is_block: function (elem) {
+    var tag = elem.nodeName.toLowerCase();
+
+    return tag == "ol" || tag == "ul" || tag == "p" ||
+           tag == "li" || tag == "table" || tag == "pre" ||
+           tag == "h1" || tag == "h2" || tag == "h3" ||
+           tag == "h4" || tag == "h5" || tag == "h6" ||
+           tag == "blockquote" || tag == "address";
+  },
+
+  add_listener: function (element, event, handler) {
+    if (window.addEventListener)
+      element.addEventListener(event, handler, false);
+    else
+      element.attachEvent("on"+event, handler);
+  },
+
+  // used to prevent event propagation from field controls
+  stop_propagation: function (event) {
+    event = event ? event : window.event;
+    event.cancelBubble = true;  // for IE
+
+    if (event.stopPropagation)
+      event.stopPropagation();
+
+    return true;
+  },
+
+  cancel: function (event) {
+    if (event)
+    {
+       event.cancel = true;
+       event.returnValue = false;
+
+      if (event.preventDefault)
+        event.preventDefault();
+    }
+
+    w3c_slidy.key_wanted = false;
+    return false;
+  }
+};
+
+// for each language define an associative array
+// and also the help text which is longer
+
+var w3c_slidy_i18n = {
+  strings_es: {
+    "slide":"pág.",
+    "help?":"Ayuda",
+    "contents?":"Índice",
+    "table of contents":"tabla de contenidos",
+    "Table of Contents":"Tabla de Contenidos",
+    "restart presentation":"Reiniciar presentación",
+    "restart?":"Inicio"
+  },
+  help_es:
+    "Utilice el ratón, barra espaciadora, teclas Izda/Dcha, " +
+    "o Re pág y Av pág. Use S y B para cambiar el tamaño de fuente.",
+
+  strings_ca: {
+    "slide":"pàg..",
+    "help?":"Ajuda",
+    "contents?":"Índex",
+    "table of contents":"taula de continguts",
+    "Table of Contents":"Taula de Continguts",
+    "restart presentation":"Reiniciar presentació",
+    "restart?":"Inici"
+  },
+  help_ca:
+    "Utilitzi el ratolí, barra espaiadora, tecles Esq./Dta. " +
+    "o Re pàg y Av pàg. Usi S i B per canviar grandària de font.",
+
+  strings_cs: {
+    "slide":"snímek",
+    "help?":"nápověda",
+    "contents?":"obsah",
+    "table of contents":"obsah prezentace",
+    "Table of Contents":"Obsah prezentace",
+    "restart presentation":"znovu spustit prezentaci",
+    "restart?":"restart"
+  },
+  help_cs:
+    "Prezentaci můžete procházet pomocí kliknutí myši, mezerníku, " +
+    "šipek vlevo a vpravo nebo kláves PageUp a PageDown. Písmo se " +
+    "dá zvětšit a zmenšit pomocí kláves B a S.",
+
+  strings_nl: {
+    "slide":"pagina",
+    "help?":"Help?",
+    "contents?":"Inhoud?",
+    "table of contents":"inhoudsopgave",
+    "Table of Contents":"Inhoudsopgave",
+    "restart presentation":"herstart presentatie",
+    "restart?":"Herstart?"
+  },
+  help_nl:
+     "Navigeer d.m.v. het muis, spatiebar, Links/Rechts toetsen, " +
+     "of PgUp en PgDn. Gebruik S en B om de karaktergrootte te veranderen.",
+
+  strings_de: {
+    "slide":"Seite",
+    "help?":"Hilfe",
+    "contents?":"Übersicht",
+    "table of contents":"Inhaltsverzeichnis",
+    "Table of Contents":"Inhaltsverzeichnis",
+    "restart presentation":"Präsentation neu starten",
+    "restart?":"Neustart"
+  },
+  help_de:
+    "Benutzen Sie die Maus, Leerschlag, die Cursortasten links/rechts oder " +
+    "Page up/Page Down zum Wechseln der Seiten und S und B für die Schriftgrösse.",
+
+  strings_pl: {
+    "slide":"slajd",
+    "help?":"pomoc?",
+    "contents?":"spis treści?",
+    "table of contents":"spis treści",
+    "Table of Contents":"Spis Treści",
+    "restart presentation":"Restartuj prezentację",
+    "restart?":"restart?"
+  },
+  help_pl:
+    "Zmieniaj slajdy klikając myszą, naciskając spację, strzałki lewo/prawo" +
+    "lub PgUp / PgDn. Użyj klawiszy S i B, aby zmienić rozmiar czczionki.",
+
+  strings_fr: {
+    "slide":"page",
+    "help?":"Aide",
+    "contents?":"Index",
+    "table of contents":"table des matières",
+    "Table of Contents":"Table des matières",
+    "restart presentation":"Recommencer l'exposé",
+    "restart?":"Début"
+  },
+  help_fr:
+    "Naviguez avec la souris, la barre d'espace, les flèches " +
+    "gauche/droite ou les touches Pg Up, Pg Dn. Utilisez " +
+    "les touches S et B pour modifier la taille de la police.",
+
+  strings_hu: {
+    "slide":"oldal",
+    "help?":"segítség",
+    "contents?":"tartalom",
+    "table of contents":"tartalomjegyzék",
+    "Table of Contents":"Tartalomjegyzék",
+    "restart presentation":"bemutató újraindítása",
+    "restart?":"újraindítás"
+  },
+  help_hu:
+    "Az oldalak közti lépkedéshez kattintson az egérrel, vagy " +
+    "használja a szóköz, a bal, vagy a jobb nyíl, illetve a Page Down, " +
+    "Page Up billentyűket. Az S és a B billentyűkkel változtathatja " +
+    "a szöveg méretét.",
+
+  strings_it: {
+    "slide":"pag.",
+    "help?":"Aiuto",
+    "contents?":"Indice",
+    "table of contents":"indice",
+    "Table of Contents":"Indice",
+    "restart presentation":"Ricominciare la presentazione",
+    "restart?":"Inizio"
+  },
+  help_it:
+    "Navigare con mouse, barra spazio, frecce sinistra/destra o " +
+    "PgUp e PgDn. Usare S e B per cambiare la dimensione dei caratteri.",
+
+  strings_el: {
+    "slide":"σελίδα",
+    "help?":"βοήθεια;",
+    "contents?":"περιεχόμενα;",
+    "table of contents":"πίνακας περιεχομένων",
+    "Table of Contents":"Πίνακας Περιεχομένων",
+    "restart presentation":"επανεκκίνηση παρουσίασης",
+    "restart?":"επανεκκίνηση;"
+  },
+  help_el:
+    "Πλοηγηθείτε με το κλίκ του ποντικιού, το space, τα βέλη αριστερά/δεξιά, " +
+    "ή Page Up και Page Down. Χρησιμοποιήστε τα πλήκτρα S και B για να αλλάξετε " +
+    "το μέγεθος της γραμματοσειράς.",
+
+  strings_ja: {
+    "slide":"スライド",
+    "help?":"ヘルプ",
+    "contents?":"目次",
+    "table of contents":"目次を表示",
+    "Table of Contents":"目次",
+    "restart presentation":"最初から再生",
+    "restart?":"最初から"
+  },
+  help_ja:
+     "マウス左クリック ・ スペース ・ 左右キー " +
+     "または Page Up ・ Page Downで操作， S ・ Bでフォントサイズ変更",
+
+  strings_zh: {
+    "slide":"幻灯片",
+    "help?":"帮助?",
+    "contents?":"内容?",
+    "table of contents":"目录",
+    "Table of Contents":"目录",
+    "restart presentation":"重新启动展示",
+    "restart?":"重新启动?"
+  },
+  help_zh:
+    "用鼠标点击, 空格条, 左右箭头, Pg Up 和 Pg Dn 导航. " +
+    "用 S, B 改变字体大小.",
+
+  strings_ru: {
+    "slide":"слайд",
+    "help?":"помощь?",
+    "contents?":"содержание?",
+    "table of contents":"оглавление",
+    "Table of Contents":"Оглавление",
+    "restart presentation":"перезапустить презентацию",
+    "restart?":"перезапуск?"
+  },
+  help_ru:
+    "Перемещайтесь кликая мышкой, используя клавишу пробел, стрелки" +
+    "влево/вправо или Pg Up и Pg Dn. Клавиши S и B меняют размер шрифта.",
+
+  strings_sv: {
+    "slide":"sida",
+    "help?":"hjälp",
+    "contents?":"innehåll",
+    "table of contents":"innehållsförteckning",
+    "Table of Contents":"Innehållsförteckning",
+    "restart presentation":"visa presentationen från början",
+    "restart?":"börja om"
+  },
+  help_sv:
+    "Bläddra med ett klick med vänstra musknappen, mellanslagstangenten, " +
+    "vänster- och högerpiltangenterna eller tangenterna Pg Up, Pg Dn. " +
+    "Använd tangenterna S och B för att ändra textens storlek.",
+
+// each such language array is declared in the localize array
+// which is set on string prototype and used as in "foo".localize();
+  localize: {
+    "es":this.strings_es,
+    "ca":this.strings_ca,
+    "cs":this.strings_cs,
+    "nl":this.strings_nl,
+    "de":this.strings_de,
+    "pl":this.strings_pl,
+    "fr":this.strings_fr,
+    "hu":this.strings_hu,
+    "it":this.strings_it,
+    "el":this.strings_el,
+    "jp":this.strings_ja,
+    "zh":this.strings_zh,
+    "ru":this.strings_ru,
+    "sv":this.strings_sv
+  },
+
+  init: function () {
+    var i18n = w3c_slidy_i18n;
+    var help_text = w3c_slidy.help_text;
+    i18n.strings_es[help_text] = i18n.help_es;
+    i18n.strings_ca[help_text] = i18n.help_ca;
+    i18n.strings_cs[help_text] = i18n.help_cs;
+    i18n.strings_nl[help_text] = i18n.help_nl;
+    i18n.strings_de[help_text] = i18n.help_de;
+    i18n.strings_pl[help_text] = i18n.help_pl;
+    i18n.strings_fr[help_text] = i18n.help_fr;
+    i18n.strings_hu[help_text] = i18n.help_hu;
+    i18n.strings_it[help_text] = i18n.help_it;
+    i18n.strings_el[help_text] = i18n.help_el;
+    i18n.strings_ja[help_text] = i18n.help_ja;
+    i18n.strings_zh[help_text] = i18n.help_zh;
+    i18n.strings_ru[help_text] = i18n.help_ru;
+    i18n.strings_sv[help_text] = i18n.help_sv;
+
+    w3c_slidy.lang = document.body.parentNode.getAttribute("lang");
+
+    if (!w3c_slidy.lang)
+      w3c_slidy.lang = document.body.parentNode.getAttribute("xml:lang");
+
+    if (!w3c_slidy.lang)
+      w3c_slidy.lang = "en";
+
+    // add localize method to all strings
+    // for use as in "contents".localize()
+   String.prototype.localize = function() {
+     if (this == "")
+       return this;
+
+     // try full language code, e.g. en-US
+     var s, lookup = w3c_slidy_i18n.localize[w3c_slidy.lang];
+
+     if (lookup)
+     {
+       s = lookup[this];
+
+       if (s)
+        return s;
+     }
+
+     // strip country code suffix, e.g.
+     // try en if undefined for en-US
+     var lg = w3c_slidy.lang.split("-");
+
+     if (lg.length > 1)
+     {
+       lookup = w3c_slidy_i18n.localize[lg[0]];
+
+       if (lookup)
+       {
+         s = lookup[this];
+
+         if (s)
+          return s;
+       }
+     }
+
+     // otherwise string as is
+     return this;
+   };
+  }
+};
+
+// hack for back button behavior
+if (w3c_slidy.ie6 || w3c_slidy.ie7)
+{
+  document.write("<iframe id='historyFrame' " +
+  "src='javascript:\"<html"+"></"+"html>\"' " +
+  "height='1' width='1' " +
+  "style='position:absolute;left:-800px'></iframe>");
+}
+
+// attach event listeners for initialization
+w3c_slidy.set_up();
+
+// hide the slides as soon as body element is available
+// to reduce annoying screen mess before the onload event
+setTimeout(w3c_slidy.hide_slides, 50);
+
+/*]]>*/
+</script>
+</head>
+<body class="article" style="max-width:45em">
+<div id="header" class="slide">
+<h1>Android</h1>
+<span id="author">Listes et Adapters</span><br />
+<span id="revdate"><link rel="stylesheet" href="myslidy.css" type="text/css" /></span>
+</div>
+<div class="sect1 slide">
+<h1 id="_les_listes">Les Listes</h1>
+<div class="sectionbody" style="max-width:45em">
+<div class="paragraph"><p>Utilisation des ListView et ExpendableListView.</p></div>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_la_problématique">La problématique</h1>
+<div class="sectionbody" style="max-width:45em">
+<ul class="">
+<li>
+<span>
+On souhaite afficher une liste d'éléments
+</span>
+</li>
+<li>
+<span>
+On veut pouvoir agir sur ces éléments
+</span>
+</li>
+<li>
+<span>
+On veut de bonnes performances et un encombrement mémoire faible
+</span>
+</li>
+<li>
+<span>
+On veut pouvoir modifier la liste des éléments à la volée
+</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_scrolling">Scrolling</h1>
+<div class="sectionbody" style="max-width:45em">
+<ul class="">
+<li>
+<span>
+La méthode de parcours préférée sur le mobile est le vertical
+</span>
+</li>
+<li>
+<span>
+Pour afficher un ensemble d'éléments on utilise :
+</span>
+<ul class="">
+<li>
+<span>
+Le scrolling
+</span>
+</li>
+<li>
+<span>
+La ScrollView quand les vues sont connues
+</span>
+</li>
+<li>
+<span>
+La ListView quand les éléments sont dynamiques
+</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_fonctionnement">Fonctionnement</h1>
+<div class="sectionbody" style="max-width:45em">
+<ul class="">
+<li>
+<span>
+La ListView connait :
+</span>
+<ul class="">
+<li>
+<span>
+le nombre de vues qu&#8217;elle doit gérer
+</span>
+</li>
+<li>
+<span>
+le nombre de vues qu&#8217;elle peut afficher en même temps
+</span>
+</li>
+</ul>
+</li>
+<li>
+<span>
+Le probléme :
+</span>
+<ul class="">
+<li>
+<span>
+Comment gérer l'écart entre les deux nombres ?
+</span>
+</li>
+</ul>
+</li>
+<li>
+<span>
+La solution :
+</span>
+<ul class="">
+<li>
+<span>
+gérer une liste de vues "en attente"
+</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_les_listadapter">Les ListAdapter</h1>
+<div class="sectionbody" style="max-width:45em">
+<ul class="">
+<li>
+<span>
+Décrivent les données à afficher
+</span>
+<ul class="">
+<li>
+<span>
+CursorAdapter depuis des données Cursor
+</span>
+</li>
+<li>
+<span>
+on peut créer son implémentation custom
+</span>
+</li>
+</ul>
+</li>
+<li>
+<span>
+Sont responsable de construire les vues correspondant aux éléments de la liste
+</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_implémenter_un_adapteur">Implémenter un adapteur</h1>
+<div class="sectionbody" style="max-width:45em">
+<ul class="">
+<li>
+<span>
+3 méthodes à surcharger :
+</span>
+<ul class="">
+<li>
+<span>
+<em>getView</em> qui retourne la vue fonction de l&#8217;index et potentiellement de la vue à recycler
+</span>
+</li>
+<li>
+<span>
+<em>getCount</em> qui retourne le nombre d'éléments total de la liste
+</span>
+</li>
+<li>
+<span>
+<em>getItem</em> qui retourne un élément de la liste fonction de son index
+</span>
+</li>
+</ul>
+</li>
+<li>
+<span>
+On appelle <em>notifyDataSetChanged()</em> quand les données ont changé pour forcer un recalcul de l&#8217;affichage
+</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_scrapview">ScrapView</h1>
+<div class="sectionbody" style="max-width:45em">
+<div class="paragraph"><p><span class="image">
+<img alt="ScrapView"
+src="data:image/jpeg;base64,
+/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsK
+CwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQU
+FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wgARCAELAhkDAREA
+AhEBAxEB/8QAHQABAAEFAQEBAAAAAAAAAAAAAAECAwQFBgcICf/EABQBAQAAAAAAAAAAAAAAAAAA
+AAD/2gAMAwEAAhADEAAAAfqkAAAAAAAGCYwABAJAIAJAAAINgZAAAOfIAJAAAJBAAAALJiHYgAAA
+AAAA15ojWEkHTGICCokgpAAIJBJnGcZIBrjYg0hpzCJJOnKSQQAAACkkEls052oAAAAAAANeaE1I
+B05zAAAAAAAB1JUasA+Xjnz6gO0NMa4FZvjngAAAAAAZBvzUnZgAAAAAAxS6YhoTUgHUGlKQASAQ
+CSsAg3hsDJAPk81x9LGwNMa8FZvjQgAkAEEEAAyTemnO1AAAAABzJ8unnZ+hJhGqMQA3BIAAAAAA
+AM4yQCkqBpDCMcFRtwAAAAAAAWTTnagAAAAAtnwqeiH1UYxYAAJIBBJJJBAABBIMsugAA89MoEFJ
+BJUSQASCCACSoGtOWPcgAAAACDhzszWG5KTyUyy2ZxzZdNidKcubU1RSduccbcwDLMQoNSeom0AA
+AOVBrSSTugAAAAAAAaA4I9cAAAABBwx3BUAUHOlsvGkOtNOXjbHlZ6GZJ58ehAg1psjXkFB0BkgA
+AHKmhOWBePUjjCsFotElZJSUEkkkncGvMw3YAAABBw525UAAAAAAAAAAAAAAAAcqaA5cF49FPNAA
+AAAAAeplJxx6iAAAAYRllQAAAAAAAAAAAAAAAAOVNEc4C+esGnJJJBSUkF0rAIKDbmMfLB9dAAAA
+AAAAAAAAAAAAAAAAAAHmhvyCQAUlRAJIJIJIJIBJYPiI+zioguFZSWi0SVlRQUkAFwrJBBeO5AAA
+AAAAAAAAOVOqAAAAAAAAABjn56H0UbgAAAAAAAAAFk93AAAAAAAAAAAOVNYaMqKj08wCSSokgsls
+kqLxsgAYp8CnvJgmWAAAAAAAAADIPVjsAAAAAAAAAADlTQnLAvHpJ5gAAAADanrgAMI+Ij14pMsx
+AAAAAAAAAAdKd8dWAAAAAAAAADlTQHLgvHqB5+SVAgoKSSQbE9LABqz5gOpLYN6aIAAAAAAAAAG6
+OzPQQAAAAAAAADlTFNMC4ekgAAAAAAA0h5AaIGSb00RvQAAAAAAAAAas+hQAAAAAAAADzQ3wAJIB
+UQCkkkpJAAJNUeaH0YeQnHm9NEbM0hkAAAAAAAAAsnVmwPWQAAAAAAADlTqgAAAAAAAAAa8+Oz7U
+OVPPC2aIyjJMoAAAAAAAAAGQe0gAAAAAAAHKmsNGVFR6mWCggkFRUSAAXwCwfnWfo2DhDgTUl42Z
+dAABwxngxTGMkqOjM8AAGUezgAAAAAAAHKmhOWBePRzzIAAAAAyj2cAtH5sH6WAA+eTUHTl0AAHP
+lBmnNnTGEQbgygAAZJ7QAAAAAAAAcqaA5cF49JPNikgpKy4VlotAqM09hALB+dx+jAABojyEygAA
+AAAAAAAZB7SAAAAAAAAcqYppgXD0kAAAAAAAFg/O4/RgAAwjykukElZUQWigkqKgQQVlRJJBBnnp
+YAAAAAAAB5cdIAQSASQACSQUkEgkg+FD9GAAAAAAAAAAAAAAAAAAAAAADlTpgSUl0AAAAAAAFg/O
+4/RgAAAAAAAAAAAAAAAAAAAAAA5U545oF49fNKQQVEkFJBWXCSCCDoS0fncfowAAAAcWedntRnAA
+GAZZBdMQsGyBhGaWi6Ac6boyAAYxeKwAAcqaE5YF49FPNAAAAAAAezl0/No/SoAAAAsH5oHXH6AG
+QAciebGzLZhm5LZz52JjnOF8rO6OJLB6YeVG3MIGxOyOuAABypz5zALx6kcUACCCS4VkFstkknpQ
+PzbP0pAAAAB84nqJ0puAAAAAAc8XDemsKDbEEgAGMUmWAADlTJNeCs64AAAAAAAGEfER91AAAAAA
+5szDcAwjBIJIJJIJAIAJAJIABmmaAADhiAASQQSACQAAADFNSesgAAAAAHNGabgwjRmkAOlMUpBJ
+JBBAAABJsTOMw4425ugDSmmMAkHTGMSCCkgkAgAkFwrKjegAAAAAA5s6AxjSGjAOlOcKQAAAAAAd
+GZh8hHgZ93nZkF8zDTGuBJ0JzoAAAAAAMo3JtDNAAAAAAABhGjNIAdKa8oIJAJBBBJWSCDZmwME+
+bT3w7AA0ppTXgk6U04BAJJJIIIIBJfNiXjcgAAAAAAAwjWmIAbArAAAAAAABlmYAADSmCY4JNwAA
+AAAAACyYJ1YAAAAAAAMM1AABUCyWCozjLLRilgkktlorLxvDLAABy5qiwWSyXDcm4LxSYppTUmQZ
+JZMctEkmQZZ0x//EADEQAAAFAwIEBQQDAQEBAQAAAAACAwQFARQVBhYREhMzECA0NUAHIjAyITE2
+UCQjJf/aAAgBAQABBQL4DmteP3DiccTjiccTj7h9w+8cTjicfcPuH3DiccTjiccyg4nHE4+4fcG9
+a1R8yqZVHdqkLVEWqQtkxblFuUW5BbJi3IOgUdAo6BRblFuQWxBbkFuQW5BbkFsmFW5KJdQ3wXP7
+Pq1pXqGHVOOcwLX7LxMXqYvUxeJi7TF4mL1MXqYvUxepi9TF6mL1MXqYvExT+aNux4qSLVF34G9W
+8rWivUMOqcFObm/oc1BxHEc1Bz0HNQc1BzUHNQc1BzlHUKOoUc5RzUqFu18Fz+z/AMlez+dPtqP0
+I5luyIG7oQbthR9X5RrJP9O/VSXhBpv6hxGpTm9W+7vgX9nfY/Mh3luzx/O5dIskUlSLpOf2f/34
+8OKVmoLRUWiotFRaKi0UFmoLNQWiotFRaKCyUFkcWSgs1AWnArbseP1lbLPpfTn0acuqQmlovTpD
+ere97wL+zvs8hhyGHIYchhyGHTMOmYdMw5DDlqOA4eHAIFr1lu1+XUU+lpuNmPrRIORClfa51OQh
+UyOf2cN6rVsaixqLGopThT4DbsePLTm8DerXa1VPY1FjUUY1pX4C3Z/KoQqies9G0bm+iUR4LI9U
+W1RbVFtUW1RbVFtUW1RbGFscWxhbVFqLUW1RbGFsYWxhbGFscWxhbGCZOmTzKtnkjN4B6NvO6jb7
+ygwclQYaWGDkqjAPht10NuuhtxyNvOxgHgwL4YORGElBg5EYF+MC+GDkBg5ESMTIt4/Mu/yf0DVN
+qc1UU6oxMO1g2YrXlpBtTw0rn5Y0VIT8wyQUnZBOVi1DOHB9Uv6NpDWSkdLHll0tJvZBzptktPvC
+ydJ2ROoTVr10lNP12ZdxSroI6po6i0NQvlo8kjNGldNaikJ51p3UkhNrtZKQ1FHxbu/jPPHe+SMw
+di53KYblqCajOc/wNQG5YGx/H/QrU2qDlLQhfExaHLHabjopdvpiMank9PR8wrHaYbpS6Ue3RdON
+MRjpNfTka4I8aJvWU1AOpNmeCYqSaEW1bKvdOEVl5GMbSzdvFtWtTRbY8dtmNsGUW1jg003HMXjX
+TUaydvob/wDObNyNG3njvfNReu8EO9LOjs2m4HQ3C5G4nIrPu6jOPBnHgzzsZ92M87GceDOPBnXg
+zzsZ52Itwd0z1RXl0zal/F/QrWupzlLQhf8Agx3vmovXeCHe1D6D80H7bqEvPAZb8Txmk/bFLQhf
++FG+9zyZzvugqOgqEUFOs6akdpYBoMC0GCaDBNBgmgwLQYBoKafaikE0GEZDCMxhGYwbMYJoGzYj
+RKUL1I3Lf85pPsGs3uuJG7Ieg3VFVG6Y0bpjhumOG6o0bqiqDdsKN2wo3VFjdMeN1Rg3bCjdkPUb
+pjxuhkN0sBumOG6Y0L6njDodc4prZkYb0aimtGo3mxG9I0V1mwFdaNhvVMb0SG9Gw3o0G9G43okN
+6EG9CjehBTWjcb0ZjebIbzZjejQIawZruvjxnvPxHHp+mYRP8x/xKe5fHjvfZp84bPMu7GZeBOVd
+GVVWIgTKNBlGoybUZFsMg2FZFrQVlmlBmmYzLMZdmE5FsqfyOvTCG9qcNU3kxhGQwbIYVmMK1GFb
+DCMxg48YKOGDYDCMhhGIwbAYOOGCjhgo0YNgMIyGFZjCsxhGXHGIDSHHbXxWP+h1F67wQ7097d+K
+L9w8j6vKytBCezl97fO6s07t6Lt6Lt4L50L9yLx5UXL+o68iLl+Lt7QXT0XL8deQHXkR1pIXEgLp
+6Lx4Lx4Lt4IXULqLioKdrM1+Ix/0OofXeCHemETrscU7GJdjDuxh3YxDsYp2MY6GLdDFuxi3Yjo5
+ym98krXljLQQ38Rafvcn+4rLF6mUGVGWKMwkMumMoMkqMkoMmYZUZMwySgyKoyKwyKwyZhlaDK0G
+VoNPT6ccvXW7EvxGHv8ALRS7x3gHYwDsJQToqnwJyvLC2gYPUmzVq4TcTMl3hFfr8SS9J8Ns9fJz
+2UkhlpAZd+Mw+GUkjC+mKi9maDIylBSTkqjISovZkX0vQZOSoMu/GXfjLvxlpAZWRGUkRk5ISz6R
+Uish4aj/ANLJeoER2XSlUWrdB8qhaPBaPRbPx0JEWz+os3dRYORYuhZvBaPRZOxYuRYORj3AsHIs
+3YtXwtXwVj3i5MpMCIl5I858GL94+JIF5mF/4SunG0u51Dp1GKKIf08nXhGtqcG3xIr/AEnwYn3W
+afOGzzLuxmXgTlXRlTGoWlyiLxAXrcXjcXiAukRcpC4SHXSHXSHXSHXTr5F6cyF3Xx1g3WXjv/UI
+fj0ZivCJSpwS8xVVEZRaaUTJWXcA2oT8qjtbqOJ8jNs51HRoRk6vEvNEf6X4MZ7zqL13gh3tQe3/
+AI2lOLrxV7XlWdptJKWkmykWlXil5iQyZFzwaRw9jivTkgC1e45HIqwiJyKQTZYNW5GjfzRP+l+D
+He+6h9d4Id6eLU7DonHTMOQw4VHTNUUbq1FosKoqUHCtPDkMGiZ6OfFfseaepzQbWvFt8SK/0nwY
+7+Z2Wil3jvAOxgHYSgnRVPgL9jzPW92zR0vLoo7cmBtyYFNOTA21LDa8qK6ZlaCunZmgwE2NvzQ2
+7MjbcuNtzA25MCmnJkbblxtmWG2JUbYlBteVG2ZURenHzaW+DHaljCSm7YYbuhBu2GG7Ycbthhu2
+FG7YUbqi6jdMeN0MRumPG6Y4bpjRumMG6oobsiBu6GG7YcbsiBuuJBtSRq5f+dD+5VUKWvUIOco6
+pPgr9j/nRHumoKcH/gj3nTojRLcDUbhajcLUbgajPtBuBqNwtRuJsNwNRnmgzrQZ1oM80GfaApuY
+q/Y/Fq+SfQ8DB/WCJkQzfNpBLys3zeQIdQiVCKUOYUdpVdspBCQJ4XiN4KqUor4k1AwUZN1yOkPI
+5cJs25DlVJ5or3fUXrvBDvah9B+Zr6ZXtc1fxLokcoz0WeEmNB6ekp6VbpdBv46odOW8WxTeaaiZ
+Bm0koN+8kIxXVCzpo81Qq5QEmdzDNUZNy0hNGqPlTP3Kjeicp/4XD9+SFemdQzjSDg7qD064Uk60
+hk9kOFHjIR0o5wqaGWdM5Fwpq5nIuFNXRJHtH2lPYvNGe9ah9d4Id6WaneNMA7GAdjAOxgHYwLsY
+F2MC7G33Q265G3nIrAOhgngwLsYB2Ei8iSva5K/j1x9O3GpNWJ6VRiWsZJkkkvyOYo1XMPGmjEBI
+IulkIqPpFsBw8zlG4btGiTBr5o33x7DEfL7aSG2kgTTqZD/Aem5GWN/LJxp1VYyTJJJeDvt8tKD+
+BwH8DlpUclB06DkoOQcg5KDplHJQclByjlHKOUco5KDkoGnb8zmIorK4lSgxSwxbgY10MW4GIUGF
+GFqMNUYc4xCgxKoxTgYx2MY6GLcjFuBjHQxjwYtyHUKZRttdj+aSjDqLRkmSSSDr9H36eLfs1fUp
+W/oL+gvii+KL4ov6C/F+L+gvxfi/F/QX9AQ/ORr2xP6ti9NJw0oSai/E/rHlf/tzVHNUUrXjU1CE
+vExdpi7TF4mL1MXxBepi9TF6mL1MXxBepi9TF6mCOiHM49P0/wA8nGHUVTqYybr9H3a8W/Zr/f5m
+3Y6pkGOrPqfPKLKqnXU0dMKo6XzbkZ1cIzZlVVPWvu74U/tx6b8zbvuvTcKfBdfo+7fi37NWJq1s
+TixOLE4sTixMLEwsTCxOLE4sTCwqLAWAsahInTI17UpDMZtDUn0ZrQaPaLsNM+J/WPe94U/tQvOj
+ZqCzUFmoLNQWigs1BZKCyOLJQWags1BaKi0VFooEWxyKOfT9T4Lr9FketSxKLEosSgheQnwGvb8x
+vVrtaqnsaixqKMa8fgL9nqfBdU4peepq0FVT0BFTGBacRREtQZOlAb+BQ5hzVHNUVUMKrHFFTChq
+hrTgl5n/ANjmqygq6VFXq1BWQcUCT5c4SrU4TakOKskxVmmFECkCyp0xkHHMV4tUUXUqDO1aCr9e
+gpIuOGRcDIOAV4tUUVOelsmP/8QAFBEBAAAAAAAAAAAAAAAAAAAAsP/aAAgBAwEBPwEQj//EABQR
+AQAAAAAAAAAAAAAAAAAAALD/2gAIAQIBAT8BEI//xABUEAABAwEBCAsKCggFBAMAAAABAAIDBBEF
+EiExMjNBkRM0NVFxcoGSk6HSEBQgIjBAQmGx0SNSc3SCg5SissEkYqOzwtPh4hVDRFCEBlNjZFSk
+w//aAAgBAQAGPwLzBgDiOBZxyzjupZx3Us45ZxyzjlnHLOOWccs45Zxyy3a1nHLOOWcd1LOO6lnX
+dSzjupZxyzjlnHJpJtPhy32GwDSshZsLICxda9LnlenzytPOKxHWV6XOKxv6RyypOkcsb+eV6fPK
+9LnFaecVp5xXpc4rTzitPOKxHWU/AcW+VlHX5jHypthWUVlHWsooH1LStK0rSsa0rStK0rStK0rS
+tK09xnB4EdLJURsqZBayJzrHO4O7NwNWPQsorKOtDCe5j7uNYwsYWMLGFjCxhYwsoa1lDWsoLGE/
+gPmUfKmeB9HzBvAopKiTY2GwW2abFhr4Rwmxbq0g4Zgt1KU8EoVzn0lQ2a9jcCWHFhTY53f4jTD0
+Zj4w4He+1MhjkNPVu/yJsBPAdKl4GocHdCPl2cKfwHzB0tRKyCJuN8jr0BMkjcHxvF81zTaCFHyp
+vgWepYli61k9ayetYutYutYli61k9ayetYutaFoWhaEAo+DwLk09PE+eZ0brGRi0nCmy3Xm70Z/2
+IsL9eIdasoaRkTtMpwvPKpuBq5O6EViKxFYisRWSVklZJWSViKxeC3BpT+A+WdWzwzzRg2EQNviP
+Wd4JzLnU0dE3/uP+Ef7lR09bUy1Qe+19+7JZjdZvINaA1rRYANCj5UMNiygsoLKCHmLODwL6wX2K
+3uzcittsWUFlBDxh5i/gPlnMe0OY4WODsRCqLqXIhe+499Zf6AdN7vs9ar7puH/rxnrd/D3G+Ne2
+LOdSznUs51LOdSznUs51LOdSznUs4Oas591Zw6lnHdSzh1LOdSznUs51LOdSzn3VnBzVnPurOdSD
+cdnh17Yq40kcIjAayO220WrdmfkjYt26vkZH2VguzUfSjasF1reNB/ct1Kf7K/8AmrDdYDiwHtrD
+dmb6MbVu3Wc2Psrdus5sfZW7dbqj7K3aquYz3Ldqp5Y2e5btT8sTFuy/oGrdn/6w963YPQD3rdiT
+ogt2puiasF2pOWBi3af0DFUyi7DyWROdYYG7yyY9XlS1pLbjjKeMdV6h+p7eDHsRY0xWXt5Zgs3l
+3rRx7FDfF17bbjPcJJsG+qdldQxOq6lrmi6cU5eZjZfG+BxYuBMuiyGkdDVOiFNES4OAfI1ovjwG
+31etVA2Gk74oqZ1VUk3165t8+9DRbpDCfUpvEpv8OirI6P0tlJc1mHexvCo7jWki5cssk3raw/Aj
+7wP0VcqnuZRROqJaGKpMWxuLfGxNFmSMBwkrvWSGO8bMy/cPRhLW+Nz3AJ90pWNjqBRmoLBiBvbb
+E+moxC4UFJ33US1JJMhJdgHrcWuw+tXrYYRRxVEVLMHE7JfvaDaPUL9vWqamufS0rXTGsc50lt6z
+Y5r22wY7bdZUFVBDTtpr6mieyQm/e+UMNjd6wSDrVLFSiM1NVNsMZmyG+KXEnkaVc6Gkp6bZ54p3
+SvkvrxhjcG2jfB/MLZaeknnre9W1GwCJ4abWg2B9lmlR2d6vraiq72iAa9rY/Fvjfh1jrRY7hwIU
+Yho3bCyGSoeC7CHPcDe8jbVsppmNua9pcyS9c0g24BacrBvCwJ0xpmNua5jnMkvXNIOgWnKwbwwK
+OOuihpe/KI1dOYCb+NzS2x1vC4FUlTi2aFkmsW+Quv8AVfhWxiMOFlttqzA1rMfeTRsIwnf8xukd
+6mk/CVi8oWttbcYY3DHVeofqfi4MYa0WNGAAeAWuAc04CCtmpqa8ksvQS9zr0bwtODkTnRUoaS4P
+yjYCHXwsFuDCAcCbJV0+yvDby2+ItbvGzGOFVtbPBbJ3wHU5MhIvRExttltltodhxqoqWRNbPUXu
+yv0vsFgVOySm8Wnj2KO9e5pDPi2g4RwqRslHGWvibA4YvEabWhT0sg+CljMbgN4ixU9JPQNq6vYt
+hddBst7G0W4y220mzDZYcKbdB1ODVj07TwW2YrfWmyRxXr27IAbT6br52sqiZTXK2GKnfCe/DKL2
+9jwgBtttuANtIWw1UeyR23wwkEHfBGEKAxQiPYIzDHZ6LTZaPuhChMf6K1gjDASLAMWFGj73+AL9
+ly3X1/8AGvrbbfXav0eIR+IGY9AJI/Eda75hpgyW0keMSG2470W2DkXfMNMGy4SPGJDbcd6LbByJ
+sFAGQSsg71ikdadijN7bZv4GjUooIxZHG0MaPUPIXX+q/Cm8Tux8YLZI7L62zCvQ1LEzUsUepY2j
+6Kzv3Qs4OaFlN5qxt5qyxzVnfuhZwc0LODmhZY5qym81NkkyidCuuf8A1JfwFaPJlrbW3HB8Z3/y
+vUP1PxcGMNaLAMAA/wBiuvwxfgTeJ3Y+MF9MeXj5farpt36aQfdKx+SfBMC6J+U0Gy31INaLAMAA
+/wBjuxxovwLAxx8UYgs27Us27UmfBuyhoWxyZPqWJ3OWS7nLJOtZB1rIOtZLtaxP5y9PWsg85Zn7
+xWa+8VmvvFZv7xWSda2OPJ9aq278Th1LH/t12RLUBh2VgyToYAVt1mordCHWsFYw8AJWfceCF5/J
+Zyb7NJ2VnJvs0nZWcm+zSdlYaxrOM0hYbq0jeNMAsF1KV3FkBWCpv+JG53sC/wBSfWKObsrxqgs+
+Uie32hYbq0jeNKAvFuhDJ8mb72LA6d/ydLK72NWTW/YJ+wv9V9im7Kyp/ssvZWdlHDTydlSDZzha
+ccT/AHLGjeU9ZI20i+bDgK2pW9D/AFW1K0fU/wBVhhrB/wAZywirH/Dl7KwR1bv+M8e0LBR1zvqg
+PaVguXXnki7aw3Nrx9FnbWGirh9UPetq1vQrBQ1x+rb2lubXn6MfbW5dfqi7a3Kr/wBl/MWG5VeO
+i7aw0Nc36tvaW163oCsxWfZytr1nQFbWregUEGw1Ubpn3jS+GwW+cXZ+Uj/djzWTilYlEd+09fmt
+zPnTfYfOLr/VH7qvY5C1t7iWeKz3UEwGY4wr6Rwa3fKz7Vn2rPsWfZrWfj5yz7Naz7VnvulZ4ais
++EGsmaXHEPBm4h7lL62Aq9mF+1sFoFp+Msx94rMDWVm3Dgkd71/nDgqJPev888NRIfzWGK3he4/m
+sNHEeFtq2lAOCMLarBwLM/eK2u08K2pEeFq2lB0YW0KfogtoU3RBbUiHA2xZmzgeQs27pHe9Zt3S
+O96B2HCMI8c+9Yn9K73qgtJPiWWk26fNrq8SE/iTeJ3Y+ME7hHk4ON4M5/8AG72LEqL5JvsUnzdv
+4nJhbGZXveGNaDZjW0P2wW0B0wW0DyStW50vJIz3rc2fnx9pYLnu5ZWrBRR8s/8ARbTp/tJ7C2lH
+yT/2raGqYLaA6YLaUfLP/atpwfaD2FtOn+0nsLalN9pPYW04eSo/tW0ByTBbnu6Vq3Pd0rVtA9K1
+U9K65jnuibZfCZqqWupnUz4HAEOcHW2i3zW6vycH8SHE7sfGCLY23zrRgCzDlmSsyVmTrWZKzDlm
+H6lmH6lmHLMOULnQuDQcJ8GsP/hf7O5TDebYqj5vH+J6ofnA9h7kjGU9RLsbr0uYzBatp1XRradV
+0aw01UPqSsMNV9mf7lggqj/x3e5YKOqP1awXOqjzO0tz6r7naW0qrmD3radV0a2jVc0e9bn1X3O0
+tzqr9n2lubVa4+2tzarXH21hoaofRb71tSq6JbVquhK2rVdEq981LVgSuZe2RbwQvoKxoJDbTBgF
+ps80utxYfYVfx3t7ZpKxN5yxN5yaSG2A7/mN0D/68n4T3GxSXzHsLmkFjt9TmM2jYGaLPScrn/OP
+4Hdyq+cSe3zX6bPxDzS6+x3NMwvo24Jmj0cC3Fl5J4/etw6npoe0twqvpYe2twq3pYP5iwXFlbx5
+4/yJXi3KgHHrLPYwrDcqn+jWf2LDci3i1LVuM8caojWC5LeWqHuWC5VPy1v9iw3Kh+jWf2rDcZ54
+tRGtwqrpoe2twqrpoe2tw6rpoe2tw6npoe2txJ+ni7S3Fl6eP3rcZ/2hirWuuSWgwvBPfDd5Y+43
+10g/GVc75x/+b+5P84l/GVNIMbWFyjea/C5oJ+BC2/8AsWrb+uELbsfLB/Vbcg+zHtrDXM5IP6rD
+dB3JE1bpVHMj7K3Rl5Y2e5boHliatv6oQt0H8kbPct0puZH2VulUcyPsrdOp5sXYW6VRysj7K3Qd
+yxNW3m9APetvN6D+qvXV2C0HBCNBtW6DPs4VLT1FUyaGVr7WiINwjzK7PysY/Zt81qRvxu9ix9xl
+RJJPFKxl5bC+9wKgnjnqJD3yG2SyWjJd3JvnE37wqr+Sd7FFxR5rQcSX2DzK7fzhn7livY5C1t7i
+WeKz3UEwGY4wrSbB61nWc5Z+PnBZ+PnhZ+PnhZ+PnBZ6PnLOs5yzjdazjdazjdazjdazjdfgSDfa
+fAgMEL6h0dQx5ZGLTZhW5tb0KnvmuYe+JPFeLCPGVb8g/wDCmcHh31YKtl9KWxva/wCAst8UWD89
+Kqpm0pfSwB/wt/jLceDhwJsfeDhUuJvY3SYL0AeMT9IBNkZSF0OwR1Ej9ksvGut0acSmueJXbO+q
+vWutwiMi/PVaFG4R3z5JJWhsktmS4g4fy9aYZaZ7HOjjfeE4fGJtHIBajIG3rb9zR67DZb1eHQ/J
+S/w+ZXZ+UjP7MJvE7sfGC+kPKRD9YeA/g8K6Uct8x3fTzkHSqxgkwuheMk7yZweG15nnkY11+2F7
+7WNKnGzTiKa+thD/ABPGxlRv2WWGSO0B8TrDYcY6gnxF84pGQRMDbcElhfgPUu/bPh9j2O31KO9k
+lifG972yMPjC+NpTNk2SQsjfHfPdaSHY/wA9ajhZbeMFgt8Oh+Tl/LzK6/1R+6hxO7HxgjYLfGGJ
+ZDtSyTqWIrEsk6lm3almn81YWOHJ3cRURvHYHDR4EnFPh3RG/TyfhKi4g81oOJL7B5ldc/JD7v8A
+VX8d7e2aSsTecsTecmkhtgO/5jJxT4c8FtmyMLLeEJjNmojetAt8dZdDrf7llUPOf7lhfQjlefyW
+fox9Fy23Rj6l3aW2aN30HD81lULvpPH5LN0B/wCQ/wDlrJoB9c/sLKoR9J/uWdovvrOUX31lUPOf
+7llUI+k/3LO0Q562xR8xy21R9G73rbdH0Tu0tuUZ+pd2ltmj6N3vUFVUzU5jia4XsTTabfMrrPfV
+sYHSsvb60f5bVunTDhkAW61H0zVunTdIFujByOW6VOOF63VpOmCwXUpHcWUFYKoP4jHO9gWDvl3F
+o5j/AArFWfYZ+wv9T9jm7Ky5xw0svZWdk6CTsrbB6J/uW3GjhaVt+IcJW6VPz1ujBzlt+JbdZqKM
+bKkOe/xQL04/9vu787b+4iVhcAeFZQ1rGFlt1+YycU/7fdv5yw/sY19Ed2PjBbJJk+penqXp6lik
+1L09Sxv5q9PUsUmpZMmpenqWUeass6llnUsp3NWN3NQIxFScU+TnrqBkcksFj3MkFtrNKayta+50
+u+7x2ax7lstLPHUR/GicHDwnvp5WytY8xkt+MMYVr3BgtA8Y6TiTwLfENhtFmi38+46mv/h2sEhZ
++qSRb1FX9O/ZGWW316bDhIwHkPdFLf8A6QWbJefq22W9wR4b4gnFg18vgT1gn/RoDevlLHWcmDDy
+Jksdt48Xwvmlp1HwZJ5TexRtvnGy2wJr2ODmOFocNPh3a+Wj/dNTeJ3Y+MF9MeXh4gT+BY/JSRSN
+v43tLXNOkKroX44ZC0E6RoK/QKiSiZFnamNxF4Peo4r98t40Nv5Da53rPgbFRbeqninhJxNJ9LkF
+p5Fdmh8SF8boZA+laSI4n2Mc4W47Lxx4VSupa+tq4W10LRL3w/TKy3Dps0HQquamdPUCKqNG2Jzi
+7LgivDz7OcVRUL7pyUNO2lFlY6Rwv5LbDiy3WAeLbpVz62hbI+WridQ2lthBksLHEaLCOtXUp6Ay
+XlLQ0rYmt9AXzw5w9d6Opd8UlfLdJ8VU116xz5G2OaWCO/dl+MQfcqptbNLKaSyjtf6b2uda/lBY
+v+o543mGZtRBEZWi0xw3sdrhwX8hU9l0asXJ/wARELqpzyZGRbCHW3+Owvsw7xQcKie+/wAKrJGP
+NocbHM2N5/Wvfan0tTdOq70ead1RWOdhZfbNfXvxQXMYMGK1NldJLKDLMGbPl3gkcGg+uwKZr62r
+kL6S2taXub3vPbkt+L6WLeCuHHs1WL+Sjcf0l/pOjtGPFvDQhHFEw0UcPjVUsznSNsHxb3xtGlXV
+lbXT1U7dhZJVMk2WMAu8d7BeiwgEkizQFS01zrs13eZgnfs+yEkvBjs8Y4wLfapBVV8lO5lS6NtG
+C52yMxM8SywNxOvsPIpBVV8lO5lS6NtGC52yMxM8SywNxOvsPIqSqmraiZtRX1UGwud8G2MbLYLO
+FmPkUDRkMdJGziB7g3qA8O7HHj/dhfRHdj4wV5HlW24Vibzlibzlibzlibzlkt5yyW85ZLecvQ1r
+Kj1rGzWsTdayBzlkDnLJbzkxu8LE/gWLydLUU9kdPNHZUzfFvf6WalB/g4bS1NO2xpOKYaWyb9u/
+oTvFMM8ZvZYH5Ubt7+vlZqukm72q5IxGXObfsNhwEtwYcYx6VIJJu+Z5ZDLLLe3t84+rRgAHJ3L2
+jqWUstuXJFsmDgtCipg8yXmN7sbnE2k6yfISRbI+K/be38eUOBRU8DLyGJoY1u8PDuvwxfgWyOkc
+3BZYFnnalnnakHbK7AbfMZ3b0bj1LF5VtZRuEVfGLATkyt+I/wBXr0JxDTFNGb2WB+VG7ePdHGWO
+zlWUecVlO5xWUecsZ1rTrX9Vp1rG7nFada06+5/Vadaxu5xWN3OKyn84rG7nFY3c4rTrWnWjwnw6
+mdlVU07pAy+EMlgNi3Urx9YPct1q7nM7K3YrtcfYW7dcOSH+WsN2K89H2FhupXn6we5boV/2grdC
+v+0Fbo1/TrdKv6b+i3Tr+lHuW6tfz29lbsV/7PsLduv1Q/y1u1X6of5a3Yr/ANl2FuxX/s+wt2a/
+VD/LW7dfzYP5aw3Yrz0XYUrX3Tr3NLSCNlA9gWbdzz5YVtEWxV7BZacmVvxH+r16E4hpimjN7LA/
+KjdvHuN4ybw+AxZJWSslZJWIrJKyVkdayOtZHWsjrWR1rI61kLJKDt9cp7ltbUhslmCFmGQ8ipq6
+Njo2Ttvg12MeBLxW/muRY1jWNWnF3MaxrGtKxOWlaVpWlYnLE5aVpQAttUnFPmDayjcIq+MWAnJl
+b8R/q9ehNLm3jiMLbbbE3jIcPgMR8u1SSMidO9t8REyy13qwqSlZA64o0ts+F1n8k6SR5ke42lzj
+aSrmsbcqumDYR47BHYdb1uHdDXD/ADFhuLdEckR/jTGG5tdFfGy+fGLB1qTiN/NDg8A+XapeIfMm
+8ZDh8BiygsYWNqxtWMLKCygsoLGFjasoLKWX1LKWUg3eXKVsNdSx1LP1xhHAdCdNcWe3T3tOfY73
+61c6nqYzFPHFeuYdHgScVv5rk8Agby0LQsSxLF1rQtC0LQtCxdayetZPWsXWgSpeKfMm8ZAW2LKK
+yisooN3vMTxj4cvA1W22LKCygsoeYycU+ZcqxlYysZWMrGVjOtYzrWNY1hK061p5xWnWsZ1rGsZW
+MrGspY1jPkCQSLQNKyzrWWVnCs51LDIVhc7WsJf0jl/mdI73r0+kd71gL+eVgedas2TqWcKyyssr
+OLOdSznUs51LOFWFxw+tZK//xAAqEAABAgMGBgMBAQAAAAAAAAABABEhMWFBUXGBsfAQkaHB0fEg
+MEDhUP/aAAgBAQABPyH8A4wkl0f1fC9d4L13gt0PC2I8J/7VulP6PhbIeFsR4W6eDbpWxHhb7wXr
+vBeg8F67wWyHhP6vhbpRXBBM/NthYRFCCoFWck3IWCuDGB+VVHDyqqW29Uzx8iYsN162POt2d1uD
+ut591V26rc8yo7FVT3Krc8yp7lVT3KrYXdHgAIPlY/idvKJ1wQMivacDE3kTBlSr8i2AtkKryKv5
+KryLZCpcqpcq2QqXKqXKqXKtkLcCJgiRXRvgZ5oYBE2W8douKg8hQV7zgYp+cLUSAcllRc0y8Jl4
+VBzXtl75e+Xvl75e+XsuKle4QOYGOK2678W8ou58Ju0vwR4JD/DBMjaNDApnayqYnhj3V1ihohVt
+4ZzEJDQj5rmolh+G4tstVFv1fgvXhC9FvwRu1yZcPvjxaHYomCAFy5CDgg2hbyi6E/AMrzeiouap
+eRbALYBUvIqdKLmqJNgFsggeyEFBmq/OtgrcKpUGXRfg53D2GSAwTmVi4D47C5DDGsBnjjlJbRcV
+K4uvCcRAO5El6JeiXol6JeoXpF61ekXolUck64p1yYp1xU4si2677gcXxiHtALB6hCSNgC5gdgwI
+Ke/RykAwEALNayAvYHYAJABbyiIoFgtXrl65euTWuDflSnSTFruPRaUw4gzRXrl65GqUbvw7Nd9x
+9XATkTBFyEyt8tC05AawxOT/ACG5XhEARUuq7lVdyqu5VXcqruVV3Kq/l4TsHlU2X9L+QC2h4J38
+S3h+E3dNtitg8qi2x4TH6BM/MDUmBkUiSSn55a7IiEENUFu+N0AVk8UdBUaDGbvgtE21JA0nhtXQ
+Zn/DyEntuSCYlmLsmpZxlGupPzyxI9PL86A32+Sb1I7JxMNarYCxGLFe9efsJAEksBaitlYhi2ks
+vnCEFRofMZbQSZrELM8NyJwxPLADgMICDkpBANwGTCIF4IhnCQsV1/WgkaMsA6DI0deLMAU4EkJJ
+iECgmXSCaYCXkgGiHk0TuBVJsA2ITiadFgBnYAFhgGmSpywES1i69spZahfjDMXnXSQJ5ZK1AiNS
+TsQgUWnSUHBbC8BG4yEii5vESOU6U2AgpyE6PlBYDLkF2kQyJHJxmAxNiBDllDhOKRXABBIJYVHg
+XGGiJ7vMflkSZwdGAITdkrgEOFF0EohCQLSYNOvEERdwcg9i2ZrGXEyhnKjtetNHKxlxMJjOU13n
+y7sRaIMCQgXRjYcZGH3fR164YsOILZGn2wQChABN+Gpp+yiQBJLAWlFAKscxbbi+UAQBGBgBd8B/
+RIJwRcUxlz9lZsBBiZqrnwp6YMIYIIMc3W82QjRZyKFbbYAsQA4IHWIDqTgFDeBrwAAQBgScgZP6
+GGUMgDdS4LFQbELoU27IQhN+FyQCgbU1gloZwCBPcAJAIOAgLxQRGA7exB0RFBNl2dcrYDPFlAFh
+YFciAJUFEdUUWKNipimMMVZTZaNgAuGYRd4KIHuTm0lQmMn19JZBEkaFzGJXmjExKvuYWJcyCaIH
+KjNveWJcyCaESHxWAzUXAgPaEZqkiMAMNPo69YNUA9Tx2i9FDBmA6Aryi/8AN5RLZYF5UowyEpkG
+65AVtsuQHbZOEiWxyKm3UW+O3AD0pesI+AJEjWpoJg6K/R9RIAklgLUfBhAgTHsnAgEAZgYAf4UZ
+aKE9ANTx2i9A+HufeT0TqfZ70NJyBFl3c1hZiLQ4QIAzAwAu/wAPcLqdYkRCFe7r3dD81N6JgEuB
+ibgb3he/r2te2olss6JrBATaxUG2xJbHnW/5Fv8AkRvIQT2edDgCAJMTravGt7/50DsCSxsBeCmJ
+jx8CM4DFBvLVwRHLaqHGiRRmaqQhDvVd4W8jxK2DuCcDn2aIroivIc1ZD7UYK0x18oE7Z1J3fveq
+9FiNMHiFb4eI1vsAElDwwVi16dYALKBIcOZQ4eFkvVGfkg7wOgTGoGiaLtILR7pFFyB3saqO+Dog
+7ymi3R+Xuj2mNUNllDXi0/DrkxaLqsJoSFqI8K26Or2zymsiHzoEhzZL9EIKu/D8psU7hwh0ZzC/
+LGH9CQAvOl7KAThYgPxBVGyiawy8IXo2lEj3a9qgXyJ9P0xTTJWb5DlRZdlE7uuiBPCfChrFvPjv
+N3A3P/UQ+bBzAEzMDRU2yqday3TV1hAlwMALe7cmt67xFHuh+pMSwwVxgjLD0A+6vsYJ7q9zgt2d
+lVcfCtx9ld7ski1DbUjxjUJyOuSTfwKjJxxGRMCAifzQgv6Yey6XqeO0XoH2UfwdRInUsLks52yj
+p7zJDKo1iqKot1EWYObrE3MyTMzI/JltbIMLoSrAsvQ1eZCDMzpEKIHbmE/LM8Sdktf3lP6vB12Z
+nxzqKbmTHagIbr1Ww+/Dp5dCzGJTalGpYEEfliNQ6Kb0g1PHaL0aYZQ8h/8AmvbBesIh84RB4eLm
+erXq042WSz40UJ1rJzQUB5FFSWyl+v8AAt8A+WJgF4p/8XlOeWL/AHTGreiYk8/RXNHdQTzowakJ
+zsXVWZjyLRWpjzdEmaLverouWt2XIE9/wXV8EXpN6saK1MOc6cNLo+dGZyPy4ZNt6nObaAATSP5O
+mVkgiZEjjKTPySc/4aKERm5hFzHxxDHRHatZcpL3FS146vCM1/afljIXg/JMnRxBwTo3gvRNTOna
+nkK32SvjWSg6COgU2wtgxTqKaxcV1ZbfjAlEuj+honHUw0NCe2dqKPXvNSPhq1+7rNUelnpP99d2
+xx8qf6vFYE4stmzwBi+h5VM3cJM36Qm0W08nAdMmhUGXIVegCvosSMndZ6FgOXqaszwuoK8UGVYk
+dGxIqQNPlKcmNI/PJ4ymEakbfkKbkfG6AKNZIeiI0HYIiALbwty90SE2RAAEFwcfxRHu6i7/AJaX
+rq4hDQBjRl2IxVnB+0bJp8RLyuP1po3D6f4+jqlMAnCxAfiCqNlE1hl4QvTGV8TIimPIiGaZ/ede
+EjqYH8FO+AvR16uvV16ugUACk2N+FMB0VPjZSYhMS2affd1BQt2cUsRYnHdqkwLh0+YsVAaJkQMS
+ZDSYkAWoWQRywNkwuvEkDEDhA6SxhYADFMEsiAqEiAIpoiGDN4BsZndBQWemGKHAmbMAMgEkGoJZ
+CwMGtngoPI/l2n53zbDd+JCC/ovsul6njtF6m/ZVKF1+HUdPlAojBjggQRCUUUg0AQuSdE4Lx0+c
++NpYuCzOWsclkWbFDAFzQaZcmbOZJuZAVAHHBgeggZ94IFFbRYWGgaonF9s1CJ5X1QFA48EOGIIY
+k3WBDX3YmYRJtiy5ygtmYnJqTf8AOHA+n4sAr9aOyN6QanjtF6DRzkA6IfMTa3olWckJIuCSQ+dQ
+e+XVUNGcBGKAJsQJI2SmfFNf8N0u+dEEhz3l6flhw78RgDXlCQRMiRxlJn5JOf8ADul3zYYDfgdn
+A/VWc/IHYMq0gzaZSlgONO0IHnnvunBOYqSbFd8UkxHeUQSrm0B55yQGnmLtXj2Ri3zDsqsgRPBG
+UHnliVBze6dsM9X7DPRh+gUbtclBXdTyCBMmn4n/AKaBwCle6vd/IpwOCYG7q7PgREdpmK8wyFTc
+Q91vR8CmT7wIivm/YLTsVL4jiJb7ABKXiJASyxAhBPAHsmZ44CZLR7mq5Pg9XJ8CT2TkiYE7IKMG
+UcoAS/z803l71TjhYgaR0Y8yjtENH4d0u/z4B37ngmg395Ob05vR7i1ExCAIEDo3qaO/FD+R8rf/
+AL4QNevqPlD+L8oFuYqC2eJL21e9r2hFGBKQ4W6XfWZU5PARlYhiBF7gU5H6icJxmyqCyf5oHykk
+m+BWyChkmAlgEjBiSQM1F2RZiZA8wwREJiYPAGwgULgA5lO4HYEApgDGMqhkQ/AiYyS2CSABy6JY
+PNi0jwLKBscAIBuAwQmY3H4RvdADxXalnc5UEb4IDeAEYEfE4sgOTAOSwihkEHXAGRB+cAqm3BdL
+1PHaL0W5X7zfcwXWdFUc/qCWkSCBiOSdMISGjdQMc1JxROJLAxiTFgjmjJJAGctJmfgWNgp5Du5E
+Ay1gkg3Gi7iQlm4Syi44VkC2LZiO52IQZJjCY3mwuNe0p7xTGEilruEEALzGSMBiho5A4uruzOQ9
+mO66PWMDjsZbkWH9BCzqExXEiECBgEhyxrHnNFEoRcTwjEuhPiMKcAKEoBYgs6i6ONh2MAXnEngC
+MwkQBKJ1LovlLIkC0mJYOTFH9PvilDQhjFI1qs4lgkEAFgJggQcMU59BzYkYxlijLnN0cSMzkGvS
+TW6AQbaDhwgLyZxgdnCI53bR2BgxId6QIjndtHYGDEh3pAidMp0X30sRWESIxKfmy1Op0E4073Ha
+L0WCBZiN8TGMb1hemIHssQQNcX3rwiO3zeEHIqxu2XpS9IRzsx9CNsToqr62hmEW4Ha0kgATN9NY
+YSFG0URaCShzzzLxaAgREfbbG/ZY5OAERAQidgxS5fWGAg8sAAPwC0Rpa5oWqUXyRP2BM8gvEjPg
+xgGDCz5EFOR0A6JkQWKEMElYBh84A1tskYGDGAXoS9CTsthjD8O4gL7jFjfmQOSYoi0HZw7uLQRA
+hiOMQYsQkUZss1NZy/MmbrVMPn+UBHdGNbhLF5lU5qZsNUy/nrcJUuqx+ZVOet7yLb8y2PMtvzJu
+w1VTnrcJAwrLb5ytHU4QCzGKKk9wPOW4CkWoFX+VH9QHRX9A9FeS5OcLRXA8xb94XqiXQsxW5Az9
+UZkDM9UugZ+vDgeUt+bj0Cr3ZGgqJuXCDUVvXv8Ac2Jd5OOSYoi0HZw7uLQRAhiOHSEMb4OmRIJB
+vVXzVTzXuOPRU80y8jLyVCMvIxDLyVHNe2QhAYJN3R4HcdXLWziWFVCYF9irfDqBDCYpVc1Xc0UE
+U1YmBVTyVfyVfyRDa5LZC9IqXKtkLZCpcq9IPK9QqXKtkKJEURsXcyw/fiduzIHJMURaC2OQzhaH
+tXSPifTLrvv6Xuo9upA4JgcA+JQC5gU4aiDZBin+VHEXklBXA5phg9E/IuSrGwFDTAaZzzMkHBbH
+f8KysV0o/BdtuW9vw9I+NdMjAiIeF+2K2RW7Pw3d3ZXtj4Qt0i0HknIdd5Kn5KIzsmpm6KOYgt5U
+KoKvjMEOHaQFoJlc3MIfDp5JXFKxR5yKU+ZUeZUXNUXNU6UeZbBVfnWwVT5lRJuAtgFT8iHcAAb0
+D7qH4nSEIwTC8F6peqXqkMQXH4WyX/PfKphxBmivXL1yDA9JAMG/AD7iCxdfwii2AQnP9E5/onP9
+E5/onP8ARN7CLjyFLj5qWGhQdVvPMQaO5ipF10+XmEVbXvl75BidD2kTbRfkQAtaST83lJfMUUES
+kCFgodBSg+RTmRuAU22cKcXAHdAlnSACawRAZ/dOzXFyIjdbApugM556kSpUXIIsI+Twqvk8Kt5P
+Cn6CMuAYxBbRK//aAAwDAQACAAMAAAAQkkkkkkkkAkgkAEEEkgEEkkkgAkAkAkAEAgkkkkkkkkgg
+AggAgAEEAEkkkkEEkgAkggkgkkkkkkkkkkgkkkkkkkkkEEAEgEkkkkkkggkkkkkkkkgkkEEgkggg
+EkkgEEgkkgEkkgkgkkkkkkAgkkgkkkkkkkkEkEkkgkkkkkkkkgkkkkkkEkkkkEkAEgAEEkkkgAkE
+AgkkEkAAkkkkkkAEgkAEggAAAgkkkkgAgkkkkkkkkkkkkkkgEkgkkgAkkEAAAkkkgAEkEAAggAkA
+kkkkkAkkkkkkkkkkkkkkkkggEgAAAAAAAEkkkkgEkkkkkkkkkkkkkkkkgEgEkEgkkAgAkkkkkkkk
+kkkkkkkkkkkkkkkAkAkkgEEEAggkEEkEkAEggkkkkkkkkkkkgkkkkkkkkkkggAAAAAAAAAAkkkkk
+kkkkkkgkEEAEEkkkkkEgkkkgkkkEkAkkkkkkkkkkggEgAAAAAkkEEEEkkkEkkkEkEkkkkkkkkkgA
+EEgggAAkkEEgEEkkkEkkgkAkkkkkkkkkgAEkkkkkkkkAEggAAAAAAAAAAkkkkkkkkkkgkAgEkkAE
+kEgggkEkkkEkkgkAkkkkkkkkgkkkkkkkkkkgkAggAAAAAAAAAEkkkkkkkkgkEAkEAAAkkAkgkAAA
+EkkAAAAAkkkkkkkkggEAAAAAAkkkkkEAAAAAEgAAAEkkkkkkkkgAEgggAkAEkEkkkgAAAAAAAAAE
+kkkkkkkkgAEkkkkkkkkEkkkEgkkAkAAAEgkkkkkkkkkgEEkEEAEkkEkkkkkkkkkkkkkkkkkkkkkk
+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" />
+</span></p></div>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_pattern_viewholder">Pattern ViewHolder</h1>
+<div class="sectionbody" style="max-width:45em">
+<ul class="">
+<li>
+<span>
+Permet d'éviter d&#8217;appeler plusieurs fois findViewById
+</span>
+</li>
+<li>
+<span>
+On commence par définir un ViewHolderItem, avec les champs correspondants aux éléments d&#8217;interface auxquels on voudra accéder :
+</span>
+</li>
+</ul>
+<div class="listingblock">
+<div class="content"><div class="highlight"><pre><span></span><span class="kd">static</span> <span class="kd">class</span> <span class="nc">ViewHolderItem</span> <span class="o">{</span>
+    <span class="n">TextView</span> <span class="n">textViewItem</span><span class="o">;</span>
+    <span class="n">TextView</span> <span class="n">textViewItem2</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></div></div></div>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_pattern_viewholder_2">Pattern ViewHolder</h1>
+<div class="sectionbody" style="max-width:45em">
+<ul class="">
+<li>
+<span>
+Dans la méthode getView, on se sert alors de ce ViewHolder :
+</span>
+<ul class="">
+<li>
+<span>
+On ne fait les findViewById qu&#8217;une fois
+</span>
+</li>
+<li>
+<span>
+On n&#8217;a plus qu'à valoriser nos éléments
+</span>
+</li>
+</ul>
+</li>
+<li>
+<span>
+On utilise les méthodes <em>getTag</em> et <em>setTag</em> pour mémoriser et récupérer notre ViewHolder
+</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_pattern_viewholder_3">Pattern ViewHolder</h1>
+<div class="sectionbody" style="max-width:45em">
+<div class="listingblock">
+<div class="content"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="n">View</span> <span class="nf">getView</span><span class="o">(</span><span class="kt">int</span> <span class="n">position</span><span class="o">,</span> <span class="n">View</span> <span class="n">convertView</span><span class="o">,</span> <span class="n">ViewGroup</span> <span class="n">parent</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">ViewHolderItem</span> <span class="n">viewHolder</span><span class="o">;</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">convertView</span> <span class="o">==</span> <span class="kc">null</span><span class="o">){</span>
+        <span class="n">LayoutInflater</span> <span class="n">inflater</span> <span class="o">=</span> <span class="o">((</span><span class="n">Activity</span><span class="o">)</span> <span class="n">context</span><span class="o">).</span><span class="na">getLayoutInflater</span><span class="o">();</span>
+        <span class="n">convertView</span> <span class="o">=</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">item</span><span class="o">,</span> <span class="n">parent</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+        <span class="n">viewHolder</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ViewHolderItem</span><span class="o">();</span>
+        <span class="n">viewHolder</span><span class="o">.</span><span class="na">textViewItem</span> <span class="o">=</span> <span class="o">(</span><span class="n">TextView</span><span class="o">)</span> <span class="n">convertView</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">textViewItem</span><span class="o">);</span>
+        <span class="n">viewHolder</span><span class="o">.</span><span class="na">textViewItem2</span> <span class="o">=</span> <span class="o">(</span><span class="n">TextView</span><span class="o">)</span> <span class="n">convertView</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">textViewItem2</span><span class="o">);</span>
+        <span class="n">convertView</span><span class="o">.</span><span class="na">setTag</span><span class="o">(</span><span class="n">viewHolder</span><span class="o">);</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="n">viewHolder</span> <span class="o">=</span> <span class="o">(</span><span class="n">ViewHolderItem</span><span class="o">)</span> <span class="n">convertView</span><span class="o">.</span><span class="na">getTag</span><span class="o">();</span>
+    <span class="o">}</span>
+    <span class="n">Item</span> <span class="n">item</span> <span class="o">=</span> <span class="n">getItem</span><span class="o">(</span><span class="n">position</span><span class="o">);</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">item</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">viewHolder</span><span class="o">.</span><span class="na">textViewItem</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="n">item</span><span class="o">.</span><span class="na">text</span><span class="o">);</span>
+        <span class="n">viewHolder</span><span class="o">.</span><span class="na">textViewItem2</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="n">item</span><span class="o">.</span><span class="na">text2</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="k">return</span> <span class="n">convertView</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></div></div></div>
+</div>
+</div>
+</body>
+</html>

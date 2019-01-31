@@ -1,0 +1,204 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:17:1-91:12
+INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:17:1-91:12
+INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:17:1-91:12
+INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:17:1-91:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/e7fce481191821700cea86dc4b80dabd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/89674b3410694c21c08c256b47f8ed53/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/f0045a22bca7228a79cf18f3f6a69363/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/dde2eb59d0eac64132d7ce549958c1a4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/d27f84a10000d927a432c12011b17071/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/e31eedb1cb84eaaf5058e04d445feb8e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/ff48d68b5136439f41a6dca1e2be1a4d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/9edfefe0937e62f3b31ad2069b5c9970/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/0661c3f0af00333a7c886c7e7aab785b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a435397f82bcb8b576425edeea7530ff/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/12cc9b4b7cea032ccf475920921ccfe7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/51715d1e4076b157a04b9a7933e52efc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/5f0a0db0fbb8211fa1faae82b9912975/AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/11526ebf8e8b4d659d0bb4ab8a2420b8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ae99b25f6fc4ca937de00c7152c314bb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c8fe9cdfeba6c96afdd2d8c4f9f903ec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/af134ad64cce626715b0e06e85daa031/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/a6235451a94986d9e3436307ce348a04/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/4131dc38bdfc8b4abdee885cc91e765a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/36d31a17788b78c9fab312e684ea463d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1c203886b4997081fc3e26eb255d0ade/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/85171145338a22a539ce0950b44aa298/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:17:1-91:12
+INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:17:1-91:12
+INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:17:1-91:12
+	package
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:19:5-49
+		INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:21:5-30
+		INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:18:5-51
+	xmlns:android
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:17:11-69
+	android:versionCode
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:20:5-28
+		INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+application
+ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:32:5-89:19
+MERGED from [com.android.support:support-compat:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/5f0a0db0fbb8211fa1faae82b9912975/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/5f0a0db0fbb8211fa1faae82b9912975/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:33:9-41
+	tools:ignore
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:36:9-60
+	android:icon
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:34:9-45
+	android:allowBackup
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:32:18-44
+	android:theme
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:35:9-70
+activity#com.example.android.animationsdemo.MainActivity
+ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:38:9-44:20
+	android:label
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:39:13-45
+	android:name
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:38:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:40:13-43:29
+action#android.intent.action.MAIN
+ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:41:17-69
+	android:name
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:41:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:42:17-77
+	android:name
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:42:27-74
+activity#com.example.android.animationsdemo.CrossfadeActivity
+ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:46:9-53:20
+	android:parentActivityName
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:49:13-55
+	android:label
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:47:13-52
+	android:uiOptions
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:48:13-57
+	tools:targetApi
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:50:13-41
+	android:name
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:46:19-52
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:51:13-52:49
+	android:value
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:52:17-46
+	android:name
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:51:24-70
+activity#com.example.android.animationsdemo.CardFlipActivity
+ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:55:9-62:20
+	android:parentActivityName
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:57:13-55
+	android:label
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:56:13-52
+	tools:targetApi
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:59:13-41
+	android:theme
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:58:13-45
+	android:name
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:55:19-51
+activity#com.example.android.animationsdemo.ScreenSlideActivity
+ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:64:9-71:20
+	android:parentActivityName
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:66:13-55
+	android:label
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:65:13-55
+	android:uiOptions
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:67:13-57
+	tools:targetApi
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:68:13-41
+	android:name
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:64:19-54
+activity#com.example.android.animationsdemo.ZoomActivity
+ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:73:9-79:20
+	android:parentActivityName
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:75:13-55
+	android:label
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:74:13-47
+	tools:targetApi
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:76:13-41
+	android:name
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:73:19-47
+activity#com.example.android.animationsdemo.LayoutChangesActivity
+ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:81:9-87:20
+	android:parentActivityName
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:83:13-55
+	android:label
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:82:13-57
+	tools:targetApi
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:84:13-41
+	android:name
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml:81:19-56
+uses-sdk
+INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:support-fragment:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/e7fce481191821700cea86dc4b80dabd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/e7fce481191821700cea86dc4b80dabd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/89674b3410694c21c08c256b47f8ed53/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/89674b3410694c21c08c256b47f8ed53/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/f0045a22bca7228a79cf18f3f6a69363/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/f0045a22bca7228a79cf18f3f6a69363/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/dde2eb59d0eac64132d7ce549958c1a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/dde2eb59d0eac64132d7ce549958c1a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/d27f84a10000d927a432c12011b17071/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/d27f84a10000d927a432c12011b17071/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/e31eedb1cb84eaaf5058e04d445feb8e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/e31eedb1cb84eaaf5058e04d445feb8e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/ff48d68b5136439f41a6dca1e2be1a4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/ff48d68b5136439f41a6dca1e2be1a4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/9edfefe0937e62f3b31ad2069b5c9970/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/9edfefe0937e62f3b31ad2069b5c9970/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/0661c3f0af00333a7c886c7e7aab785b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/0661c3f0af00333a7c886c7e7aab785b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a435397f82bcb8b576425edeea7530ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a435397f82bcb8b576425edeea7530ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/12cc9b4b7cea032ccf475920921ccfe7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/12cc9b4b7cea032ccf475920921ccfe7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/51715d1e4076b157a04b9a7933e52efc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/51715d1e4076b157a04b9a7933e52efc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/5f0a0db0fbb8211fa1faae82b9912975/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/5f0a0db0fbb8211fa1faae82b9912975/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/11526ebf8e8b4d659d0bb4ab8a2420b8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/11526ebf8e8b4d659d0bb4ab8a2420b8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ae99b25f6fc4ca937de00c7152c314bb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ae99b25f6fc4ca937de00c7152c314bb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c8fe9cdfeba6c96afdd2d8c4f9f903ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c8fe9cdfeba6c96afdd2d8c4f9f903ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/af134ad64cce626715b0e06e85daa031/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/af134ad64cce626715b0e06e85daa031/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/a6235451a94986d9e3436307ce348a04/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/a6235451a94986d9e3436307ce348a04/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/4131dc38bdfc8b4abdee885cc91e765a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/vincent/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/4131dc38bdfc8b4abdee885cc91e765a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/36d31a17788b78c9fab312e684ea463d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/36d31a17788b78c9fab312e684ea463d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1c203886b4997081fc3e26eb255d0ade/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1c203886b4997081fc3e26eb255d0ade/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/85171145338a22a539ce0950b44aa298/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/vincent/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/85171145338a22a539ce0950b44aa298/AndroidManifest.xml:20:5-44
+INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+		ADDED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vincent/projects/iut-android/AnimationsDemo/app/src/main/AndroidManifest.xml

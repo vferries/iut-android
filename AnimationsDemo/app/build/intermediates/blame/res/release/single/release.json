@@ -1,0 +1,274 @@
+[
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-hdpi_ic_action_new.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-hdpi/ic_action_new.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_notification_action_tombstone.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_notification_template_part_chronometer.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/animator_card_flip_right_in.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/animator/card_flip_right_in.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout-v16_notification_template_custom_big.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/layout-v16/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout-v21_notification_action.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_activity_card_flip.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/layout/activity_card_flip.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout-v21_notification_action_tombstone.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-nodpi_image1.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-nodpi/image1.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_activity_zoom.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/layout/activity_zoom.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-mdpi_ic_list_remove.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-mdpi/ic_list_remove.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-mdpi_ic_action_photo.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-mdpi/ic_action_photo.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_activity_screen_slide.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/layout/activity_screen_slide.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable_notification_bg.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-nodpi_image2.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-nodpi/image2.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout-v21_notification_template_icon_group.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-hdpi_ic_list_remove.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-hdpi/ic_list_remove.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-hdpi_ic_action_info.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-hdpi/ic_action_info.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/animator_card_flip_left_out.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/animator/card_flip_left_out.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_activity_main.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_notification_template_icon_group.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-mdpi_ic_action_info.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-mdpi/ic_action_info.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_notification_template_custom_big.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/layout/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable_notification_icon_background.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-xhdpi_ic_action_photo.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-xhdpi/ic_action_photo.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout-v21_notification_template_custom_big.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_fragment_card_front.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/layout/fragment_card_front.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-xhdpi_ic_action_new.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-xhdpi/ic_action_new.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/animator_card_flip_left_in.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/animator/card_flip_left_in.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-nodpi_thumb2.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-nodpi/thumb2.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_notification_action.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-mdpi_ic_action_new.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-mdpi/ic_action_new.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable_notification_tile_bg.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_excerpt_content.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/layout/excerpt_content.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/menu_activity_layout_changes.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/menu/activity_layout_changes.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_notification_template_part_time.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-xhdpi_ic_action_info.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-xhdpi/ic_action_info.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable_notification_bg_low.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_activity_layout_changes.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/layout/activity_layout_changes.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_fragment_screen_slide_page.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/layout/fragment_screen_slide_page.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-v21_notification_action_background.xml.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_activity_crossfade.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/layout/activity_crossfade.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-nodpi_thumb1.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-nodpi/thumb1.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-hdpi_ic_action_photo.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-hdpi/ic_action_photo.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-mdpi_ic_launcher.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-xhdpi_ic_list_remove.png.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/drawable-xhdpi/ic_list_remove.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/menu_activity_crossfade.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/menu/activity_crossfade.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_list_item_example.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/layout/list_item_example.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-hdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/animator_card_flip_right_out.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/animator/card_flip_right_out.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/layout_fragment_card_back.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/layout/fragment_card_back.xml"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/home/vincent/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f304c7bfc76dea7f2b1239f2dd6974a2/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/home/vincent/projects/iut-android/AnimationsDemo/app/build/intermediates/res/merged/release/menu_activity_screen_slide.xml.flat",
+        "source": "/home/vincent/projects/iut-android/AnimationsDemo/app/src/main/res/menu/activity_screen_slide.xml"
+    }
+]

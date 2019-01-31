@@ -1,0 +1,35 @@
+body {
+	color: #777;
+}
+
+ul > li > *, ol > li > * {
+	color: #3f3f3f;
+}
+
+h1, h2 {
+	line-height: 64px;
+	color: #fff;
+	border-bottom: none;
+}
+
+div.slide {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+div.sectionbody {
+	padding-left: 20px;
+}
+
+div.slide h1 {
+	padding-left: 20px;
+	background-color: #03a9f4;
+	margin-right: 0;
+	border-bottom: 5px solid #0089d4;
+}
+
+.first-slide {
+	background-image: url(images/android.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}

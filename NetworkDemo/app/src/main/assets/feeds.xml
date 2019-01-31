@@ -1,0 +1,2457 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">Newest questions tagged android - Stack Overflow</title>
+    <link rel="self" href="http://stackoverflow.com/feeds/tag?tagnames=android&amp;sort=newest" type="application/atom+xml" />
+    <link rel="alternate" href="http://stackoverflow.com/questions/tagged/?tagnames=android&amp;sort=newest" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2016-01-14T17:57:03Z</updated>
+    <id>http://stackoverflow.com/feeds/tag?tagnames=android&amp;sort=newest</id>
+    <creativeCommons:license>http://www.creativecommons.org/licenses/by-sa/3.0/rdf</creativeCommons:license>
+    <entry>
+        <id>http://stackoverflow.com/q/34796383</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Android Fail to Connect to Camera Service?</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="camera" />
+        <category scheme="http://stackoverflow.com/tags" term="android-camera" />
+        <author>
+            <name>AngryCupcake274</name>
+            <uri>http://stackoverflow.com/users/4258856</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796383/android-fail-to-connect-to-camera-service" />
+        <published>2016-01-14T17:50:15Z</published>
+        <updated>2016-01-14T17:50:15Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I am making an app that needs to use the camera flash.  My code will be below this post, but I get a &lt;code&gt;java.lang.RuntimeException: Fail to connect to camera service&lt;/code&gt; when I try to open the camera.  The error comes when the &lt;code&gt;Camera.open();&lt;/code&gt; method is called.&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;Camera camera = Camera.open();
+            Camera.Parameters parameters = camera.getParameters();
+            parameters.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
+            camera.setParameters(parameters);
+            camera.startPreview();
+            &lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796378</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Making a Bitmap clickable using onTouchEvent - Android</title>
+        <category scheme="http://stackoverflow.com/tags" term="java" />
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="bitmap" />
+        <category scheme="http://stackoverflow.com/tags" term="surfaceview" />
+        <author>
+            <name>LukeHxH</name>
+            <uri>http://stackoverflow.com/users/5790987</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796378/making-a-bitmap-clickable-using-ontouchevent-android" />
+        <published>2016-01-14T17:49:48Z</published>
+        <updated>2016-01-14T17:49:48Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I&#39;ve created a SurfaceView and I&#39;ve put an onTouchEvent on it, and the MotionEvent gets the whole screen, like this:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;@Override
+            public boolean onTouchEvent (MotionEvent event) {
+
+            if(event.getAction()==MotionEvent.ACTION_DOWN){
+            if (!player.getPlaying()&amp;amp;&amp;amp; newGameCreated &amp;amp;&amp;amp; reset) {
+            player.setPlaying(true);
+            player.fly(true);
+            lives = 3;
+            }
+            if (player.getPlaying()) {
+            if (!started) started = true;
+            reset = false;
+            player.fly(true);
+            }
+            return true;
+            }
+            if (event.getAction()==MotionEvent.ACTION_UP) {
+            player.fly(false);
+            return true;
+            }
+
+            // This is inside a class that extends SurfaceView
+
+            return super.onTouchEvent(event);
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;And I need to check touch on bitmap or not using x-y position of touch and do a different action if the condition is true, how can I do this on this onTouchEvent method?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796356</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">How to use JSON result as the data input for GraphView?</title>
+        <category scheme="http://stackoverflow.com/tags" term="php" />
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="arrays" />
+        <category scheme="http://stackoverflow.com/tags" term="json" />
+        <category scheme="http://stackoverflow.com/tags" term="android-graphview" />
+        <author>
+            <name>Rex Chau</name>
+            <uri>http://stackoverflow.com/users/5542938</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796356/how-to-use-json-result-as-the-data-input-for-graphview" />
+        <published>2016-01-14T17:48:29Z</published>
+        <updated>2016-01-14T17:48:29Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;This is what it returned from the .php url.&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;[[{&quot;date0&quot;:&quot;2016-01-20&quot;,&quot;sgrcon0&quot;:&quot;48&quot;},{&quot;date1&quot;:&quot;2016-01-13&quot;,&quot;sgrcon1&quot;:&quot;56&quot;},{&quot;date2&quot;:&quot;2016-01-04&quot;,&quot;sgrcon2&quot;:&quot;53&quot;},{&quot;date3&quot;:&quot;2016-01-04&quot;,&quot;sgrcon3&quot;:&quot;53&quot;},{&quot;date4&quot;:&quot;2016-01-04&quot;,&quot;sgrcon4&quot;:&quot;53&quot;},{&quot;date5&quot;:&quot;2016-01-04&quot;,&quot;sgrcon5&quot;:&quot;53&quot;},{&quot;date6&quot;:&quot;2016-01-14&quot;,&quot;sgrcon6&quot;:&quot;89&quot;}]]
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;My question is how can I use them as the data input for making a line chart using   GraphView? I tried to use JSONArray to get the data into string first. But the code is wrong and I have no idea how to pass the data into GraphView DataPoint.    &lt;/p&gt;
+
+            &lt;p&gt;Here is the code of the .java.&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;public class BloodGlucose extends AppCompatActivity {
+
+
+            ImageButton FAB;
+            TextView textViewResult;
+            private Button buttonGet;
+            private EditText editPatientID;
+            private ProgressDialog loading;
+
+            @Override
+            protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_blood_glucose);
+
+            FAB = (ImageButton) findViewById(R.id.imageButton);
+
+            FAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+            Intent i = new Intent(BloodGlucose.this, AddBloodGlucoseRecord.class);
+            startActivity(i);
+
+
+            }
+            });
+            textViewResult = (TextView) findViewById(R.id.textViewResult);
+            buttonGet = (Button) findViewById(R.id.buttonGet);
+            editPatientID = (EditText) findViewById(R.id.editPatientID);
+            buttonGet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            getData();
+            }
+            });
+
+
+
+
+            }
+
+
+            private void getData() {
+
+
+            String pid = editPatientID.getText().toString().trim();
+            if(pid.equals(&quot;&quot;))
+
+            {
+            Toast.makeText(this, &quot;Please enter an id&quot;, Toast.LENGTH_LONG).show();
+            return;
+            }
+
+            loading= ProgressDialog.show(this, &quot;Please wait...&quot;, &quot;Fetching...&quot;, false, false);
+
+            String url = Config.DATA_URLBloodGlucose + editPatientID.getText().toString().trim();
+
+            StringRequest stringRequest = new StringRequest(url, new Response.Listener&amp;lt;String&amp;gt;() {
+            @Override
+            public void onResponse(String response) {
+            loading.dismiss();
+            showJSON();
+            }
+            },
+            new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+            Toast.makeText(BloodGlucose.this, error.getMessage().toString(), Toast.LENGTH_LONG).show();
+            }
+            });
+
+            RequestQueue requestQueue = Volley.newRequestQueue(this);
+            requestQueue.add(stringRequest);
+            }
+
+
+
+            private void  showJSON(){
+            String date=&quot;&quot;;
+
+            JSONObject jsonObject = new JSONObject();
+            //JSONArray result = jsonObject.getJSONArray(Config.KEY_RESULT);
+            //JSONObject c = result.getJSONObject(0);
+            Iterator&amp;lt;String&amp;gt; iter = jsonObject.keys();
+            while (iter.hasNext()) {
+            String key = iter.next();
+            try {
+
+            JSONArray value = jsonObject.getJSONArray(key);
+            date = value.getString();
+
+            }
+
+            catch (JSONException e) {
+            e.printStackTrace();
+
+            }
+
+
+
+            textViewResult.setText(date);
+
+            }
+
+            //GarphView Sample
+
+            GraphView graph = (GraphView) findViewById(R.id.graph);
+            LineGraphSeries&amp;lt;DataPoint&amp;gt; series = new LineGraphSeries&amp;lt;DataPoint&amp;gt;(new DataPoint[] {
+            new DataPoint(0, 1),
+            new DataPoint(1, 5),
+            new DataPoint(2, 3),
+            new DataPoint(3, 2),
+            new DataPoint(4, 6)
+            });
+            graph.addSeries(series);
+            // set date label formatter
+            //    graph.getGridLabelRenderer().setLabelFormatter(new DateAsXAxisLabelFormatter(getActivity()));
+            //   graph.getGridLabelRenderer().setNumHorizontalLabels(3); // only 4 because of the space
+
+            // set manual x bounds to have nice steps
+            //graph.getViewport().setMinX(d1.getTime());
+            //  graph.getViewport().setMaxX(d3.getTime());
+            //  graph.getViewport().setXAxisBoundsManual(true);
+
+            }
+
+
+
+
+
+            @Override
+            public boolean onCreateOptionsMenu(Menu menu) {
+            // Inflate the menu; this adds items to the action bar if it is present.
+            getMenuInflater().inflate(R.menu.menu_blood_glucose, menu);
+            return true;
+            }
+
+            @Override
+            public boolean onOptionsItemSelected(MenuItem item) {
+            // Handle action bar item clicks here. The action bar will
+            // automatically handle clicks on the Home/Up button, so long
+            // as you specify a parent activity in AndroidManifest.xml.
+            int id = item.getItemId();
+
+            //noinspection SimplifiableIfStatement
+            if (id == R.id.action_settings) {
+            return true;
+            }
+
+            return super.onOptionsItemSelected(item);
+            }
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796336</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">How to make a ListView from a Specific List&lt;ParseUser&gt;?</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="parsing" />
+        <author>
+            <name>witlex</name>
+            <uri>http://stackoverflow.com/users/5790817</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796336/how-to-make-a-listview-from-a-specific-listparseuser" />
+        <published>2016-01-14T17:46:51Z</published>
+        <updated>2016-01-14T17:46:51Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I&#39;m trying to make a listview from a list containing ParseUser.
+            My search class returns: List
+            Parse SDK 1.12 does not support ParseQueryAdapter any more and the profile adapter function does not take ParseUser. &lt;/p&gt;
+
+            &lt;p&gt;I tried to query the ParseObjects from the &quot;_User&quot; Class of parse but it wouldn&#39;t return the objects. &lt;/p&gt;
+
+            &lt;p&gt;So i&#39;m working in circels, if I try to get the Userinformation in ParseObject I don&#39;t get it. If I work with ParseUser I can&#39;t make the ListView. Does someone know a way to get around it? &lt;/p&gt;
+
+            &lt;p&gt;I allready checked this questions.&lt;/p&gt;
+
+            &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/32475596/parseuser-username-adapter-in-android-listview-doesnt-show-data&quot;&gt;ParseUser Username Adapter in Android ListView doesn&amp;#39;t show Data&lt;/a&gt;&lt;/p&gt;
+
+            &lt;p&gt;and &lt;/p&gt;
+
+            &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/29870415/how-to-fetch-the-list-of-users-from-parseuser-table-and-show-the-it-in-list-view&quot;&gt;How to fetch the list of users from ParseUser table and show the it in list view in andorid&lt;/a&gt;&lt;/p&gt;
+
+            &lt;p&gt;But it doesn&#39;t work with a specified List of Users.&lt;/p&gt;
+
+            &lt;p&gt;This is my code.&lt;/p&gt;
+
+            &lt;p&gt;Java:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;public class MainActivity extends ActionBarActivity {
+
+            Search search;
+            EditText mCityField;
+            List&amp;lt;ParseUser&amp;gt; mAccountList;
+
+            @Override
+            protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+
+            ParseAnalytics.trackAppOpenedInBackground(getIntent());
+
+            mCityField = (EditText)findViewById(R.id.mCityField);
+
+
+            }
+
+            public void searchCity(View v){
+            if(mCityField.getText().toString().length()!=0){
+            mAccountList = search.searchUsers(mCityField.getText().toString());
+
+
+
+            Log.i(&quot;main&quot;, &quot;succesfully searched yo mamma&quot;);
+            }
+            else{
+            Toast.makeText(MainActivity.this, &quot;You did not enter a city!&quot;, Toast.LENGTH_SHORT).show();
+            }
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;This is my Search Class: &lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;public class Search {
+
+
+            List&amp;lt;ParseUser&amp;gt; locals = null;
+
+
+            public List&amp;lt;ParseUser&amp;gt; searchUsers(String city){
+            ParseQuery&amp;lt;ParseUser&amp;gt; query = ParseUser.getQuery();
+            query.whereEqualTo(&quot;City&quot;, city);
+            query.findInBackground(new FindCallback&amp;lt;ParseUser&amp;gt;() {
+            public void done(List&amp;lt;ParseUser&amp;gt; userList, ParseException e) {
+            if (e == null) {
+            Log.i(&quot;main&quot;, &quot;inside if loop&quot; + userList);
+
+            for (ParseUser user : userList) {
+            Log.i(&quot;main&quot;, &quot;inside for loop&quot;);
+            String username = user.getString(&quot;username&quot;);
+            Log.i(&quot;main&quot;, &quot;username &quot; + username);
+
+            }
+            locals = userList;
+            } else {
+            Log.d(&quot;score&quot;, &quot;Error: &quot; + e.getMessage());
+            }
+            }
+            });
+            return locals;
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;}&lt;/p&gt;
+
+            &lt;p&gt;Adapter CLass: &lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;public class ProfileAdapter extends ParseQueryAdapter&amp;lt;ParseObject&amp;gt; {
+
+
+
+            public ProfileAdapter(Context context, QueryFactory&amp;lt;ParseObject&amp;gt; queryFactory) {
+            super(context, queryFactory);
+            }
+
+            @Override
+            public View getItemView(final ParseUser user, View v, ViewGroup parent) {
+            // build your views
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;}&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796283</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Still not able to access file in external storage even after requesting permission in app (Marshmallow), need to relaunch app to gain access?</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="marshmallow" />
+        <author>
+            <name>Shawn Chen</name>
+            <uri>http://stackoverflow.com/users/5790862</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796283/still-not-able-to-access-file-in-external-storage-even-after-requesting-permissi" />
+        <published>2016-01-14T17:44:17Z</published>
+        <updated>2016-01-14T17:44:17Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I am testing in emulator using Marshmallow. Here&#39;s what I did: when first launching the app, I checked if the Camera / Storage permission is on or not. If it&#39;s &quot;NOT&quot;, I will request the permission for these: &lt;strong&gt;Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE&lt;/strong&gt;. In later screen, I launched a picker that provides option for taking phone from camera or loading from gallery. During the process, the image is saved in external storage.&lt;/p&gt;
+
+            &lt;p&gt;Here&#39;s what I did:&lt;/p&gt;
+
+            &lt;p&gt;I granted both permission for Camera and Storage when the system dialog prompt. Then, I select to load from gallery. During the process, at some point, I call this method to get the image:&lt;/p&gt;
+
+            &lt;p&gt;&lt;strong&gt;Bitmap scaledBitmap = BitmapFactory.decodeFile(imagePath, options)&lt;/strong&gt;;&lt;/p&gt;
+
+            &lt;p&gt;where &lt;strong&gt;imagePath&lt;/strong&gt; is the path in the external storage. And in Marshmallow, the above line generate this error:&lt;/p&gt;
+
+            &lt;p&gt;Unable to decode stream: java.io.FileNotFoundException: &lt;strong&gt;/storage/1E03-0606/IMG_1452715979191.jpg&lt;/strong&gt;: open failed: EACCES (&lt;strong&gt;Permission denied&lt;/strong&gt;)&lt;/p&gt;
+
+            &lt;p&gt;From above error message, it seems that the permission to access the storage is still denied even after I granted the permission for Storage ( I double checked in &lt;strong&gt;Setting&lt;/strong&gt; after clicking &quot;Allow&quot; in the system dialog, both Camera and Storage becomes turned on.)&lt;/p&gt;
+
+            &lt;p&gt;I did further check for the imagePath to make sure it exists and is a file:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;File f = new File(imagePath);
+            if(f.exists() &amp;amp;&amp;amp; f.isFile()){
+            System.out.println(&quot;file \&quot;&quot; +  imagePath + &quot;\&quot; exists &amp;amp; is a file.&quot; );
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;So this means that I did have the file generated in storage, but still the permission is denied even I granted it already from the system dialog.&lt;/p&gt;
+
+            &lt;p&gt;The observation: I killed the app and launched it again. Now the Camera &amp;amp; Storage permissions are on since I granted it from the system dialog previously, and this time, the above code works :&lt;/p&gt;
+
+            &lt;p&gt;&lt;strong&gt;Bitmap scaledBitmap = BitmapFactory.decodeFile(imagePath, options)&lt;/strong&gt;;&lt;/p&gt;
+
+            &lt;p&gt;So it looks like when requesting a permission programmatically in the app, it does appear right away if checking in &lt;strong&gt;Setting&lt;/strong&gt;, but the actual grant won&#39;t take effect until you shut down the app and relaunch it again??!!&lt;/p&gt;
+
+            &lt;p&gt;I read somewhere, if the permission is revoked manually through &lt;strong&gt;Setting&lt;/strong&gt; when your app is running, the app will terminate itself.&lt;/p&gt;
+
+            &lt;p&gt;Thanks,
+            Shawn&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796266</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">no such column: task_date (code 1):</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="sqlite" />
+        <category scheme="http://stackoverflow.com/tags" term="android-sqlite" />
+        <author>
+            <name>o.m.k</name>
+            <uri>http://stackoverflow.com/users/5666356</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796266/no-such-column-task-date-code-1" />
+        <published>2016-01-14T17:43:31Z</published>
+        <updated>2016-01-14T17:55:21Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;no such column: task_date (code 1): , while compiling: SELECT * FROM tasks_table WHERE task_status = ? OR task_status = ? ORDER BY task_date
+            checked the code many time and couldn&#39;t find the error!!&lt;/p&gt;
+
+            &lt;p&gt;DBHelper&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;public class DBHelper extends SQLiteOpenHelper {
+
+            public static final int DATABASE_VERSION = 1;
+
+            public static final String DATABASE_NAME = &quot;reminder_database&quot;;
+
+            public static final String TASKS_TABLE = &quot;tasks_table&quot;;
+
+            public static final String TASK_TITLE_COLUMN = &quot;task_title&quot;;
+            public static final String TASK_DATE_COLUMN = &quot;task_date&quot;;
+            public static final String TASK_PRIORITY_COLUMN = &quot;task_priority&quot;;
+            public static final String TASK_STATUS_COLUMN = &quot;task_status&quot;;
+            public static final String TASK_TIME_STAMP_COLUMN = &quot;task_time_stamp&quot;;
+
+            private static final String TASKS_TABLE_CREATE_SCRIPT =  &quot;CREATE TABLE &quot;
+            + TASKS_TABLE + &quot; (&quot; + BaseColumns._ID + &quot; INTEGER PRIMARY KEY AUTOINCREMENT, &quot;
+            + TASK_TITLE_COLUMN + &quot; TEXT NOT NULL, &quot;
+            + TASK_DATE_COLUMN + &quot; LONG, &quot; + TASK_PRIORITY_COLUMN + &quot; INTEGER, &quot;
+            + TASK_STATUS_COLUMN + &quot; INTEGER, &quot; + TASK_TIME_STAMP_COLUMN + &quot; LONG);&quot;;
+
+
+            public static final String SELECTION_STATUS = DBHelper.TASK_STATUS_COLUMN + &quot; = ?&quot;;
+            public static final String SELECTION_TIME_STAMP = TASK_TIME_STAMP_COLUMN + &quot; = ?&quot;;
+
+            private DBQueryManager dbQueryManager;
+            private DBUpdateManager dbUpdateManager;
+
+
+
+            public DBHelper(Context context) {
+            super(context, DATABASE_NAME, null, DATABASE_VERSION);
+            dbQueryManager = new DBQueryManager(getReadableDatabase());
+            dbUpdateManager = new DBUpdateManager(getWritableDatabase());
+            }
+
+            @Override
+            public void onCreate(SQLiteDatabase db) {
+            db.execSQL(TASKS_TABLE_CREATE_SCRIPT);
+
+            }
+
+            @Override
+            public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+            db.execSQL(&quot;DROP TABLE &quot; + TASKS_TABLE);
+            onCreate(db);
+            }
+
+            public void saveTask(ModelTask task){
+
+            ContentValues newValues = new ContentValues();
+
+            newValues.put(TASK_TITLE_COLUMN,task.getTitle());
+            newValues.put(TASK_DATE_COLUMN,task.getDate());
+            newValues.put(TASK_STATUS_COLUMN,task.getStatus());
+            newValues.put(TASK_PRIORITY_COLUMN,task.getPriority());
+            newValues.put(TASK_TIME_STAMP_COLUMN, task.getTimeStamp());
+
+            getWritableDatabase().insert(TASKS_TABLE, null, newValues);
+
+            }
+
+            public DBUpdateManager update() {
+            return dbUpdateManager;
+            }
+
+            public DBQueryManager query() {
+            return dbQueryManager;
+            }
+
+            public void removeTask(long timeStamp){
+            getWritableDatabase().delete(TASKS_TABLE,SELECTION_TIME_STAMP,new String[]{Long.toString(timeStamp)});
+
+            }
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;DBQueryManager&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;public class DBQueryManager {
+            private SQLiteDatabase sqLiteDatabase;
+
+            public DBQueryManager(SQLiteDatabase sqLiteDatabase) {
+            this.sqLiteDatabase = sqLiteDatabase;
+            }
+
+
+            public ModelTask getTask(long timeStamp){
+            ModelTask modelTask = null;
+            Cursor c = sqLiteDatabase.query(DBHelper.TASKS_TABLE,null,DBHelper.SELECTION_TIME_STAMP,
+            new String[]{Long.toString(timeStamp)},null,null,null);
+
+            if (c.moveToFirst()){
+
+            String title = c.getString(c.getColumnIndex(DBHelper.TASK_TITLE_COLUMN));
+            long date =  c.getLong(c.getColumnIndex(DBHelper.TASK_DATE_COLUMN));
+            int priority = c.getInt(c.getColumnIndex(DBHelper.TASK_PRIORITY_COLUMN));
+            int status = c.getInt(c.getColumnIndex(DBHelper.TASK_STATUS_COLUMN));
+            modelTask = new ModelTask(title,date,priority,status,timeStamp);
+
+            }
+            c.close();
+            return modelTask;
+
+            }
+
+
+            public List&amp;lt;ModelTask&amp;gt; getTask(String selection , String[] selectionArgs,String orderBy){
+            List&amp;lt;ModelTask&amp;gt; tasks = new ArrayList&amp;lt;&amp;gt;();
+
+            Cursor c = sqLiteDatabase.query(DBHelper.TASKS_TABLE, null,selection,selectionArgs,null,null,orderBy);
+
+            if (c.moveToFirst()){
+            do {
+
+            String title = c.getString(c.getColumnIndex(DBHelper.TASK_TITLE_COLUMN));
+            long date =  c.getLong(c.getColumnIndex(DBHelper.TASK_DATE_COLUMN));
+            int priority = c.getInt(c.getColumnIndex(DBHelper.TASK_PRIORITY_COLUMN));
+            int status = c.getInt(c.getColumnIndex(DBHelper.TASK_STATUS_COLUMN));
+            long timeStamp = c.getInt(c.getColumnIndex(DBHelper.TASK_TIME_STAMP_COLUMN));
+
+            ModelTask modelTask = new ModelTask(title,date,priority,status,timeStamp);
+            tasks.add(modelTask);
+
+
+
+            }while (c.moveToNext());
+            }
+            c.close();
+            return tasks;
+
+
+            }
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796262</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Hello, my viewpager is not swiping?</title>
+        <category scheme="http://stackoverflow.com/tags" term="java" />
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="intellij-idea" />
+        <author>
+            <name>Ariel Elie Kotch</name>
+            <uri>http://stackoverflow.com/users/5717180</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796262/hello-my-viewpager-is-not-swiping" />
+        <published>2016-01-14T17:43:23Z</published>
+        <updated>2016-01-14T17:43:23Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;My viewpager does not appear to be working also, if I press on a tab it only responds sometimes.
+            Here is my code for my main activity below&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;public class MainActivity extends ActionBarActivity {
+            private Toolbar mToolbar;
+            private ViewPager mPager;
+            private SlidingTabLayout mTabs;
+
+
+            private static final String KEY_FRAGMENT=&quot;position&quot;;
+
+
+            @Override
+            protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main_appbar);
+
+            mToolbar=(Toolbar)findViewById(R.id.app_bar);
+            setSupportActionBar(mToolbar);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+            NavigationFragment drawerlayout=(NavigationFragment)
+            getSupportFragmentManager().findFragmentById(R.id.fragment_navigation);
+            drawerlayout.setUp(R.id.fragment_navigation, (DrawerLayout) findViewById(R.id.drawer_layout), mToolbar);
+            mPager=(ViewPager)findViewById(R.id.pager);
+            mPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+            mTabs=(SlidingTabLayout)findViewById(R.id.tabs);
+            mTabs.setDistributeEvenly(true);
+            mTabs.setCustomTabView(R.layout.custom_tab, R.id.tabText);
+            //sets accent color
+            mTabs.setCustomTabColorizer(new SlidingTabLayout.TabColorizer(){
+            @Override
+            public int getIndicatorColor(int position) {
+            return getResources().getColor(R.color.colorAccent);
+            }
+            });
+            mTabs.setViewPager(mPager);
+
+            }
+
+            @Override
+            public boolean onCreateOptionsMenu(Menu menu) {
+            getMenuInflater().inflate(R.menu.menu_main, menu);
+            return true;
+            }
+
+            @Override
+            public boolean onOptionsItemSelected(MenuItem item) {
+            int id = item.getItemId();
+            if (id == R.id.action_settings) {
+            return true;
+            }
+            if(id==R.id.navigate){
+            startActivity(new Intent(this, NavigateTo.class));
+            }
+
+            return super.onOptionsItemSelected(item);
+            }
+
+
+            class MyPagerAdapter extends FragmentPagerAdapter {
+            int icons[]={R.drawable.ic_launcher,R.drawable.ic_launcher,R.drawable.ic_launcher};
+            String[]tabText=getResources().getStringArray(R.array.tabs);
+            String[]tabs;
+
+            public MyPagerAdapter(FragmentManager fm) {
+            super(fm);
+            tabs=getResources().getStringArray(R.array.tabs);
+            }
+
+            @Override
+            public Fragment getItem(int position) {
+            MyFragment myFragment=MyFragment.getInstance(position);
+
+            return myFragment;
+            }
+
+            @Override
+            public CharSequence getPageTitle(int position) {
+            Drawable drawable=getResources().getDrawable(icons[position]);
+            drawable.setBounds(0,0,100,100);
+            //must embedded image in text because we only have a CharSequence
+            ImageSpan imageSpan=new ImageSpan(drawable);
+            //spannable is text that contains an image
+            SpannableString spannableString=new SpannableString(&quot; &quot;);
+            spannableString.setSpan(imageSpan,0,spannableString.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            return spannableString;
+            }
+
+            @Override
+            public int getCount() {
+            return 3;
+            }
+            //constructing a fragment class in the MainActivity(UPDATE THIS)
+            }
+            public static class MyFragment extends Fragment{
+            private TextView textview;
+            //in position represents the position that is shown inside the fragment
+            public static MyFragment getInstance(int position){
+            MyFragment myFragment=new MyFragment();
+            Bundle args=new Bundle();
+            //UPDATE PUT A KEY IN FOR &quot;position&quot;
+            args.putInt(KEY_FRAGMENT,position);
+            myFragment.setArguments(args);
+            return myFragment;
+            }
+
+            @Override
+            public View onCreateView(LayoutInflater inflater,@Nullable ViewGroup container,@Nullable Bundle savedInstanceState) {
+            View layout=inflater.inflate(R.layout.my_fragment, container, false);
+            textview=(TextView)layout.findViewById(R.id.position);
+            Bundle bundle=getArguments();
+            if(bundle!=null){
+            System.out.println(&quot;not null&quot;);
+            textview.setText(&quot;The Page Currently Selected is&quot;+bundle.getInt(KEY_FRAGMENT));
+            }
+            System.out.println(&quot; null&quot;);
+            return layout;
+
+            }
+            }
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;Also I am using googles API for their slidingtablayout and sliding tab strip. &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796254</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">How to send notification from android to spacific users</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="push-notification" />
+        <category scheme="http://stackoverflow.com/tags" term="google-cloud-messaging" />
+        <author>
+            <name>user3714029</name>
+            <uri>http://stackoverflow.com/users/3714029</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796254/how-to-send-notification-from-android-to-spacific-users" />
+        <published>2016-01-14T17:42:57Z</published>
+        <updated>2016-01-14T17:42:57Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;How to send data from android to specific user of my app&lt;/p&gt;
+
+            &lt;p&gt;My scenario is that
+            There are three users in my app&lt;/p&gt;
+
+            &lt;p&gt;1- Fazal
+            2- Ali
+            3- Haider&lt;/p&gt;
+
+            &lt;p&gt;how to send notification from Fazal to Haider in android&lt;/p&gt;
+
+            &lt;p&gt;I can&#39;t find any tutorial on google and Youtube&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796238</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Android Wallpaper center bug</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="center" />
+        <category scheme="http://stackoverflow.com/tags" term="wallpaper" />
+        <category scheme="http://stackoverflow.com/tags" term="lollipop" />
+        <author>
+            <name>Lidius</name>
+            <uri>http://stackoverflow.com/users/5780706</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796238/android-wallpaper-center-bug" />
+        <published>2016-01-14T17:42:06Z</published>
+        <updated>2016-01-14T17:47:44Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I have my app in which there&#39;s functionality to change the wallpaper of the home screen of device. To center the image across the pages I draw a canvas with the &lt;code&gt;windowsManager.getDesiredMinimumWidth()&lt;/code&gt; &amp;amp; &lt;code&gt;windowsManager.getDesiredMinimumHeight()&lt;/code&gt;, like this:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;final Bitmap blank = createNewBitmap(wallpaperManager.getDesiredMinimumWidth(),
+            wallpaperManager.getDesiredMinimumHeight());
+
+            final Bitmap overlay = wallpaperBitmapManager.overlayIntoCentre(blank, wallpaperImage);
+
+            wallpaperManager.setBitmap(overlay);
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;And the overlayIntoCentre method:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;public Bitmap overlayIntoCentre(@NonNull final Bitmap bmOverlay, @NonNull final Bitmap bmp2, final int centerFactor) {
+            final Canvas canvas = new Canvas(bmOverlay);
+
+
+            // overlay the second in the center of the first
+            canvas.drawBitmap(bmp2, bmOverlay.getWidth() / centerFactor - bmp2.getWidth() / centerFactor,
+            bmOverlay.getHeight() / 2 - bmp2.getHeight() / 2, null);
+
+            return bmOverlay;
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;My problem is that on &lt;strong&gt;Lollipop&lt;/strong&gt;, this is working bad, it does not center the image for some reason if I have 3 pages, and even worse, if I have just one page, it shows me only half the image and half the screen blank. The same code works just fine for a KitKat.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796217</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">How does security work in the Google App Engine?</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="ios" />
+        <category scheme="http://stackoverflow.com/tags" term="google-app-engine" />
+        <category scheme="http://stackoverflow.com/tags" term="google-oauth" />
+        <category scheme="http://stackoverflow.com/tags" term="google-cloud-endpoints" />
+        <author>
+            <name>Blane Townsend</name>
+            <uri>http://stackoverflow.com/users/560145</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796217/how-does-security-work-in-the-google-app-engine" />
+        <published>2016-01-14T17:40:53Z</published>
+        <updated>2016-01-14T17:40:53Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I am making a Google App Engine application that is going to use cloud endpoints and then have an iOS and Android App access those cloud endpoints. I&#39;m kind of freaking out about the security part of this process though. It seems as though the security of Google App Engine is based off of their Users API and that you make API methods secure by saying they have to be logged in using the User API. One of my concerns is that the API Explorer is visible to the world! So, couldn&#39;t somebody just go to the API Explorer and enter random stuff spamming and messing up the data? Also, it&#39;s ridiculous to say that anybody who wants to use your app must have and login with a Google account! I&#39;ve looked into EngineAuth, but could somebody explain exactly how that works and what I&#39;d have to do to get it work with iOS and Android? Any help here would be much appreciated. I&#39;ve read the google docs, but they don&#39;t seem very clear on these issues. Thanks in advance!&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796153</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Indy10 TCP; client for ANDROID and server for win32</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="delphi" />
+        <category scheme="http://stackoverflow.com/tags" term="tcp" />
+        <author>
+            <name>Med Ben</name>
+            <uri>http://stackoverflow.com/users/4440022</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796153/indy10-tcp-client-for-android-and-server-for-win32" />
+        <published>2016-01-14T17:38:20Z</published>
+        <updated>2016-01-14T17:38:20Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;i&#39;m new in INDY library, so i use delphi XE8 and indy for TCP client/serverconnection; i built server application for windows and client for android, when client application send message&quot;text&quot; to server application it work but the client app don&#39;t receive anything;&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;IdTCPClient1.IOHandler.WriteLn(&#39;OK&#39;+edit2.Text+inttostr(incr), IndyTextEncoding_OSDefault());
+
+            LLine := IdTCPClient1.IOHandler.ReadLn();
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;LLine variable is empty and the client don&#39;t recieve anything from the server app.
+            i repeat that the client app is created for ANDROID and the server for WIN32 when i tested the client/sever app for WIN32 it work fine but when i test client app for ANDROID, the client app is connected and the server app  recieve the data but client app don&#39;t recieve anything,,, thank you and sorry for my english &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796119</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Error: java.io.EOFException during HTTP request</title>
+        <category scheme="http://stackoverflow.com/tags" term="java" />
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <author>
+            <name>PL13</name>
+            <uri>http://stackoverflow.com/users/5619293</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796119/error-java-io-eofexception-during-http-request" />
+        <published>2016-01-14T17:36:21Z</published>
+        <updated>2016-01-14T17:43:08Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I have created an HTTP server which contain some files. Now I request a file from my android device but I get the error of the title&lt;/p&gt;
+
+            &lt;p&gt;Here is my java code:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;    package com.android.python27;
+
+            import android.annotation.TargetApi;
+            import android.app.Activity;
+            import android.content.Context;
+            import android.net.wifi.WifiInfo;
+            import android.net.wifi.WifiManager;
+            import android.os.Build;
+            import android.os.Environment;
+            import android.os.Bundle;
+            import android.os.StrictMode;
+            import android.util.Log;
+            import android.view.View;
+            import android.widget.Button;
+            import android.widget.EditText;
+            import android.widget.Toast;
+
+            import java.io.DataOutputStream;
+            import java.io.FileOutputStream;
+            import java.io.IOException;
+            import java.io.InputStream;
+            import java.net.MalformedURLException;
+            import java.net.URL;
+            import java.net.URLConnection;
+
+            public class CVars extends Activity {
+
+            private EditText serverInfoField;
+            private Button requestButton;
+
+            private String server_info = &quot;&quot;;
+            private String my_mac = &quot;&quot;;
+            private boolean receivedServerInfo = false;
+
+            @TargetApi(Build.VERSION_CODES.GINGERBREAD)
+            @Override
+            protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_cvars);
+
+            // StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            // StrictMode.setThreadPolicy(policy);
+
+            if (android.os.Build.VERSION.SDK_INT &amp;gt; 9) {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+            }
+
+            serverInfoField = (EditText) this.findViewById(R.id.serverInfo);
+            requestButton = (Button) this.findViewById(R.id.requestButton);
+
+            requestButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+            setServerInfo(getServerInfoFieldText());
+
+            downloadVarsFromHTTPServer();
+            }
+            });
+
+            WifiManager manager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+            WifiInfo info = manager.getConnectionInfo();
+            setMyMAC(info.getMacAddress());
+
+            //createServerInfoInputDialog();
+
+            }
+
+            public void setServerInfo(String info) {
+            this.server_info = info;
+            }
+
+            public String getServerInfo() {
+            return this.server_info;
+            }
+
+            public void setMyMAC(String mac) {
+            this.my_mac = mac;
+            }
+
+            public String getMyMAC() {
+            return this.my_mac;
+            }
+
+            public String getServerInfoFieldText()
+            {
+            return this.serverInfoField.getText().toString();
+            }
+
+            public void downloadVarsFromHTTPServer() {
+
+            String getPKrequest = &quot;http://&quot; + getServerInfo() + &quot;/.pk?&quot; + getMyMAC();
+            String getParamsrequest = &quot;http://&quot; + getServerInfo() + &quot;/.params?&quot; + getMyMAC();
+
+            //HTTP request for private key
+            try {
+
+            Log.d(&quot;HTTPrequest&quot;, &quot;Requesting device&#39;s private key (PK)...: &quot; + getPKrequest);
+
+            URL url = new URL(getPKrequest);
+            InputStream ins = url.openStream();
+            byte data[] = new byte[1024];
+            DataOutputStream fos = new DataOutputStream(new FileOutputStream(Environment.getExternalStorageDirectory() + &quot;/myPK.key&quot;));
+            int count = 0;
+            while ((count = ins.read(data)) != -1) {
+            fos.write(data, 0, count);
+            }
+            fos.flush();
+            fos.close();
+
+            Toast.makeText(this, &quot;PK received&quot;, Toast.LENGTH_SHORT).show();
+            } catch (MalformedURLException e) {
+            e.printStackTrace();
+            } catch (IOException e) {
+            e.printStackTrace();
+            }
+
+            /*
+            //HTTP request for crypto params
+            try {
+
+            Log.d(&quot;HTTPrequest&quot;, &quot;Requesting crypto params...: &quot; + getParamsrequest);
+
+            URL url = new URL(getParamsrequest);
+            URLConnection conn = url.openConnection();
+            int contentLength = conn.getContentLength();
+            Log.d(&quot;contentLength&quot;, String.valueOf(contentLength));
+            InputStream ins = url.openStream();
+            byte data[] = new byte[1024];
+            DataOutputStream fos = new DataOutputStream(new FileOutputStream(Environment.getExternalStorageDirectory() + &quot;/params.param&quot;));
+            int count = 0;
+            while ((count = ins.read(data)) != -1) {
+            fos.write(data, 0, count);
+            }
+            fos.flush();
+            fos.close();
+
+            Toast.makeText(this, &quot;Params received&quot;, Toast.LENGTH_SHORT).show();
+            } catch (MalformedURLException e) {
+            e.printStackTrace();
+            } catch (IOException e) {
+            e.printStackTrace();
+            }
+            */
+
+            }
+
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;And here is the Error I get:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;01-14 19:31:57.345 5736-5736/? W/System.err: java.io.EOFException
+            01-14 19:31:57.345 5736-5736/? W/System.err:     at libcore.io.Streams.readAsciiLine(Streams.java:203)
+            01-14 19:31:57.345 5736-5736/? W/System.err:     at libcore.net.http.HttpEngine.readResponseHeaders(HttpEngine.java:560)
+            01-14 19:31:57.345 5736-5736/? W/System.err:     at libcore.net.http.HttpEngine.readResponse(HttpEngine.java:813)
+            01-14 19:31:57.345 5736-5736/? W/System.err:     at libcore.net.http.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:274)
+            01-14 19:31:57.345 5736-5736/? W/System.err:     at libcore.net.http.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:168)
+            01-14 19:31:57.345 5736-5736/? W/System.err:     at java.net.URL.openStream(URL.java:462)
+            01-14 19:31:57.345 5736-5736/? W/System.err:     at com.android.python27.CVars.downloadVarsFromHTTPServer(CVars.java:101)
+            01-14 19:31:57.355 5736-5736/? W/System.err:     at com.android.python27.CVars$1.onClick(CVars.java:57)
+            01-14 19:31:57.355 5736-5736/? W/System.err:     at android.view.View.performClick(View.java:4162)
+            01-14 19:31:57.355 5736-5736/? W/System.err:     at android.view.View$PerformClick.run(View.java:17082)
+            01-14 19:31:57.355 5736-5736/? W/System.err:     at android.os.Handler.handleCallback(Handler.java:615)
+            01-14 19:31:57.355 5736-5736/? W/System.err:     at android.os.Handler.dispatchMessage(Handler.java:92)
+            01-14 19:31:57.355 5736-5736/? W/System.err:     at android.os.Looper.loop(Looper.java:137)
+            01-14 19:31:57.355 5736-5736/? W/System.err:     at android.app.ActivityThread.main(ActivityThread.java:4867)
+            01-14 19:31:57.355 5736-5736/? W/System.err:     at java.lang.reflect.Method.invokeNative(Native Method)
+            01-14 19:31:57.355 5736-5736/? W/System.err:     at java.lang.reflect.Method.invoke(Method.java:511)
+            01-14 19:31:57.355 5736-5736/? W/System.err:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1007)
+            01-14 19:31:57.355 5736-5736/? W/System.err:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:774)
+            01-14 19:31:57.365 5736-5736/? W/System.err:     at dalvik.system.NativeStart.main(Native Method)
+            01-14 19:32:18.267 5736-5738/? D/dalvikvm: GC_CONCURRENT freed 131K, 11% free 9878K/11015K, paused 2ms+2ms, total 28ms
+            01-14 19:32:27.235 5736-5736/? W/IInputConnectionWrapper: getSelectedText on inactive InputConnection
+            01-14 19:32:27.245 5736-5736/? W/IInputConnectionWrapper: setComposingText on inactive InputConnection
+            01-14 19:32:27.245 5736-5736/? W/IInputConnectionWrapper: getExtractedText on inactive InputConnection
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;I should mention that my HTTP server can respond to such kind of HTTP request, so there is no problem with the form of my HTTP request.
+            Any advice would be really helpful and deeply appreciated...&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796118</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Surface View Show Black Screen</title>
+        <category scheme="http://stackoverflow.com/tags" term="java" />
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="android-studio" />
+        <author>
+            <name>zack</name>
+            <uri>http://stackoverflow.com/users/5692042</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796118/surface-view-show-black-screen" />
+        <published>2016-01-14T17:36:21Z</published>
+        <updated>2016-01-14T17:36:21Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;My GamePanel&#39;s Surface View show black screen (or don&#39;t show at all) on testing&lt;br&gt;
+            even though every-thing looks fine!!
+            Am i missing something?!&lt;br&gt;
+            Note:&lt;br&gt;
+            -I&#39;m testing on my device not emulator.&lt;br&gt;
+            -I have another &lt;code&gt;Activity&lt;/code&gt; that leads to this class.&lt;br&gt;
+            -I&#39;m not getting any errors unfortunately.&lt;br&gt;
+            (thanks advancedly for help)&lt;br&gt;
+            my &lt;code&gt;GamePanel class&lt;/code&gt; code:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;import android.content.Context;
+            import android.graphics.BitmapFactory;
+            import android.graphics.Canvas;
+            import android.graphics.Color;
+            import android.graphics.Paint;
+            import android.graphics.Rect;
+            import android.graphics.Typeface;
+            import android.view.MotionEvent;
+            import android.view.SurfaceHolder;
+            import android.view.SurfaceView;
+            import java.util.ArrayList;
+            import java.util.Random;
+
+
+            public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
+            {
+            public static final int WIDTH = 960;
+            public static final int HEIGHT = 540;
+            public static final int MoveSpeed = -5;
+            private long enemyStartTime;
+            private MainThread thread;
+            private Background bg;
+            private Alien alien;
+            private ArrayList&amp;lt;Enemy&amp;gt; enemy;
+            private Random rand = new Random();
+            private Buttons babyButton;
+
+            public GamePanel (Context context)
+            {
+            super(context);
+
+            getHolder().addCallback(this);
+
+            setFocusable(true);
+            }
+            @Override
+            public void surfaceChanged(SurfaceHolder holder, int format, int wight, int height ){}
+
+            @Override
+            public void surfaceDestroyed(SurfaceHolder holder ){
+
+            boolean retry = true;
+            while (retry){
+            try { thread.setRunning(false);
+            thread.join();
+            retry = false;
+            thread = null;
+
+            }catch (InterruptedException e) {e.printStackTrace();}
+            }
+            }
+
+            @Override
+            public void surfaceCreated(SurfaceHolder holder ){
+
+            babyButton = new Buttons(BitmapFactory.decodeResource(getResources(), R.drawable.ratebutton),250, 250, 1);
+            switch((int) (rand.nextDouble() * 5)) {
+            case 0:
+            bg = new Background(BitmapFactory.decodeResource(getResources(), R.drawable.backgrounda));
+            break;
+            case 1:
+            bg = new Background(BitmapFactory.decodeResource(getResources(), R.drawable.backgroundb));
+            break;
+            case 2:
+            bg = new Background(BitmapFactory.decodeResource(getResources(), R.drawable.backgroundc));
+            break;
+            case 3:
+            bg = new Background(BitmapFactory.decodeResource(getResources(), R.drawable.backgroundd));
+            break;
+            case 4:
+            bg = new Background(BitmapFactory.decodeResource(getResources(), R.drawable.backgrounde));
+            break;
+            case 5:
+            bg = new Background(BitmapFactory.decodeResource(getResources(), R.drawable.backgroundf));
+            break;
+            }
+            alien = new Alien(BitmapFactory.decodeResource(getResources(), R.drawable.aalien),120, 270, 8);
+            enemy = new ArrayList&amp;lt;&amp;gt;();
+            enemyStartTime = System.nanoTime();
+
+            thread = new MainThread(getHolder() , this);
+            thread.setRunning(true);
+            thread.start();
+            }
+            @Override
+            public boolean onTouchEvent(MotionEvent event)
+            {
+            return super.onTouchEvent(event);
+            }
+            public void update()
+            {
+            bg.update();
+            alien.update();
+            babyButton.update();
+
+            long EnemyElapsed = (System.nanoTime() - enemyStartTime)/1000000;
+            if (EnemyElapsed &amp;gt; (2000-alien.getScore()/4)) {
+            enemy.add(new Enemy(BitmapFactory.decodeResource(getResources(), R.drawable.dog), WIDTH + 10,60, 250, 250, alien.getScore(), 2));
+            enemyStartTime = System.nanoTime();
+            }
+            for (int i= 0; i&amp;lt;enemy.size(); i++) {
+            enemy.get(i).update();
+            if (collision(enemy.get(i), alien)) ;
+            {
+            enemy.remove(i);
+            break;
+            }
+            }
+
+            for (Enemy m : enemy)
+            {
+            m.update();
+            }
+            }
+            public boolean collision (GameObject a, GameObject b)
+            {
+            if(Rect.intersects(a.getRectangel(), b.getRectangel()))
+            {
+            return true;
+            }
+            return false;
+            }
+
+            @Override
+            public void draw(Canvas canvas) {
+            final float scaleFactoryX = getWidth() / (WIDTH * 1.f);
+            final float scaleFactoryY = getHeight() / (HEIGHT * 1.f);
+            if (canvas != null) {
+            final int savedState = canvas.save();
+            canvas.scale(scaleFactoryX, scaleFactoryY);
+            bg.draw(canvas);
+            alien.draw(canvas);
+            babyButton.draw(canvas);
+            for (Enemy m : enemy) {
+            m.draw(canvas);
+            }
+            canvas.restoreToCount(savedState);
+            }
+
+            }
+
+            public void drawText(Canvas canvas) {
+            Paint paint = new Paint();
+            paint.setColor(Color.GREEN);
+            paint.setTextSize(35);
+            paint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
+            canvas.drawText(&quot;DISTANCE&quot; + alien.getScore(), 10, 10, paint);
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;}&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796099</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Control Android App with Fire TV remote</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="amazon-fire-tv" />
+        <author>
+            <name>Androidicus</name>
+            <uri>http://stackoverflow.com/users/3449811</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796099/control-android-app-with-fire-tv-remote" />
+        <published>2016-01-14T17:35:27Z</published>
+        <updated>2016-01-14T17:35:27Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;it seems like this information must be available somewhere on the internet but I cannot seem to find it.
+            I want to run an android application that I&#39;ve written on an Amazon Fire TV stick. I found some tutorials how to load the app on the stick, but I could find information on how to get the Fire TV remote to work with the app. &lt;/p&gt;
+
+            &lt;p&gt;The main user interface of the app consists of large tiles (RelativeLayout) that are clickable by recognizing onTouch on the Layout. So no Buttons. How does the remote behave in this scenario? Do I need to adapt my layout? If so how? &lt;/p&gt;
+
+            &lt;p&gt;Thanks for your help. &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34796077</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Attaching Boolean Values to Rect for Comparison</title>
+        <category scheme="http://stackoverflow.com/tags" term="java" />
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <author>
+            <name>user2712795</name>
+            <uri>http://stackoverflow.com/users/2712795</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34796077/attaching-boolean-values-to-rect-for-comparison" />
+        <published>2016-01-14T17:34:05Z</published>
+        <updated>2016-01-14T17:34:05Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I have three buttons that returns true or false depending on if they are pressed down or not. I also have an Arraylist of rectangles that I want to assign specific Boolean values to. I have another separate rectangle that crosses the screen and interests my arraylist of rectangles. When it intersects, I want it to compare the set Boolean values to what the buttons return. I am not sure how to do this and so far am thinking something along the lines of this:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;rectangles.get(0) = rectangles.add(new Rect(xCoor, yCoor, rectW, rectH));
+            setFinger(rectangles.get(0), true, true, false);
+
+            for (Rect rect : rectangles) {
+            if (bar.intersect(rect)) {
+            checkButtons();
+            Log.d(&quot;GameScreen&quot;, &quot;Note and Bar Intersected&quot;);
+
+            }
+
+            }
+
+            private void setFinger (Rect rect, boolean F1, boolean F2, boolean F3) extends Rect {
+
+
+            }
+
+            private void checkButtons() {
+            for (int t = 0; t&amp;lt;500; t++) {
+            Rect Rec_Integer = rectangles.get(t);
+            Log.i(&quot;GameScreen&quot;, Rec_Integer.toString());
+
+            checkBoolean(Rec_Integer);
+            }
+            }
+
+            private void checkBoolean(Rect rect) {
+            if (rect.getCorrectFinger() == rect.getUserFinger) {
+            playCorrectSound();
+            }
+            if (rect.getCorrectFinger() != rect.getUserFinger) {
+            playIncorrectSound();
+            }
+
+            private void getUserFinger() {
+            if (B1Pressed) {
+
+            }
+
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;How can I do this?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795964</id>
+        <re:rank scheme="http://stackoverflow.com">-9</re:rank>
+        <title type="text">Anyone worked on building an Android Wedding app before?</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="contract" />
+        <author>
+            <name>Andrew Hunter</name>
+            <uri>http://stackoverflow.com/users/4990067</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795964/anyone-worked-on-building-an-android-wedding-app-before" />
+        <published>2016-01-14T17:29:04Z</published>
+        <updated>2016-01-14T17:29:04Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;Am looking for an Android developer who has previous experience with wedding apps?&lt;/p&gt;
+
+            &lt;p&gt;Do you know anyone?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795949</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Is there a way to collaborate and host widgets in my android app?</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="user-interface" />
+        <category scheme="http://stackoverflow.com/tags" term="widget" />
+        <category scheme="http://stackoverflow.com/tags" term="hosting" />
+        <author>
+            <name>TalDroid</name>
+            <uri>http://stackoverflow.com/users/1616261</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795949/is-there-a-way-to-collaborate-and-host-widgets-in-my-android-app" />
+        <published>2016-01-14T17:28:02Z</published>
+        <updated>2016-01-14T17:28:02Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I wanted to know if it is possible to host a component written by someone else in my app?&lt;/p&gt;
+
+            &lt;p&gt;for example, to host a component in my app for payment through Paypal which was developed by them (say they had one).
+            or a component that shows items from Amazon, written by amazon.
+            this component would be connecting to their servers as a black box.&lt;/p&gt;
+
+            &lt;p&gt;Is there a way to include such external components in my android app?&lt;/p&gt;
+
+            &lt;p&gt;Thanks&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795866</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Query data from more than one table parse.com android</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="parse.com" />
+        <author>
+            <name>Siddhpura Amit</name>
+            <uri>http://stackoverflow.com/users/938845</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795866/query-data-from-more-than-one-table-parse-com-android" />
+        <published>2016-01-14T17:24:23Z</published>
+        <updated>2016-01-14T17:24:23Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I want to get data from two table, For example&lt;/p&gt;
+
+            &lt;p&gt;Let&#39;s say, I have two table A, B&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;      A                    B
+            ---------------        ----------
+            objectId              objectId
+            post                  comment
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;Now Post and comment is like below&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;  post1
+            comment_of_post1_1
+            comment_of_post1_2
+            comment_of_post1_3
+
+            post2
+            comment_of_post2_1
+            comment_of_post2_2
+            comment_of_post2_3
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;I want to fetch each post and it&#39;s related each comments&lt;/p&gt;
+
+            &lt;p&gt;for example I want to show list of post, and each of post&#39;s related comments.&lt;/p&gt;
+
+            &lt;p&gt;I want to get all in single query&lt;/p&gt;
+
+            &lt;p&gt;I know parse has &lt;a href=&quot;https://parse.com/docs/android/guide#relations&quot; rel=&quot;nofollow&quot;&gt;pointer&lt;/a&gt; concept, but I really do not get how to execute parse query for this situation,&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795786</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">How to capture screenshot with shadow using getDrawingCache?</title>
+        <category scheme="http://stackoverflow.com/tags" term="java" />
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="imageview" />
+        <category scheme="http://stackoverflow.com/tags" term="shadow" />
+        <category scheme="http://stackoverflow.com/tags" term="elevation" />
+        <author>
+            <name>Usman</name>
+            <uri>http://stackoverflow.com/users/3581148</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795786/how-to-capture-screenshot-with-shadow-using-getdrawingcache" />
+        <published>2016-01-14T17:21:08Z</published>
+        <updated>2016-01-14T17:21:08Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I take screenshots within my app using:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;private Bitmap takeScreenshot() {
+            View rootView = findViewById(android.R.id.content).getRootView();
+            rootView.setDrawingCacheEnabled(true);
+            return rootView.getDrawingCache();
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;This works fine except that the result does not contain any shadow. How can I capture the shadows of elevated objects as well?&lt;/p&gt;
+
+            &lt;p&gt;I think I can also make a fake shadow using a very old approach, but then this will be a very old approach and will neglect the concept of elevations and natural shadows. Which is I don&#39;t want.&lt;/p&gt;
+
+            &lt;p&gt;Please reply.&lt;/p&gt;
+
+            &lt;p&gt;Thanks.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795685</id>
+        <re:rank scheme="http://stackoverflow.com">-2</re:rank>
+        <title type="text">How to save togglebutton state using sharedpreferences with a Listview</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="listview" />
+        <category scheme="http://stackoverflow.com/tags" term="custom-adapter" />
+        <category scheme="http://stackoverflow.com/tags" term="android-togglebutton" />
+        <category scheme="http://stackoverflow.com/tags" term="android-sharedpreferences" />
+        <author>
+            <name>Ahmed M Moharm</name>
+            <uri>http://stackoverflow.com/users/2818543</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795685/how-to-save-togglebutton-state-using-sharedpreferences-with-a-listview" />
+        <published>2016-01-14T17:15:41Z</published>
+        <updated>2016-01-14T17:15:41Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I trying to make a wishlist Application so in my first Listview , i have a togglebutton,, i need to save my togglebutton state for each row so i made Arraylist of boolean ,, but i cant save it in a sharedpreferences !
+            so any way to save it and load it to my togglebuttons ? ! &lt;/p&gt;
+
+            &lt;h2&gt;Here my code&lt;/h2&gt;
+
+            &lt;pre&gt;&lt;code&gt;package com.company.wishlist;
+
+            import android.content.Context;
+            import android.content.SharedPreferences;
+            import android.database.sqlite.SQLiteDatabase;
+            import android.util.Log;
+            import android.view.LayoutInflater;
+            import android.view.View;
+            import android.view.ViewGroup;
+            import android.widget.BaseAdapter;
+            import android.widget.CompoundButton;
+            import android.widget.ListAdapter;
+            import android.widget.TextView;
+            import android.widget.Toast;
+            import android.widget.ToggleButton;
+
+            import java.util.ArrayList;
+
+            public class MyListAdapter extends BaseAdapter implements ListAdapter {
+
+            private ArrayList&amp;lt;String&amp;gt; list = new ArrayList&amp;lt;String&amp;gt;();
+            private ArrayList&amp;lt;Boolean&amp;gt; checklist = new ArrayList&amp;lt;Boolean&amp;gt;();
+            private Context context;
+            User_DBHelper user_dbHelper;
+            SQLiteDatabase sqLiteDatabase;
+
+            public MyListAdapter(ArrayList&amp;lt;String&amp;gt; list , Context context)
+            {
+            this.list = list;
+            this.context = context;
+            }
+            @Override
+            public int getCount() {
+            return list.size();
+            }
+
+            @Override
+            public Object getItem(int position) {
+            return list.get(position);
+            }
+
+            @Override
+            public long getItemId(int position) {
+            return 0;
+            }
+
+            @Override
+            public View getView(final int position, View convertView, ViewGroup parent)         {
+
+            View view = convertView;
+
+            if (view == null)
+            {
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            view = inflater.inflate(R.layout.row_layout, null);
+            }
+
+            final TextView textView = (TextView)view.findViewById(R.id.rowText);
+            textView.setText(list.get(position));
+
+            final ToggleButton Butn = (ToggleButton)view.findViewById(R.id.butid);
+
+            for (int i=0; i &amp;lt; list.size(); i++) {
+            checklist.add(i, false);
+            }
+
+
+            Butn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+            if (isChecked)
+            {
+            Toast.makeText(context, &quot;Added&quot; + position, Toast.LENGTH_SHORT).show();
+
+            String new_data = textView.getText().toString();
+
+            user_dbHelper = new User_DBHelper(context);
+
+            sqLiteDatabase = user_dbHelper.getWritableDatabase();
+
+            user_dbHelper.addinformations(new_data, sqLiteDatabase);
+
+            user_dbHelper.close();
+
+            isChecked=false;
+
+            notifyDataSetChanged();
+
+            }
+            else
+            {
+
+            Toast.makeText(context, &quot;Removed&quot; + position, Toast.LENGTH_SHORT).show();
+
+            String delete_data = textView.getText().toString();
+
+            user_dbHelper = new User_DBHelper(context);
+
+            sqLiteDatabase = user_dbHelper.getWritableDatabase();
+
+            user_dbHelper.Deleteinfo(delete_data, sqLiteDatabase);
+
+            isChecked=true;
+
+            notifyDataSetChanged();
+            }
+
+            checklist.set(position, isChecked);
+
+            }
+            });
+            return view;
+            }
+
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795678</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Send files over network - JAVA</title>
+        <category scheme="http://stackoverflow.com/tags" term="java" />
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="networking" />
+        <author>
+            <name>andy</name>
+            <uri>http://stackoverflow.com/users/3680944</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795678/send-files-over-network-java" />
+        <published>2016-01-14T17:15:09Z</published>
+        <updated>2016-01-14T17:15:09Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I am programming an application where the owner of the application has to be able to send files to other available devices in the network. At this moment I am able to retrieve all the ip addresses of the devices that are connected to the network. &lt;/p&gt;
+
+            &lt;p&gt;Is it possible to send files to these devices if i have their intern ip address&lt;/p&gt;
+
+            &lt;p&gt;Current code:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;InetAddress localhost = null;
+            try {
+            localhost = InetAddress.getLocalHost();
+            } catch (UnknownHostException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            }
+            // this code assumes IPv4 is used
+            byte[] ip = localhost.getAddress();
+
+            for (int i = 1; i &amp;lt;= 254; i++)
+            {
+            ip[3] = (byte)i;
+            InetAddress address = null;
+            try {
+            address = InetAddress.getByAddress(ip);
+            } catch (UnknownHostException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            }
+
+            try {
+            if (address.isReachable(100))
+            {
+            System.out.println(address + &quot; machine is turned on and can be pinged&quot;);
+            }
+            else if (!address.getHostAddress().equals(address.getHostName()))
+            {
+            System.out.println(address + &quot; machine is known in a DNS lookup&quot;);
+            }
+            else
+            {
+            System.out.println(address + &quot; the host address and host name are equal, meaning the host name could not be resolved&quot;);
+            }
+            } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            }
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795670</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">How to convert bitmap to URI</title>
+        <category scheme="http://stackoverflow.com/tags" term="java" />
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="json" />
+        <category scheme="http://stackoverflow.com/tags" term="bitmap" />
+        <author>
+            <name>Tony</name>
+            <uri>http://stackoverflow.com/users/5257704</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795670/how-to-convert-bitmap-to-uri" />
+        <published>2016-01-14T17:14:44Z</published>
+        <updated>2016-01-14T17:42:58Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I&#39;m new to Android and PHP. I&#39;ve successfully uploaded the image URI from Android to MySQL and now getting trouble to get the image URI back and display on the &lt;code&gt;listView&lt;/code&gt; Activity A. Any help would be greatly appreciated. Thanks a lot.&lt;/p&gt;
+
+            &lt;p&gt;&lt;strong&gt;Sending to MySQL:&lt;/strong&gt;&lt;/p&gt;
+
+            &lt;p&gt;Before sending it to server, the URI has been converted to bitmap:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;@Override
+            protected String doInBackground(String... params) {
+            for (int index = 0; index &amp;lt; jsonArray.length(); index++) {
+            try {
+            JSONObject jsonObject = jsonArray.getJSONObject(index);
+            String strUri = jsonObject.getString(&quot;image&quot;);
+            HashMap&amp;lt;String, String&amp;gt; data = new HashMap&amp;lt;String, String&amp;gt;();
+            data.put(Configs.KEY_IMAGE, getStringImage(Uri.parse(strUri)));
+            RequestHandler rh = new RequestHandler();
+            String result = rh.sendPostRequest(Configs.SEND, data);
+            return result;
+            } catch (Exception e) {
+            }
+            }
+            return &quot;&quot;;
+            }
+
+            @Override
+            protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            loading.dismiss();
+            Toast.makeText(getApplicationContext(), s, Toast.LENGTH_LONG).show();
+            }
+
+            public String getStringImage(Uri imgUri) {
+            try {
+            Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), imgUri);
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+            byte[] imageBytes = baos.toByteArray();
+            String encodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);
+            return encodedImage;
+            } catch (Exception e) {
+            }
+
+            return &quot;&quot;;
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;And now I&#39;m trying to retrieve out but the image cannot be retrieved out, only text can be retrieved.&lt;/p&gt;
+
+            &lt;p&gt;&lt;strong&gt;Retrieved from server:&lt;/strong&gt;&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;protected void showList() {
+            try {
+            JSONObject jsonObj = new JSONObject(myJSON);
+            details = jsonObj.getJSONArray(Configs.TAG_RESULTS);
+
+            for (int i = 0; i &amp;lt; details.length(); i++) {
+            JSONObject c = details.getJSONObject(i);
+            String type = c.getString(Configs.TAG_TYPE);
+            String description = c.getString(Configs.TAG_DESCRIPTION);
+            String amount = c.getString(Configs.TAG_AMOUNT);
+            String image = c.getString(Configs.TAG_IMAGE);
+            int ID = c.getInt(Configs.TAG_ID);
+            Staff staff = new Staff(ID, type, description, amount, image);
+            staffs.add(staff);
+            }
+
+            CVAdapter adapter = new CVAdapter(getActivity(), staffs);
+            listViewEdit.setAdapter(adapter);
+
+            } catch (JSONException e) {
+            e.printStackTrace();
+            }
+
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;&lt;strong&gt;CVAdapter:&lt;/strong&gt;&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;public  class CVAdapter extends ArrayAdapter&amp;lt;Staff&amp;gt; {
+            Activity context;
+            List&amp;lt;Staff&amp;gt; staffs;
+            static class ViewHolder {
+            public ImageView image;
+            public TextView type;
+            public TextView amount;
+            public TextView description;
+            }
+            @Override
+            public int getCount() {
+            return staffs.size();
+            }
+            public CVAdapter(Activity context, List&amp;lt;Staff&amp;gt; staffs) {
+            super(context, R.layout.retrieve_staff, staffs);
+            this.context = context;
+            this.staffs = staffs;
+            }
+
+            @Override
+            public Staff getItem(int position) {
+            return null;
+            }
+
+            @Override
+            public long getItemId(int position) {
+            return 0;
+            }
+
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+            ViewHolder holder;
+            if(convertView==null){
+            ViewHolder v = new ViewHolder();
+            LayoutInflater inflater = context.getLayoutInflater();
+            convertView = inflater.inflate(R.layout.retrieve_staff, null);
+            v.image = (ImageView)convertView.findViewById(R.id.image);
+            v.amount = (TextView)convertView.findViewById(R.id.amount);
+            v.type = (TextView)convertView.findViewById(R.id.type);
+            v.description = (TextView)convertView.findViewById(R.id.description);
+            convertView.setTag(v);
+            }
+            holder = (ViewHolder)convertView.getTag();
+            Log.v(&quot;TEST&quot;, staffs.get(position).getImage());
+            byte[] data = Base64.decode(staffs.get(position).getImage(), 0);
+            Bitmap b = BitmapFactory.decodeByteArray(data, 0, data.length);
+            Drawable d=new BitmapDrawable(context.getResources(),b);
+            holder.image.setImageUri(d);
+            holder.amount.setText(staffs.get(position).getAmount());
+            holder.type.setText(staffs.get(position).getType());
+            holder.description.setText(staffs.get(position).getDescription());
+            return convertView;
+            }
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+            &lt;p&gt;&lt;a href=&quot;http://i.stack.imgur.com/YpDmw.png&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;http://i.stack.imgur.com/YpDmw.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795659</id>
+        <re:rank scheme="http://stackoverflow.com">-1</re:rank>
+        <title type="text">How to call the broadcast receiver when Internet connection is available..??</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="service" />
+        <category scheme="http://stackoverflow.com/tags" term="alarmmanager" />
+        <category scheme="http://stackoverflow.com/tags" term="alarm" />
+        <category scheme="http://stackoverflow.com/tags" term="android-broadcastreceiver" />
+        <author>
+            <name>user1532825</name>
+            <uri>http://stackoverflow.com/users/1532825</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795659/how-to-call-the-broadcast-receiver-when-internet-connection-is-available" />
+        <published>2016-01-14T17:14:25Z</published>
+        <updated>2016-01-14T17:14:25Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I am calling a service @every day 8oclk in the morning,
+            the service is retrieving data from Internet and pushing a notification,  i m stucked in a case when service is called @8 oclk but thr is no Internet connection thn i m getting empty notification.,in this case i want to call the service whenever Internet connection is made after 8oclk thn retrieve the data and push the notification. &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795622</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Android list files from USB Drive</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="android-usb" />
+        <author>
+            <name>David</name>
+            <uri>http://stackoverflow.com/users/1691446</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795622/android-list-files-from-usb-drive" />
+        <published>2016-01-14T17:12:25Z</published>
+        <updated>2016-01-14T17:12:25Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I currently have a working implementation that allows me to list USB devices, request permission for that USB device and then connect to them (mainly from &lt;a href=&quot;http://developer.android.com/guide/topics/connectivity/usb/host.html&quot; rel=&quot;nofollow&quot;&gt;http://developer.android.com/guide/topics/connectivity/usb/host.html&lt;/a&gt;). The code I have is the same as the linked article but none of the methods on the classes provided are for listing files on the device or checking if files exist.&lt;/p&gt;
+
+            &lt;p&gt;However I do not understand how I can list files that are on the USB device to check if files exists before transferring data.&lt;/p&gt;
+
+            &lt;p&gt;The device &quot;path&quot; is along the lines of &lt;code&gt;/dev/bus/usb/00x&lt;/code&gt; but this can&#39;t be accessed directly through &lt;code&gt;File&lt;/code&gt;. I see the app &lt;code&gt;ES File Explorer&lt;/code&gt; is able to list files on a USB (non-rooted device) so I know it is possible. I have also tried accessing URI paths like &lt;code&gt;usb://100x&lt;/code&gt; as it seemed like ES File Explorer was doing that, but I had no luck.&lt;/p&gt;
+
+            &lt;p&gt;Any ideas? Thanks.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795609</id>
+        <re:rank scheme="http://stackoverflow.com">-1</re:rank>
+        <title type="text">I am unable to understand why server is not getting called</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <author>
+            <name>Prashant Winni</name>
+            <uri>http://stackoverflow.com/users/5790432</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795609/i-am-unable-to-understand-why-server-is-not-getting-called" />
+        <published>2016-01-14T17:11:45Z</published>
+        <updated>2016-01-14T17:39:02Z</updated>
+        <summary type="html">
+
+
+            &lt;pre&gt;&lt;code&gt;Ion.with(getContext())
+            .load(serverUrl)
+            .setMultipartParameter(&quot;image&quot;, &quot;images&quot;)
+            .setMultipartFile(&quot;archive&quot;, &quot;application/images&quot;, new File(stringFileaPath))
+            .asJsonObject()
+            .setCallback(...)
+            &lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795573</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Is it possible to get other application version?</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <author>
+            <name>Yarh</name>
+            <uri>http://stackoverflow.com/users/1551603</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795573/is-it-possible-to-get-other-application-version" />
+        <published>2016-01-14T17:09:35Z</published>
+        <updated>2016-01-14T17:10:42Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;Is it possible to findout version of another application?
+            I can find if it is installed&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;android.content.pm.PackageManager mPm = getPackageManager();  // 1
+            PackageInfo info = mPm.getPackageInfo(pName, 0);  // 2,3
+            Boolean installed = info != null;
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;But i miss relative field in &lt;code&gt;packageinfo&lt;/code&gt; or &lt;code&gt;applicationinfo&lt;/code&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795558</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">How can I change from Fragment to Fragment with an ImageButton?</title>
+        <category scheme="http://stackoverflow.com/tags" term="java" />
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="xml" />
+        <category scheme="http://stackoverflow.com/tags" term="android-fragments" />
+        <category scheme="http://stackoverflow.com/tags" term="mobile" />
+        <author>
+            <name>Rang92</name>
+            <uri>http://stackoverflow.com/users/5785760</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795558/how-can-i-change-from-fragment-to-fragment-with-an-imagebutton" />
+        <published>2016-01-14T17:09:02Z</published>
+        <updated>2016-01-14T17:17:21Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;Im trying to go from MainFragment to AddPostFragment with an ImageButton.
+            How is this possible...I tried a lot of things...
+            I want to use a fragment to keep my navigation drawer on top instead of a new activity.&lt;/p&gt;
+
+            &lt;p&gt;MainFragment:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;public class MainFragment extends Fragment implements View.OnClickListener{
+
+            ImageButton floatButton;
+
+            @Nullable
+            @Override
+            public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+            floatButton = (ImageButton)rootView.findViewById(R.id.postButtonMain);
+            floatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            Intent post = new Intent(getActivity(), AddPostFragment.class);
+            startActivity(post);
+            }
+            });
+
+            return rootView;
+            }
+
+            @Override
+            public void onClick(View v) {
+
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;}&lt;/p&gt;
+
+            &lt;p&gt;AddPostFragment:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;public class AddPostFragment extends Fragment {
+
+            @Nullable
+            @Override
+            public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.frag_add_post, container, false);
+
+            return rootView;
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;}&lt;/p&gt;
+
+            &lt;p&gt;XML MainFragment:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&amp;gt;
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;&amp;lt;TextView
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:textAppearance=&quot;?android:attr/textAppearanceLarge&quot;
+            android:text=&quot;Home&quot;
+            android:id=&quot;@+id/frag_home&quot;
+            android:layout_gravity=&quot;center_horizontal|top&quot; /&amp;gt;
+
+            &amp;lt;ImageButton
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:id=&quot;@+id/postButtonMain&quot;
+            android:src=&quot;@drawable/rsz_add_car&quot;
+            android:background=&quot;?android:attr/selectableItemBackground&quot;
+            android:layout_alignParentBottom=&quot;true&quot;
+            android:layout_alignParentRight=&quot;true&quot;
+            android:layout_alignParentEnd=&quot;true&quot;
+            android:layout_gravity=&quot;right|bottom&quot; /&amp;gt;
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;&lt;/p&gt;
+
+            &lt;p&gt;XML AddPostFragment:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&amp;gt;
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;&amp;lt;TextView
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:textAppearance=&quot;?android:attr/textAppearanceLarge&quot;
+            android:text=&quot;Add Post&quot;
+            android:id=&quot;@+id/add_post&quot;
+            android:layout_gravity=&quot;center_horizontal|top&quot;
+            android:layout_alignParentTop=&quot;true&quot;
+            android:layout_centerHorizontal=&quot;true&quot; /&amp;gt;
+
+            &amp;lt;TextView
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:textAppearance=&quot;?android:attr/textAppearanceMedium&quot;
+            android:text=&quot;Airport&quot;
+            android:id=&quot;@+id/text_airport&quot;
+            android:layout_marginTop=&quot;88dp&quot;
+            android:layout_below=&quot;@+id/add_post&quot;
+            android:layout_toLeftOf=&quot;@+id/add_post&quot;
+            android:layout_toStartOf=&quot;@+id/add_post&quot; /&amp;gt;
+
+            &amp;lt;TextView
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:textAppearance=&quot;?android:attr/textAppearanceMedium&quot;
+            android:text=&quot;Date&quot;
+            android:id=&quot;@+id/text_date&quot;
+            android:layout_below=&quot;@+id/text_airport&quot;
+            android:layout_alignRight=&quot;@+id/text_airport&quot;
+            android:layout_alignEnd=&quot;@+id/text_airport&quot;
+            android:layout_marginTop=&quot;36dp&quot; /&amp;gt;
+
+            &amp;lt;TextView
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:textAppearance=&quot;?android:attr/textAppearanceMedium&quot;
+            android:text=&quot;Time&quot;
+            android:id=&quot;@+id/text_time&quot;
+            android:layout_centerVertical=&quot;true&quot;
+            android:layout_alignRight=&quot;@+id/text_date&quot;
+            android:layout_alignEnd=&quot;@+id/text_date&quot; /&amp;gt;
+
+            &amp;lt;TextView
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:textAppearance=&quot;?android:attr/textAppearanceMedium&quot;
+            android:text=&quot;Persons&quot;
+            android:id=&quot;@+id/text_persons&quot;
+            android:layout_marginTop=&quot;43dp&quot;
+            android:layout_below=&quot;@+id/add_time&quot;
+            android:layout_toLeftOf=&quot;@+id/add_time&quot;
+            android:layout_toStartOf=&quot;@+id/add_time&quot; /&amp;gt;
+
+            &amp;lt;TextView
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:textAppearance=&quot;?android:attr/textAppearanceMedium&quot;
+            android:text=&quot;Address&quot;
+            android:id=&quot;@+id/text_address&quot;
+            android:layout_marginTop=&quot;48dp&quot;
+            android:layout_below=&quot;@+id/text_persons&quot;
+            android:layout_alignLeft=&quot;@+id/text_persons&quot;
+            android:layout_alignStart=&quot;@+id/text_persons&quot; /&amp;gt;
+
+            &amp;lt;EditText
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:inputType=&quot;time&quot;
+            android:ems=&quot;10&quot;
+            android:id=&quot;@+id/add_time&quot;
+            android:layout_centerVertical=&quot;true&quot;
+            android:layout_toRightOf=&quot;@+id/text_time&quot;
+            android:layout_alignRight=&quot;@+id/add_post&quot;
+            android:layout_alignEnd=&quot;@+id/add_post&quot; /&amp;gt;
+
+            &amp;lt;EditText
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:inputType=&quot;date&quot;
+            android:ems=&quot;10&quot;
+            android:id=&quot;@+id/add_date&quot;
+            android:layout_alignTop=&quot;@+id/text_date&quot;
+            android:layout_toRightOf=&quot;@+id/text_date&quot;
+            android:layout_alignRight=&quot;@+id/add_time&quot;
+            android:layout_alignEnd=&quot;@+id/add_time&quot; /&amp;gt;
+
+            &amp;lt;EditText
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:inputType=&quot;number&quot;
+            android:ems=&quot;10&quot;
+            android:id=&quot;@+id/add_persons&quot;
+            android:layout_above=&quot;@+id/text_address&quot;
+            android:layout_toRightOf=&quot;@+id/text_persons&quot;
+            android:layout_alignRight=&quot;@+id/add_post&quot;
+            android:layout_alignEnd=&quot;@+id/add_post&quot; /&amp;gt;
+
+            &amp;lt;android.support.v7.widget.SearchView
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:id=&quot;@+id/add_search&quot;
+            android:layout_above=&quot;@+id/text_date&quot;
+            android:layout_toRightOf=&quot;@+id/text_airport&quot;
+            android:layout_toEndOf=&quot;@+id/text_airport&quot; /&amp;gt;
+
+            &amp;lt;EditText
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:id=&quot;@+id/add_address&quot;
+            android:layout_alignBottom=&quot;@+id/text_address&quot;
+            android:layout_alignRight=&quot;@+id/add_post&quot;
+            android:layout_alignEnd=&quot;@+id/add_post&quot;
+            android:layout_toRightOf=&quot;@+id/text_address&quot;
+            android:layout_toEndOf=&quot;@+id/text_address&quot; /&amp;gt;
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;&lt;/p&gt;
+
+            &lt;p&gt;MainMenu with navigation drawer:&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;public class MainMenu extends AppCompatActivity
+            implements NavigationView.OnNavigationItemSelectedListener {
+
+            Fragment someFragment;
+
+
+            /**
+            * ATTENTION: This was auto-generated to implement the App Indexing API.
+            * See https://g.co/AppIndexing/AndroidStudio for more information.
+            */
+            private GoogleApiClient client;
+
+            @Override
+            protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main_menu);
+            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+            setSupportActionBar(toolbar);
+
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+            this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+            drawer.setDrawerListener(toggle);
+            toggle.syncState();
+
+            NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+            navigationView.setNavigationItemSelectedListener(this);
+
+
+            FragmentManager fm = getFragmentManager();
+            fm.beginTransaction().replace(R.id.content_main, new MainFragment()).commit();
+
+
+
+            }
+
+
+            @Override
+            public void onBackPressed() {
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+            } else {
+            super.onBackPressed();
+            }
+            }
+
+            @Override
+            public boolean onCreateOptionsMenu(Menu menu) {
+            // Inflate the menu; this adds items to the action bar if it is present.
+            getMenuInflater().inflate(R.menu.main_menu, menu);
+            return true;
+            }
+
+            @Override
+            public boolean onOptionsItemSelected(MenuItem item) {
+            // Handle action bar item clicks here. The action bar will
+            // automatically handle clicks on the Home/Up button, so long
+            // as you specify a parent activity in AndroidManifest.xml.
+            int id = item.getItemId();
+
+            //noinspection SimplifiableIfStatement
+
+            return super.onOptionsItemSelected(item);
+            }
+
+            @SuppressWarnings(&quot;StatementWithEmptyBody&quot;)
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+            FragmentManager fm = getFragmentManager();
+
+            // Handle navigation view item clicks here.
+            int id = item.getItemId();
+
+            if (id == R.id.nav_home) {
+            // Handle the home action
+            fm.beginTransaction().replace(R.id.content_main, new MainFragment()).commit();
+            } else if (id == R.id.nav_demand) {
+            fm.beginTransaction().replace(R.id.content_main, new DemandFragment()).commit();
+            } else if (id == R.id.nav_posts) {
+            fm.beginTransaction().replace(R.id.content_main, new PostsFragment()).commit();
+            } else if (id == R.id.nav_messages) {
+            fm.beginTransaction().replace(R.id.content_main, new MessagesFragment()).commit();
+            } else if (id == R.id.nav_settings) {
+            fm.beginTransaction().replace(R.id.content_main, new SettingsFragment()).commit();
+            } else if (id == R.id.nav_logout) {
+
+            }
+
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            drawer.closeDrawer(GravityCompat.START);
+            return true;
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795537</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Voice search not working in search interface Android</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <author>
+            <name>Devesh Agrawal</name>
+            <uri>http://stackoverflow.com/users/1216931</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795537/voice-search-not-working-in-search-interface-android" />
+        <published>2016-01-14T17:08:15Z</published>
+        <updated>2016-01-14T17:08:15Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;This is Override function in ProductActivity.    &lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;@Override
+            public boolean onCreateOptionsMenu(Menu menu) {
+            // Inflate the menu; this adds items to the action bar if it is present.
+            getMenuInflater().inflate(R.menu.menu_my, menu);
+
+            android.support.v7.widget.SearchView searchView = (android.support.v7.widget.SearchView)
+            MenuItemCompat.getActionView(menu.findItem(R.id.search));
+
+            // Get the SearchView and set the searchable configuration
+            SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+            searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+            searchView.setIconifiedByDefault(false); // Do not iconify the widget; expand it by default
+
+            //search.setIconifiedByDefault(false);
+            //searchView.setOnQueryTextListener(this);
+            //searchView.setOnCloseListener(this);
+
+            searchView.setOnQueryTextListener(new android.support.v7.widget.SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+            adapter.filterData(query);
+            return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String query) {
+            adapter.filterData(query);
+            return false;
+            }
+            });
+
+            return true;
+            }
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;This is menu_my file.&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;&amp;lt;menu xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+            xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;
+            xmlns:tools=&quot;http://schemas.android.com/tools&quot;    tools:context=&quot;.MyActivity&quot;&amp;gt;
+
+
+
+
+
+            &amp;lt;item
+            android:id=&quot;@+id/search&quot;
+            android:title=&quot;Search&quot;
+            android:icon=&quot;@android:drawable/ic_menu_search&quot;
+            app:showAsAction=&quot;ifRoom&quot;
+            app:actionViewClass=&quot;android.support.v7.widget.SearchView&quot; /&amp;gt;
+            &amp;lt;/menu&amp;gt;
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;This is activity configuration in manifest file.&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;&amp;lt;activity
+            android:name=&quot;com.wokoshop.sony.app.ActivityProductList&quot;
+            android:label=&quot;@string/title_activity_products&quot;
+            android:parentActivityName=&quot;com.wokoshop.sony.app.ActivityStartShopping&quot;
+            android:screenOrientation=&quot;portrait&quot;
+            android:launchMode=&quot;singleTop&quot;
+            &amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+            &amp;lt;action android:name=&quot;android.intent.action.SEARCH&quot; /&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+            &amp;lt;meta-data android:name=&quot;android.app.searchable&quot;
+            android:resource=&quot;@xml/searchable&quot;/&amp;gt;
+
+            &amp;lt;/activity&amp;gt;
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;When user do text search it is working fine(Filtering data as expected). But when user try to do voice search it is not filtering data.&lt;/p&gt;
+
+            &lt;p&gt;Can anyone help me what is wrong here, and what changes are needed for voice search functionality?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795454</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Analyze code with Lint for calls that require permissions</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="android-permissions" />
+        <category scheme="http://stackoverflow.com/tags" term="lint" />
+        <author>
+            <name>JacksOnF1re</name>
+            <uri>http://stackoverflow.com/users/2607567</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795454/analyze-code-with-lint-for-calls-that-require-permissions" />
+        <published>2016-01-14T17:03:41Z</published>
+        <updated>2016-01-14T17:11:47Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I am setting my targetSdkVersion to 23 and therefore I want to implement
+            &quot;Requesting permissions at runtime&quot;. (see &lt;a href=&quot;http://developer.android.com/training/permissions/requesting.html&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
+
+            &lt;p&gt;Lint directly calls out if you forget to check the permission and
+            tells you the following: &lt;/p&gt;
+
+            &lt;blockquote&gt;
+            &lt;p&gt;Call requires permission which may be rejected by user: code should
+            explicitly check to see if permission is available (with
+            &lt;code&gt;checkPermission&lt;/code&gt;) or explicitly handle a potential
+            `SecurityException&#39;&lt;/p&gt;
+            &lt;/blockquote&gt;
+
+            &lt;p&gt;This is quite nice and I want to analyze my code for any call that I may
+            have forgotten, but I can&#39;t find Lint option that I have to select
+            in my Inspection profile. &lt;/p&gt;
+
+            &lt;p&gt;How is the inspection called?
+            Thanks!&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/34795416</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Get Marker (org.osmdroid.bonuspack.overlays) from mMapView.getOverlays()</title>
+        <category scheme="http://stackoverflow.com/tags" term="android" />
+        <category scheme="http://stackoverflow.com/tags" term="dictionary" />
+        <category scheme="http://stackoverflow.com/tags" term="android-mapview" />
+        <category scheme="http://stackoverflow.com/tags" term="osmdroid" />
+        <author>
+            <name>Gianluca Demarinis</name>
+            <uri>http://stackoverflow.com/users/5757328</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/34795416/get-marker-org-osmdroid-bonuspack-overlays-from-mmapview-getoverlays" />
+        <published>2016-01-14T17:02:00Z</published>
+        <updated>2016-01-14T17:02:00Z</updated>
+        <summary type="html">
+
+
+            &lt;p&gt;I&#39;m using OSMDroid.
+            I put my overlays marker in map view with&lt;/p&gt;
+
+            &lt;pre&gt;&lt;code&gt;Marker startMarker = new Marker(mMapView);
+            startMarker.setPosition(VBA.getPosition());
+            startMarker.setIcon(getResources().getDrawable(R.drawable.ic_location_big));
+            startMarker.setTitle(VBA.getHotelName());
+            etc...
+
+            ...
+            mMapView.getOverlays().add(startMarker);
+            &lt;/code&gt;&lt;/pre&gt;
+
+            &lt;p&gt;Now i have to get all markers (for example thanks a foreach) to add a listener&lt;/p&gt;
+
+        </summary>
+    </entry>
+</feed>
