@@ -3812,8 +3812,327 @@ setTimeout(w3c_slidy.hide_slides, 50);
 <span id="revdate"><link rel="stylesheet" href="myslidy.css" type="text/css" /></span>
 </div>
 <div class="sect1 slide">
-<h1 id="_sera_ajouté_prochainement_si_vous_êtes_sages">Sera ajouté prochainement si vous êtes sages</h1>
+<h1 id="_un_petit_aperçu">Un petit aperçu</h1>
 <div class="sectionbody" style="max-width:45em">
+<div class="listingblock">
+<div class="content"><div class="highlight"><pre><span></span><span class="k">data</span> <span class="k">class</span> <span class="nc">Person</span><span class="p">(</span><span class="k">val</span> <span class="py">name</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="k">val</span> <span class="py">age</span><span class="p">:</span> <span class="n">Int</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span><span class="p">)</span>
+</pre></div></div></div>
+<div class="listingblock">
+<div class="content"><div class="highlight"><pre><span></span><span class="k">fun</span> <span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="p">:</span> <span class="n">Array</span><span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;)</span> <span class="p">{</span>
+        <span class="k">val</span> <span class="py">persons</span> <span class="p">=</span> <span class="n">listOf</span><span class="p">(</span><span class="n">Person</span><span class="p">(</span><span class="s">&quot;Alice), Person(&quot;</span><span class="n">Bob</span><span class="s">&quot;, age = 29))</span>
+        <span class="k">val</span> <span class="py">oldest</span> <span class="p">=</span> <span class="n">persons</span><span class="p">.</span><span class="n">maxBy</span> <span class="p">{</span> <span class="n">it</span><span class="p">.</span><span class="n">age</span> <span class="o">?:</span> <span class="m">0</span> <span class="p">}</span>
+        <span class="n">println</span><span class="p">(</span><span class="s">&quot;The oldest is: $oldest&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">//The oldest is: Person(name=Bob, age=29)</span>
+</pre></div></div></div>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_quel_est_l_8217_intérêt">Quel est l&#8217;intérêt ?</h1>
+<div class="sectionbody" style="max-width:45em">
+<ul class="">
+<li>
+<span>
+Un language pragmatique, concis et moderne.
+</span>
+</li>
+<li>
+<span>
+Server-side, Android, partout où on trouve du Java.
+</span>
+</li>
+<li>
+<span>
+Complètement interopérable avec Java.
+</span>
+</li>
+<li>
+<span>
+Qui compile en bytecode Java 6.
+</span>
+</li>
+<li>
+<span>
+Fortement typé statiquement, avec support des nullables
+</span>
+</li>
+<li>
+<span>
+A la fois fonctionnel et orienté objet:
+</span>
+<ul class="">
+<li>
+<span>
+fonctions de premier ordre
+</span>
+</li>
+<li>
+<span>
+immutabilité
+</span>
+</li>
+<li>
+<span>
+pas d&#8217;effets de bord
+</span>
+</li>
+</ul>
+</li>
+<li>
+<span>
+Open Source
+</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_anko">Anko</h1>
+<div class="sectionbody" style="max-width:45em">
+<div class="paragraph"><p>Un DSL pour remplacer les layouts.</p></div>
+<div class="listingblock">
+<div class="content"><div class="highlight"><pre><span></span><span class="n">verticalLayout</span> <span class="p">{</span>
+        <span class="k">val</span> <span class="py">name</span> <span class="p">=</span> <span class="n">editText</span><span class="p">()</span>
+        <span class="n">button</span><span class="p">(</span><span class="s">&quot;Say hi!&quot;</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">onClick</span> <span class="p">{</span> <span class="n">toast</span><span class="p">(</span><span class="s">&quot;Hello, ${name.text}&quot;</span><span class="p">)</span> <span class="p">}</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+</pre></div></div></div>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_functions">Functions</h1>
+<div class="sectionbody" style="max-width:45em">
+<ul class="">
+<li>
+<span>
+Classique
+</span>
+</li>
+</ul>
+<div class="listingblock">
+<div class="content"><div class="highlight"><pre><span></span><span class="k">fun</span> <span class="nf">nom</span><span class="p">(</span><span class="n">param1</span><span class="p">:</span> <span class="n">TypeParam1</span><span class="p">,</span> <span class="n">param2</span><span class="p">:</span> <span class="n">String</span><span class="p">?</span> <span class="p">=</span> <span class="s">&quot;def&quot;</span><span class="p">):</span> <span class="n">TypeRetour</span> <span class="p">{</span>
+        <span class="c1">//Code de la fonction</span>
+        <span class="k">return</span> <span class="n">x</span>
+<span class="p">}</span>
+</pre></div></div></div>
+<ul class="">
+<li>
+<span>
+Inline
+</span>
+</li>
+</ul>
+<div class="listingblock">
+<div class="content"><div class="highlight"><pre><span></span><span class="k">fun</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Int</span> <span class="p">=</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span>
+</pre></div></div></div>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_structures_conditionnelles">Structures conditionnelles</h1>
+<div class="sectionbody" style="max-width:45em">
+<ul class="">
+<li>
+<span>
+Tout est une expression
+</span>
+</li>
+</ul>
+<div class="listingblock">
+<div class="content"><div class="highlight"><pre><span></span><span class="k">val</span> <span class="py">result</span> <span class="p">=</span> <span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">)</span> <span class="m">1</span> <span class="k">else</span> <span class="m">2</span>
+</pre></div></div></div>
+<div class="listingblock">
+<div class="content"><div class="highlight"><pre><span></span><span class="k">return</span> <span class="k">when</span> <span class="p">(</span><span class="n">variable</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">is</span> <span class="m">1</span> <span class="p">-&gt;</span> <span class="s">&quot;un&quot;</span>
+        <span class="k">is</span> <span class="m">2</span> <span class="p">-&gt;</span> <span class="s">&quot;deux&quot;</span>
+        <span class="m">42</span> <span class="p">&lt;</span> <span class="m">12</span> <span class="p">-&gt;</span> <span class="s">&quot;The answer&quot;</span>
+        <span class="k">else</span> <span class="p">-&gt;</span> <span class="s">&quot;trop&quot;</span>
+<span class="p">}</span>
+</pre></div></div></div>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_variables">Variables</h1>
+<div class="sectionbody" style="max-width:45em">
+<ul class="">
+<li>
+<span>
+On déclare le type après car souvent inféré par le compilateur (pas nécessaire donc)
+</span>
+</li>
+<li>
+<span>
+val / var
+</span>
+</li>
+</ul>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img alt="Caution" src="data:image/png;base64,
+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" />
+</td>
+<td class="content">C&#8217;est la référence qu&#8217;on ne peut pas bouger, pas son contenu</td>
+</tr></table>
+</div>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_classes_constructeur_properties_8230">Classes, constructeur, properties&#8230;</h1>
+<div class="sectionbody" style="max-width:45em">
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_ranges_boucles">Ranges, boucles</h1>
+<div class="sectionbody" style="max-width:45em">
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_exceptions">Exceptions</h1>
+<div class="sectionbody" style="max-width:45em">
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_la_gestion_du_null">La gestion du null</h1>
+<div class="sectionbody" style="max-width:45em">
+<div class="paragraph"><p>Force la vérification
+Null et Java (annotations, type non inférable)</p></div>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_extension_functions">Extension functions</h1>
+<div class="sectionbody" style="max-width:45em">
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img alt="Important" src="data:image/png;base64,
+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
+fll0/wFbNLSnMp35lwAAAABJRU5ErkJggg==" />
+</td>
+<td class="content">LA KILLER FEATURE de Kotlin</td>
+</tr></table>
+</div>
+<div class="paragraph"><p>Permet de rajouter des méthodes après coup sur des classes existantes.</p></div>
+<div class="listingblock">
+<div class="content"><div class="highlight"><pre><span></span><span class="k">fun</span> <span class="nf">String</span><span class="p">.</span><span class="n">lastChar</span><span class="p">():</span> <span class="n">Char</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="k">get</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">length</span> <span class="p">-</span> <span class="m">1</span><span class="p">)</span>
+</pre></div></div></div>
+<div class="listingblock">
+<div class="content"><div class="highlight"><pre><span></span><span class="s">&quot;Hello&quot;</span><span class="p">.</span><span class="n">lastChar</span>
+</pre></div></div></div>
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_sealed_classes">Sealed classes</h1>
+<div class="sectionbody" style="max-width:45em">
+</div>
+</div>
+<div class="sect1 slide">
+<h1 id="_références">Références</h1>
+<div class="sectionbody" style="max-width:45em">
+<ul class="">
+<li>
+<span>
+Mooc Coursera par les créateurs du language : <a href="https://www.coursera.org/learn/kotlin-for-java-developers">https://www.coursera.org/learn/kotlin-for-java-developers</a>
+</span>
+</li>
+<li>
+<span>
+Les Koans Kotlin : <a href="https://kotlinlang.org/docs/tutorials/koans.html">https://kotlinlang.org/docs/tutorials/koans.html</a>
+</span>
+</li>
+<li>
+<span>
+Le livre de référence : Kotlin in Action
+</span>
+</li>
+</ul>
 </div>
 </div>
 </body>
